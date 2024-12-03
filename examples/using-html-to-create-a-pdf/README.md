@@ -1,0 +1,5 @@
+***Based on <https://ironpdf.com/examples/using-html-to-create-a-pdf/>***
+
+Utilize the `fromHtml` method to transform HTML content into PDF files. This method ensures that the generated PDF replicates the output of Google Chrome's print function. By incorporating the Chrome rendering engine, IronPDF guarantees a consistent result that matches the output of Google Chrome under similar conditions.
+
+IronPDF not only excels in converting HTML to PDF but also provides extensive functionalities for PDF manipulation, blending rendering and document manipulation capabilities into a comprehensive toolkit. Take, for instance, the [HTML stamping feature provided by IronPDF](https://ironpdf.com/examples/stamping-html-pdf-multiple/). This feature allows for the insertion of HTML-rendered PDFs onto or beneath the primary document content, enabling dynamic and customizable PDF creation with HTML elements integrated as stamps.

@@ -1,0 +1,7 @@
+***Based on <https://ironpdf.com/examples/pdf-generation-settings/>***
+
+IronPDF provides a robust set of customization options when converting HTML content into PDFs, whether from direct HTML strings, local files, or URLs. These options encompass an array of settings, including: setting a custom paper size with adjustable measurement units, activating HTML backgrounds, adjusting page orientation, defining the document title, inserting a delay in the rendering process for resource loading, specifying the CSS media type for style application, opting for specific paper modes, generating editable form fields, customizing page margins, and appending page numbers to the document.
+
+The CSS media types, namely "screen" and "print," are critical in determining how styles are applied within HTML documents based on the intended display medium. Choosing "screen" as the media type optimizes the webpage for on-screen viewing, enhancing aspects like colors and layout for better digital visibility. On the other hand, selecting "print" configures the browser to apply styles best suited for physical printing, ensuring the content is readable and well-formatted on paper. It’s often essential to set the media type to "screen" for accurate display of certain background images that might not otherwise render correctly.
+
+Additionally, introducing a delay in the rendering process allows essential elements such as JavaScript and fonts to fully load, ensuring that the final PDF output accurately reflects the intended design and functionality.
