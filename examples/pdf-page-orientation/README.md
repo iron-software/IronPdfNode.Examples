@@ -1,9 +1,9 @@
 ***Based on <https://ironpdf.com/examples/pdf-page-orientation/>***
 
-Page orientation and rotation are often mistaken for one another, especially when considering a 90-degree rotation similar to landscape orientation.
+Sometimes, there may be confusion between page orientation and page rotation, especially when considering a 90-degree rotation and the landscape setting for orientation.
 
-Page orientation determines the baseline layout of a page, which can be either vertical (portrait) or horizontal (landscape).
+Page orientation is the initial setup of a page that determines if it's laid out vertically (portrait) or horizontally (landscape).
 
-Conversely, page rotation adjusts the angle at which a page is displayed. This feature is handy for aligning content properly or catering to specific viewing requirements. Common rotation angles include 90, 180, and 270 degrees.
+Conversely, page rotation involves altering the page’s angle, which can shift the orientation as required. This adjustment is particularly useful for aligning content properly or to suit specific viewing needs. Typically, page angles are adjusted to 90, 180, or 270 degrees.
 
-For more details on how to set page orientation when rendering PDFs, check out [IronPDF's guide on setting page orientation](https://ironpdf.com/nodejs/examples/pdf-page-orientation/). It's important to note, however, that once a PDF is created, its orientation cannot be altered. On the other hand, you can rotate an existing PDF document at any time, but this adjustment cannot be made during the PDF rendering stage.
+You can explore more about how to adjust page orientation during the PDF generation phase by consulting [IronPDF's comprehensive guide on page orientation](https://ironpdf.com/nodejs/examples/pdf-page-orientation/). It's important to note, however, that while you cannot change the page orientation of an already existing PDF, you can apply rotation to it. Unlike orientation, rotation does not allow adjustments during the document creation process.

@@ -1,7 +1,7 @@
 ***Based on <https://ironpdf.com/examples/js-charts-to-pdf/>***
 
-When rendering charts that require JavaScript, it's crucial to allocate enough time for the JavaScript to run. In the example provided, JavaScript execution is permitted through the `enableJavaScript` option.
+When incorporating charts driven by JavaScript, ensuring adequate time for JavaScript to execute is crucial. In the provided example, JavaScript execution is facilitated by setting the `enableJavaScript` property to true.
 
-To pause the rendering process until the JavaScript has finished executing, the `waitFor` parameter is utilized. By setting it to `WaitForType.JavaScript`, the process will either wait for the `window.ironpdf.notifyRender` function to be triggered within the JavaScript, or until a preset maximum wait time expires.
+The `waitFor` property is strategically employed to postpone the rendering until the JavaScript has fully executed. By selecting `WaitForType.JavaScript` as the method, the process will either continue when `window.ironpdf.notifyRender` is activated within the JavaScript, or it will timeout at the maximum specified wait duration.
 
-Furthermore, by setting the CSS media parameter, the appearance and formatting of the HTML content will be optimized to match screen-specific settings.
+Moreover, setting the CSS media property guarantees that the HTML content's presentation and layout conforms to the applicable screen configurations.

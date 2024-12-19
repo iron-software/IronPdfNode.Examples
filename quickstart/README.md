@@ -1,33 +1,31 @@
-# IronPDF for Node.js - Comprehensive PDF Manipulation in Node.js Scripts
+# IronPDF for Node.js - Effortlessly Create, Edit, and Read PDFs
 
 ***Based on <https://ironpdf.com/docs/docs/>***
 
 
-IronPDF is a robust PDF management library that streamlines the task of programmatically generating and editing PDFs in Node.js environments.
+IronPDF streamlines the creation and customization of PDF documents through Node.js, offering a robust PDF library courtesy of Iron Software, which develops a suite of advanced and high-performance document processing tools.
 
-Developed by Iron Software, IronPDF is part of a suite of efficient, advanced document management tools that the company offers.
+IronPDF can also be used in other environments, including [.NET (C# and VB.NET)](https://ironpdf.com), [Java PDF Library](https://ironpdf.com/java/), and [Python PDF Library](https://ironpdf.com/python/).
 
-IronPDF is also accessible for different programming environments, including [.NET (C# and VB.NET)](https://ironpdf.com/), [Java PDF Library](https://ironpdf.com/java/), and [Python PDF Library](https://ironpdf.com/python/).
+## IronPDF's Key Features for Node.js
 
-## Core Functionalities of IronPDF for Node.js
+1. Create PDFs from various sources like HTML, CSS, JavaScript, images, and other file types
+2. Enhance PDFs with headers, footers, attachments, digital signatures, watermarks, and bookmarks
+3. Protect PDFs with passwords, digital signatures, metadata, and more for security
+4. Support full multithreading and asynchronous tasks for top performance in crucial applications
 
-1. Create PDFs from HTML, CSS, JavaScript, images, and other content types
-2. Enhance PDFs with headers, footers, attachments, watermarks, digital signatures, and bookmarks
-3. Protect PDF documents with encryption, digital signatures, metadata, and access restrictions
-4. Support for multithreading and asynchronous tasks to ensure superior performance in critical applications
+IronPDF boasts over [50 advanced features](https://ironpdf.com/features/) for rich PDF creation and editing capabilities.
 
-IronPDF offers over [50 sophisticated functionalities](https://ironpdf.com/features/) dedicated to the generation, styling, and modification of PDF files.
+## Getting Started with IronPDF for Node.js
 
-## Setting Up IronPDF for Node.js
-
-1. **Node.js Installation**: First, ensure that you have the latest version of Node.js, which can be installed from the [official Node.js website](https://nodejs.org/en).
-2. **IronPDF Package Installation**: Use the following NPM command to install the IronPDF package:
+1. **Node.js Installation**: Ensure the latest Node.js is installed from the [official Node.js website](https://nodejs.org/en).
+2. **IronPDF Package Installation**: Run the following command in your terminal to install IronPDF using NPM:
 
    ```shell
    npm i @ironsoftware/ironpdf
    ```
 
-3. **Install the `IronPDF Engine`**: Depending on your operating system, install the appropriate IronPDF binary:
+3. **IronPDF Engine Installation**: Install the engine specific to your OS as follows:
 
    *For Windows x64*:
 
@@ -59,25 +57,24 @@ IronPDF offers over [50 sophisticated functionalities](https://ironpdf.com/featu
    npm install @ironsoftware/ironpdf-engine-macos-arm64
    ```
 
-   _IronPDF will endeavor to automatically download and install the correct binary for your system when your Node.js project is executed for the first time. If this automated process is blocked, manual installation of the binary might be necessary using the above commands._
+   _(IronPDF automatically attempts to download and install the correct binary for your system at the first run of your Node.js project. Should this be blocked by your system, refer to the commands above.)_
 
-4. **License Key Activation (optional)**: Within your Node.js project, apply a valid license key by setting the `IronPdfGlobalConfig.licenseKey`:
-
-_(Note: If you encounter a warning asking to set "type": "module" in your package.json, please do so at the top level of the file.)_
+4. **License Key Application (optional)**: To unlock IronPDF's full capabilities, set the `IronPdfGlobalConfig.licenseKey` in your Node.js project:
 
 ```node
 import {IronPdfGlobalConfig} from "@ironsoftware/ironpdf";
 
 (async () => {
-    const IronPdfConfig = {
+    // Set your license key
+    const config = {
         licenseKey: "IRONPDF-MYLICENSE-KEY-1EF01",
     };
 
-    IronPdfGlobalConfig.setConfig(IronPdfConfig);
+    IronPdfGlobalConfig.setConfig(config);
 })();
 ```
 
-5. **Enable Debug Mode (optional)**: Activate debug mode by setting the `IronPdfGlobalConfig.debugMode` property to true, which will also generate a log file in the directory:
+5. **Debug Mode (optional)**: Enable debugging to generate a detailed log file:
 
 ```node
 import {IronPdfGlobalConfig} from "@ironsoftware/ironpdf";
@@ -91,37 +88,38 @@ import {IronPdfGlobalConfig} from "@ironsoftware/ironpdf";
 
 ### HTML to PDF Conversion
 
-Using `PdfDocument.fromHtml`, you can transform HTML content into PDF files. This function works with HTML strings or paths to HTML documents.
+Utilize `PdfDocument.fromHtml` for transforming HTML into PDFs, whether it is raw HTML code or an HTML file.
 
 ```node
 import {PdfDocument} from "@ironsoftware/ironpdf";
 
-/* Convert an HTML String to a PDF */
-PdfDocument.fromHtml("<h1>Welcome to your PDF</h1><p><small>Powered by IronPDF for Node.js!</small></p>")
+/* HTML string to PDF conversion */
+PdfDocument.fromHtml("<h1>Hello world!</h1><p><small>A PDF by IronPDF for Node.js</small></p>")
 .then((pdf) => {
-    pdf.saveAs("./created-pdf-from-string.pdf");
+    pdf.saveAs("./html-string-to-pdf.pdf");
 });
 
-/* Convert an HTML File to a PDF */
-PdfDocument.fromHtml("./example.html")
+/* HTML file to PDF conversion */
+PdfDocument.fromHtml("./index.html")
 .then((pdf) => {
-    pdf.saveAs("./created-pdf-from-file.pdf");
+    pdf.saveAs("./html-file-to-pdf.pdf");
 });
 ```
 
 ### URL to PDF Conversion
 
-`PdfDocument.fromUrl` captures content from a specified URL and converts it to a PDF document.
+Convert web page contents directly into a PDF using `PdfDocument.fromUrl`.
 
 ```node
 import {PdfDocument} from "@ironsoftware/ironpdf";
 
+/* URL to PDF conversion */
 const pdf = await PdfDocument.fromUrl("https://ironpdf.com/nodejs/");
-await pdf.saveAs("./web-page-to-pdf.pdf");
+await pdf.saveAs("./url_to_pdf.pdf");
 ```
 
-## Licensing & Support Options
+## Licensing & Support
 
-To deploy IronPDF in a production environment, you may [purchase a license key](https://ironpdf.com/licensing). For a test run, consider applying for a [free trial license](https://ironpdf.com/trial-license).
+[Obtain a license key for IronPDF](https://ironpdf.com/licensing) for production use, or try IronPDF with a [free trial license](https://ironpdf.com/trial-license).
 
-For additional support and queries, please refer to our [support team](https://ironpdf.com/#live-chat-support).
+For further assistance, please [reach out to our support](https://ironpdf.com/#live-chat-support).

@@ -1,0 +1,19 @@
+{
+    "name": "ironpdfnode-examples__form-data",
+    "version": "1.0.0",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: Form Data",
+    "main": "src/program.js",
+    "keywords": [
+        "IronPDF for Node.js",
+        "Node.js",
+        "node",
+        "IronPdfNode.Examples",
+        "Form Data",
+        "Code Example"
+    ],
+    "author": "Iron Software LLC",
+    "license": "MIT",
+    "dependencies": {
+        "@ironsoftware/ironpdf": "^2024.11.4"
+    }
+}

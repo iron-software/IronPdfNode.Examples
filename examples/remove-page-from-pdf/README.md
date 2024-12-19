@@ -1,3 +1,3 @@
 ***Based on <https://ironpdf.com/examples/remove-page-from-pdf/>***
 
-To delete one or several pages from a PDF file, make use of the `removePage` method. After editing, the PDF can be saved using the `saveAs` method provided by IronPDF. IronPDF is a robust .NET library tailored for creating, editing, and managing PDF files through code. Discover more about IronPDF's capabilities on the [IronPDF official website](https://ironpdf.com).
+To delete one or more pages from a PDF file, utilize the `removePage` function. Afterward, you can save the modified PDF document by employing the `saveAs` function of IronPDF. IronPDF is a robust .NET library designed for creating, editing, and handling PDF files through programming. For additional details on the capabilities of IronPDF, visit the [IronPDF official website](https://ironpdf.com).

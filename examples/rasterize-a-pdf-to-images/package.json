@@ -1,0 +1,19 @@
+{
+    "name": "ironpdfnode-examples__rasterize-a-pdf-to-images",
+    "version": "1.0.0",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: Rasterize A Pdf To Images",
+    "main": "src/program.js",
+    "keywords": [
+        "IronPDF for Node.js",
+        "Node.js",
+        "node",
+        "IronPdfNode.Examples",
+        "Rasterize A Pdf To Images",
+        "Code Example"
+    ],
+    "author": "Iron Software LLC",
+    "license": "MIT",
+    "dependencies": {
+        "@ironsoftware/ironpdf": "^2024.11.4"
+    }
+}

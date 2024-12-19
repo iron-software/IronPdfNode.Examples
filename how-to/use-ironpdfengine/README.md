@@ -1,78 +1,109 @@
-# Guide to Utilizing IronPdfEngine
+# How to Employ IronPdfEngine
 
 ***Based on <https://ironpdf.com/how-to/use-ironpdfengine/>***
 
 
-IronPdfEngine serves as a gRPC server designed to facilitate the creation, editing, and management of PDF documents through the capabilities offered by IronPDF.
+IronPdfEngine serves as a powerful gRPC server designed to manage various operations with IronPDF including generating, modifying, and reading PDF documents.
 
-## Interaction Between Node.js and IronPdfEngine
+<h3>Getting Started with IronPDF</h3>
 
-For Node.js applications, IronPdf is dependent on IronPdfEngine, functioning essentially as an API layer to the latter's gRPC server capabilities. Whenever a method from IronPdf is invoked in Node.js, the actual processing is carried out by IronPdfEngine.
+--------------------------------
 
-By default, IronPdf for Node.js initiates IronPdfEngine as a subprocess which remains active until the application is terminated.
+## Node.js Integration and IronPdfEngine
 
-For flawless operation, ensure that the IronPdf for Node.js version aligns with the corresponding IronPdfEngine version, as cross-version compatibility is not supported.
+For Node.js users, IronPdf requires IronPdfEngine to function. The Node.js implementation acts as an API facade for IronPdfEngine's gRPC functionalities. Essentially, every method invoked in IronPdf for Node.js leverages IronPdfEngine behind the scenes.
+
+By design, IronPdf for Node.js initiates IronPdfEngine as a subprocess and maintains communication until the application terminates.
+
+It's important to match the version of IronPdf for Node.js with the corresponding version of IronPdfEngine, as cross-version compatibility is not supported.
 
 ### Implementing IronPdf for Node.js with a Local IronPdfEngine
 
-#### Option 1: Runtime Download of IronPdfEngine
+#### Option 1: Dynamically Download IronPdfEngine
 
-Initially, after incorporating IronPdf into your Node.js project, the system identifies your platform (such as Windows x64) and downloads the appropriate IronPdfEngine binaries.
+After integrating IronPdf into your project, the initial execution will auto-detect your operating system (e.g., Windows x64) and automatically fetch the appropriate IronPdfEngine binaries.
 
 ```shell
 npm install @ironsoftware/ironpdf
 ```
 
-**Advantages**:
-- Smaller application size.
-- Versatile across different platforms.
+**Advantages**
 
-**Disadvantages**:
-- Requires internet for initial runs.
-- Slower startup times.
+* Reduces the overall size of your application package.
+* Flexible deployment across various platforms.
 
-#### Option 2 (Recommended): Installing IronPdfEngine as a Dependency
+**Disadvantages**
 
-This method enables inclusion of IronPdfEngine directly as a package dependency in your project. This approach bundles IronPdfEngine into a .zip file which is then automatically extracted and utilized by the application.
+* Requires internet connectivity for initial downloads.
+* Potentially slow initial startup time.
 
-You can select from different platform-specific dependencies:
+#### Option 2: Pre-install IronPdfEngine (Recommended)
 
+This approach enables you to pre-install IronPdfEngine by including it as a dependency, packaging IronPdfEngine into a .zip file which automatically extracts and configures itself.
+
+You should ensure that the version tags for `ironpdf` and `ironpdf-engine-xxx-xxx` align correctly.
+
+`ironpdf-engine-xxx-xxx` merely indicates the package version, not the IronPdfEngine version within.
+
+##### Installation Commands for Different Platforms
+
+For Windows x64:
 ```shell
 npm install @ironsoftware/ironpdf-engine-windows-x64
+```
+
+For Windows x86:
+```shell
 npm install @ironsoftware/ironpdf-engine-windows-x86
+```
+
+For Linux x64:
+```shell
 npm install @ironsoftware/ironpdf-engine-linux-x64
+```
+
+For macOS x64:
+```shell
 npm install @ironsoftware/ironpdf-engine-macos-x64
+```
+
+For macOS ARM:
+```shell
 npm install @ironsoftware/ironpdf-engine-macos-arm64
 ```
-It's important that the version of `ironpdf` matches the version of `ironpdf-engine-xxx-xxx`.
 
-**Advantages**:
-- Quicker startup.
-- No internet required post-installation.
+Note: It’s typically not advisable to install every dependency due to their substantial size.
 
-**Disadvantages**:
-- Increases the size of the application.
-- Requires specifying the destination platform.
+**Advantages**
 
-## Utilizing IronPdf with a Remote IronPdfEngine
+* Quicker startup times.
+* No internet dependency post-installation.
 
-When deploying IronPdfEngine remotely, it is crucial that the IronPdf version matches exactly with the IronPdfEngine version to avoid compatibility issues. For example, if IronPdf for Node.js is version 2024.2.2, then IronPdfEngine must also be 2024.2.2.
+**Disadvantages**
 
-Check the required version using:
+* Increased size of the application package.
+* Requires specifying the target platforms.
+
+## Configuring Node.js with a Remote IronPdfEngine
+
+To hook up with a remotely running IronPdfEngine, it's crucial to sync the version of IronPdf for Node.js with the identical IronPdfEngine release (e.g., version 2024.2.2 for both).
+
 ```js
 const ironPdfEngineVersion = IronPdfGlobalConfig.ironPdfEngineVersion;
 ```
 
-### Connection Setup
+### How to Establish Connection
 
-Assuming IronPdfEngine operates remotely at `123.456.7.8:33350`, connect by setting the configuration in your application’s initial setup:
+Suppose IronPdfEngine is operating remotely at `123.456.7.8:33350`.
 
+For instructions on deploying IronPdfEngine remotely, refer to "[How to Deploy and Manage IronPdfEngine](https://ironpdf.com/how-to/pull-run-ironpdfengine/)."
+
+Integrate this configuration at the beginning of your application or before making any calls to IronPdf methods:
 ```js
 IronPdfGlobalConfig.setConfig({
-    ironPdfEngineDockerAddress: "123.456.7.8:33350"
+    ironPdfEngineDockerAddress:"123.456.7.8:33350"
 });
 ```
+This single step links your application with the Remote IronPdfEngine, streamlining your PDF handling operations.
 
-This simple configuration ensures your application communicates with the remote IronPdfEngine. Note that when using a remote IronPdfEngine, there is no need to install IronPdfEngine as a local dependency.
-
-For more detailed instructions on setting up a remote IronPdfEngine, please visit ["How to Pull and Run IronPdfEngine"](https://ironpdf.com/how-to/pull-run-ironpdfengine/).
+When utilizing Remote IronPdfEngine, there's no need to install IronPdfEngine as a local dependency. You can bypass the section titled "[Option 2: Pre-install IronPdfEngine (Recommended)](#anchor-option-2-recommended-install-ironpdfengine-as-a-dependency)."

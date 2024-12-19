@@ -1,0 +1,19 @@
+{
+    "name": "ironpdfnode-examples__reading-pdf-text",
+    "version": "1.0.0",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: Reading Pdf Text",
+    "main": "src/program.js",
+    "keywords": [
+        "IronPDF for Node.js",
+        "Node.js",
+        "node",
+        "IronPdfNode.Examples",
+        "Reading Pdf Text",
+        "Code Example"
+    ],
+    "author": "Iron Software LLC",
+    "license": "MIT",
+    "dependencies": {
+        "@ironsoftware/ironpdf": "^2024.11.4"
+    }
+}

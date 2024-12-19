@@ -1,8 +1,8 @@
 ***Based on <https://ironpdf.com/examples/angular-to-pdf/>***
 
-Leverage the `fromUrl` method in IronPDF to create a PDF from a web address. This method generates a PDF instantaneously, but it might face challenges in loading JavaScript or fonts efficiently. To counter this, employ the `waitFor` class, choosing a suitable wait type and defining a maximum duration for the wait.
+Employ the `fromUrl` method with IronPDF to create a PDF document directly from a URL. This action is executed instantly, but this quick rendering can encounter problems while loading JavaScript or fonts. To circumvent these issues, it's recommended to utilize the `waitFor` class. Here, you can designate a suitable wait type and set a limit on the waiting duration.
 
-Here are some issues that can arise if JavaScript or fonts do not load properly:
+Issues that may arise from inadequately loaded JavaScript or fonts include:
 
-- Text content not appearing
-- Content appearing improperly
+- Text content becoming invisible
+- Content appearing incorrectly

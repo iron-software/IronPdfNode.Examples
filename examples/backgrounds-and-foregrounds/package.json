@@ -1,0 +1,19 @@
+{
+    "name": "ironpdfnode-examples__backgrounds-and-foregrounds",
+    "version": "1.0.0",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: Backgrounds And Foregrounds",
+    "main": "src/program.js",
+    "keywords": [
+        "IronPDF for Node.js",
+        "Node.js",
+        "node",
+        "IronPdfNode.Examples",
+        "Backgrounds And Foregrounds",
+        "Code Example"
+    ],
+    "author": "Iron Software LLC",
+    "license": "MIT",
+    "dependencies": {
+        "@ironsoftware/ironpdf": "^2024.11.4"
+    }
+}

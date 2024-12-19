@@ -1,5 +1,5 @@
 ***Based on <https://ironpdf.com/examples/file-to-pdf/>***
 
-Transform an HTML file into a PDF using the `fromHtml` method from Iron Software's IronPDF library. The PDF generated will incorporate all of the content from your HTML file.
+Transform an HTML file into a PDF document by employing the `fromHtml` method from the IronPDF library, a product of Iron Software. This method ensures that the PDF document effectively encapsulates all the content from the specified HTML file.
 
-Once the PDF is created, you can utilize the `saveAs` method to store the document with the name 'output.pdf' either in the current directory or in another location you specify. To delve deeper into the capabilities of IronPDF for handling PDF creation and manipulation, visit the IronPDF documentation on [Iron Software's official website](https://ironpdf.com/).
+Once the conversion is complete, the `saveAs` method allows you to store the document with the filename 'output.pdf' in either the current directory or another directory of your choosing. To expand your knowledge on utilizing IronPDF for creating and modifying PDFs, check out the [IronPDF documentation on Iron Software's official website](https://ironpdf.com).

@@ -1,13 +1,13 @@
 ***Based on <https://ironpdf.com/examples/security-and-metadata/>***
 
-IronPDF offers functionality for encrypting and decrypting, editing metadata, and setting permissions related to annotations, copying, pasting content, form fields, and printing capabilities.
+IronPDF provides features for encrypting, decrypting, customizing metadata, and setting specific permissions on actions like annotations, copying and pasting content, handling form fields, and document printing capabilities.
 
-To access a password-protected PDF, employ the `open` method and enter the password as the second argument. To set metadata, you must first create a new map, populate it with key-value pairs that represent the desired metadata, and then use the `overrideMetadata` method to replace the existing metadata.
+To unlock a PDF that is secured with a password, utilize the `open` method and supply the password as its second argument. To modify metadata, construct a new dictionary with key-value pairs reflecting the desired metadata information. This dictionary is then passed into the `overrideMetadata` method to replace the existing metadata.
 
-The `removePasswordsAndEncryption` method eliminates any existing passwords from the document. With the `makePdfDocumentReadOnly` method, the PDF is converted to read-only mode, encrypting the content with 128-bit encryption and prohibiting actions such as copying, pasting, making annotations, and editing forms.
+Use the `removePasswordsAndEncryption` method to eliminate passwords from the document. The `makePdfDocumentReadOnly` method locks the PDF, encrypting it with 128-bit security and preventing actions such as copying and pasting content, making annotations, and modifying form fields.
 
-Alter permissions by constructing a permission object with defined settings and applying it using the `setPermission` method.
+To set specific document permissions, start by constructing a permissions object with your desired settings and pass this object to the `setPermission` method.
 
-Finally, the `saveAs` method allows you to specify both `ownerPassword` and `userPassword` in the object you pass to it, setting these passwords as needed.
+Finally, the `saveAs` method can be used to apply `ownerPassword` and `userPassword` properties as needed for securing the document.
 
-For additional details on the capabilities and applications of IronPDF, refer to the [IronPDF product page](https://ironpdf.com) or discover more about other products from Iron Software on their [website](https://ironsoftware.com).
+For additional insights into the functionalities and applications of IronPDF, visit the [IronPDF product page](https://www.ironpdf.com) or learn more about Iron Software's offerings on their [main website](https://www.ironsoftware.com).

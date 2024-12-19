@@ -1,7 +1,7 @@
 ***Based on <https://ironpdf.com/examples/google-fonts-htmltopdf/>***
 
-To accurately display resources that require additional load time, like JavaScript, fonts, and network elements, it is crucial to set a render delay by using the `waitFor` class. This ensures that all assets fully load before rendering takes place.
+To ensure assets that need loading time, like JavaScript, fonts, and network resources, are properly rendered, it's crucial to define a render delay using the `waitFor` class.
 
-When incorporating custom fonts from Google Fonts into your HTML content, adjust the rendering options by setting the `waitFor` property. Choose `RenderDelay` as the delay type and allocate a maximum wait time of 500 milliseconds.
+For displaying HTML content with a custom Google Font, adjust the rendering settings to include the `waitFor` property. Choose `RenderDelay` as the waiting type and allocate a maximum delay of 500 milliseconds.
 
-Once the HTML has been processed, generate the PDF document using the features of [IronPDF's PDF Generation Library](https://ironpdf.com). After generation, review the PDF to confirm that the custom font is accurately rendered and visible.
+Once the HTML is rendered, convert it into a PDF using the features provided by [IronPDF's PDF Generation Library](https://ironpdf.com). You can then review the generated PDF to confirm the custom font is accurately loaded and presented.

@@ -1,9 +1,9 @@
 ***Based on <https://ironpdf.com/examples/reading-pdf-text/>***
 
-Retrieving text and images from documents is essential for data migration, particularly when transitioning between different document formats. By extracting these elements, you can maintain content in a format that's both easier to access and edit, minimizing the potential for data loss.
+Retrieving text and images from documents is crucial during a transition between different document formats. This process allows content to be stored in formats that are both easier to manage and modify, thereby minimizing the potential for data loss.
 
-Images and text within a PDF can be extracted separately. The text is retrieved as a simple string, while images are pulled in an image buffer format, ready for further processing or export.
+You can independently extract both embedded images and text. When extracted, text is represented as a plain string, and images are stored in an image buffer format, ready for export or additional manipulation.
 
-Utilize the `extractText` method for text extraction, and the `extractRawImages` method for isolating images from PDF files.
+To extract text, use the `extractText` method, and for images, utilize the `extractRawImages` method from a PDF.
 
-For step-by-step guidance on using these methods, please refer to the [IronPDF Documentation](https://ironpdf.com/docs/).
+For comprehensive guidance on utilizing these methods, refer to the [IronPDF Documentation](https://ironpdf.com/docs/).

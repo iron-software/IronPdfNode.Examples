@@ -1,15 +1,15 @@
 ***Based on <https://ironpdf.com/examples/viewport/>***
 
-In the context of viewport settings, IronPDF features both CSS media and paper mode options.
+Discussing viewport settings, there are CSS media and paper mode considerations.
 
-The CSS media option within IronPDF enables the specification of style application to HTML content during its conversion to a PDF. This option carries two settings, CSS media "screen" and "print":
+IronPDF provides a CSS media feature that lets you define how styles should be applied to HTML content for PDF conversion. You can choose between two modes:
 
-- **Screen**: This setting is designed for content viewed on digital displays, applying styles that are visually appealing on devices like computer monitors, which may include vibrant colors and dynamic layouts.
-- **Print**: This setting optimizes CSS for output to physical media, ensuring that styles are adjusted for clarity and proper layout when the content is printed on paper.
+- **Screen**: This mode is designed for digital displays, optimizing styles such as colors and layouts to enhance readability and appearance on devices like computer monitors.
+- **Print**: This option configures the browser to employ styles suitable for physical printing. It optimizes CSS rules to ensure content is clear and properly formatted for output on paper.
 
-Additionally, IronPDF’s [Paper Sizing Options](https://ironpdf.com/examples/custom-pdf-paper-size/) provide various settings for how content should be arranged on PDF pages:
+Additionally, IronPDF includes a paper mode setting which adjusts how content is rendered onto PDF pages. The options for paper mode, detailed in [IronPDF's Paper Sizing Options](https://ironpdf.com/examples/custom-pdf-paper-size/), include:
 
-- `ContinuousFeed`: Ideal for continuous feed printers that operate with rolls of paper. It’s commonly utilized in settings requiring long, uninterrupted prints, such as industrial environments.
-- `FitToHeight`: This setting adjusts the content to fit the designated height of the paper, preserving the content’s aspect ratio to prevent any overflow.
-- `FitToWidth`: Here, the content is resized to match the paper's width constraints while keeping the aspect ratio intact, ensuring the content does not exceed the paper’s width.
-- `FitToPage`: This option scales the content to efficiently fill the entire page, both height and width, while maintaining the aspect ratio, guaranteeing that the entire content is neatly contained within a single page.
+- `ContinuousFeed`: Ideal for continuous feed printers which print on a continuous roll of paper, often used in industrial print settings.
+- `FitToHeight`: This setting scales content to fit the designated height of the paper, preserving the content’s aspect ratio to prevent any overflow.
+- `FitToWidth`: Similar to `FitToHeight`, this setting adjusts the content to fit within the specified width of the paper, also maintaining the aspect ratio.
+- `FitToPage`: This option scales the content to fit the page, considering both height and width, ensuring that the content is fully visible on a single page while preserving the original aspect ratio.

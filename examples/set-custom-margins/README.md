@@ -1,9 +1,9 @@
 ***Based on <https://ironpdf.com/examples/set-custom-margins/>***
 
-Adjusting margins is a straightforward process with IronPDF.
+Adjusting the margins is a simple process with IronPDF.
 
-Start by configuring the rendering options and defining the margins for the PDF content. In our example, we set a top margin of 40 units, a left margin of 20 units, a right margin of 20 units, and a bottom margin of 40 units. These settings dictate the space between the content and the page boundaries in the PDF.
+First, configure the rendering settings and stipulate the margins for the content within your PDF. In this particular case, we've established a top margin and a bottom margin of 40 units each, with left and right margins set at 20 units each. These values determine the distance between the PDF content and the page boundaries.
 
-Use the `PdfDocument.fromHtml` method to transform an HTML file into a PDF using IronPDF's robust HTML-to-PDF functionality. Ensure to pass in the rendering options that include the customized margins within the `renderOptions` parameter.
+Leverage the `PdfDocument.fromHtml` method to transform an HTML file into a PDF using the robust HTML-to-PDF conversion features of IronPDF. Ensure to include the custom margin settings in the `renderOptions` object during this process.
 
-After the HTML has been converted to a PDF document, you can proceed to export the PDF file, leveraging IronPDF's advanced document conversion capabilities.
+After the HTML has been effectively converted to a PDF, you can then proceed to export the newly created PDF file, utilizing the comprehensive document management capabilities of IronPDF.

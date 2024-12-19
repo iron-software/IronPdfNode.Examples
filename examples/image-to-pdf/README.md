@@ -1,15 +1,15 @@
 ***Based on <https://ironpdf.com/examples/image-to-pdf/>***
 
-To transform a single image into a PDF document, use the `PdfGenerator.imageToPdf` method by providing the image file path and then exporting the resultant PDF.
+Transforming a single image into a PDF can be effortlessly accomplished by providing the image's file path to the `PdfGenerator.imageToPdf` method and then exporting the generated PDF document.
 
-For converting several images into one PDF, the process entails a few more steps. Initially, you must obtain an array of the image file paths using the `readdir` method, targeting the specific directory storing the image files.
+When dealing with multiple images, the process involves a few more steps due to the need for handling several files. Initially, employ the `readdir` method to acquire the list of image files from a specified directory path.
 
-Following that, refine the list to include only file names ending in ".jpg" or ".jpeg." Place these names in an array named `jpegFiles`.
+After obtaining the list, filter out only the file names that end in ".jpg" or ".jpeg". These filtered names should be stored in an array called `jpegFiles`.
 
-Next, create complete paths for these image files by concatenating the directory path with each file name, storing the results in the `filePaths` array.
+For each file name in the `jpegFiles` array, create the complete path by concatenating the directory path with the file name. Place these complete paths into another array named `filePaths`.
 
-To convert these images into a single PDF file, employ the `imageToPdf` method again, which can accept an array of image file paths.
+Proceed by using the `imageToPdf` method again, which now converts all images located at the paths specified in the `filePaths` array into a single PDF document.
 
-Finally, compile the images into a PDF and save this as "composite.pdf."
+The final step is to save this newly created PDF, which includes all the images, under the name "composite.pdf."
 
-For additional details on how to programmatically convert images to PDFs using the IronPDF library, explore the [IronPDF product page](https://ironpdf.com/).
+For further details on how to programmatically convert images to PDFs using the IronPDF library, please visit the [IronPDF product page](https://ironpdf.com).

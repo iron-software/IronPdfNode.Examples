@@ -1,9 +1,9 @@
 ***Based on <https://ironpdf.com/examples/replace-text-in-pdf/>***
 
-The following code snippet illustrates the process of text substitution within a PDF document. This utility can be employed for both newly created and pre-existing PDFs.
+The following code snippet illustrates the process of replacing specified text within a PDF file. This functionality is essential for updating text in both newly created and pre-existing PDF documents.
 
-To execute a text replacement within a PDF, the `replaceText` method is employed. This method demands three parameters: the initial text you wish to locate, the new text that will replace the original, and the page number where the alteration is to be made. In this instance, the text ".NET6" is replaced with ".NET7" on the designated page.
+To undertake text replacement within a PDF, make use of the `replaceText` method. This method demands three parameters: the text you intend to replace (`oldText`), the new text that will take its place (`newText`), and the index of the page (`pageIndex`) where the text replacement is to occur. In our example, the text ".NET6" is swapped for ".NET7" on a chosen page.
 
-After the text substitution is finalized, the altered PDF can be saved using the `saveAs` method. For additional details on PDF manipulation techniques, please visit the [IronPDF Features Page](https://ironpdf.com/features).
+After the text update is complete, you can persist the changes to the PDF by employing the `saveAs` method. For additional insights into PDF manipulation and management techniques, refer to the [IronPDF Features Page](https://ironpdf.com/features).
 
-Furthermore, Iron Software offers a range of potent tools, including [IronOCR for OCR features](https://ironsoftware.com/csharp/ocr/), [IronBarcode for barcode creation and scanning](https://ironsoftware.com/csharp/barcode/), or explore the [Iron Software website](https://ironsoftware.com/) to discover the complete portfolio of offerings.
+Furthermore, Iron Software extends a variety of potent tools worth exploring, like [IronOCR for OCR functionality](https://ironsoftware.com/csharp/ocr/), [IronBarcode for barcode creation and decoding](https://ironsoftware.com/csharp/barcode/), and [ironsoftware.com](https://ironsoftware.com/) which hosts a comprehensive catalog of offerings.

@@ -1,7 +1,7 @@
 ***Based on <https://ironpdf.com/examples/javascript-html-to-pdf/>***
 
-Any JavaScript embedded within the HTML will run during the conversion phase to PDF, applicable whether the HTML originates from a string, a file, or a URL.
+Any JavaScript contained within the HTML will be run as part of the PDF conversion process, whether sourced from a string, file, or a URL pointing to a PDF document.
 
-To facilitate the execution of JavaScript, you must set the `enableJavaScript` property to `true`. Additionally, for certain scenarios like rendering charts and graphs that rely on JavaScript, it's recommended to set a `waitFor` property. This property delays the conversion process, allowing adequate time for the JavaScript to execute fully.
+To permit the execution of JavaScript, you should set the `enableJavaScript` property to `true`. In particular scenarios, such as when generating PDFs from web pages that include dynamic charts and graphs utilizing JavaScript, it might be necessary to also specify a `waitFor` property. This property allows adequate time for the JavaScript to execute fully, ensuring an accurate rendering.
 
-For step-by-step guidance on [activating JavaScript in IronPDF](https://ironpdf.com/examples/javascript-html-to-pdf/), refer to the [JavaScript Code Examples page](https://ironpdf.com/examples/javascript-html-to-pdf/).
+For a step-by-step guide on how to enable JavaScript with IronPDF, please refer to the [JavaScript Code Examples page](https://ironpdf.com/examples/javascript-html-to-pdf/).

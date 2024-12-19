@@ -1,7 +1,7 @@
 ***Based on <https://ironpdf.com/examples/merge-pdfs/>***
 
-The above example demonstrates how to merge multiple PDF documents, each generated from distinct HTML sources, into a single cohesive PDF file.
+The presented code demonstrates how you can consolidate several PDFs, each originating from distinct HTML sources, into one unified PDF document.
 
-In this instance, two separate PDF documents are created from individual HTML contents. These documents, `pdfdoc_a` and `pdfdoc_b`, are then merged into one unified document titled "merged" by using the `PdfDocument.mergePdf` function.
+Initially, two separate PDF files are generated from different HTML inputs. The method `PdfDocument.mergePdf` is then employed to amalgamate these two individual PDF documents, referred to as `pdfdoc_a` and `pdfdoc_b`, into a single file named "merged."
 
-It’s important to note that this merging capability is not only applicable to newly created PDF files but also extends to pre-existing PDF documents through the same merging method.
+This merging technique is versatile, accommodating not only newly created PDF documents but also pre-existing ones.
