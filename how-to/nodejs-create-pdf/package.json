@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__nodejs-create-pdf",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\how-to\\nodejs-create-pdf",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Nodejs Create Pdf",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ How To \\ Nodejs Create Pdf",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Nodejs Create Pdf",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ How To \\ Nodejs Create Pdf",
         "How-To"
     ],
     "author": "Iron Software LLC",

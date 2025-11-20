@@ -2,7 +2,7 @@ import {PdfDocument} from "@ironsoftware/ironpdf";
 
 (async () => {
     // Step 1. Import a PDF
-	const pdf = await PdfDocument.open("sample.pdf");
+const pdf = await PdfDocument.open("sample.pdf");
 
     // Step 2. Sign the PDF with digital certificate
     await pdf.signDigitalSignature({
@@ -16,5 +16,5 @@ import {PdfDocument} from "@ironsoftware/ironpdf";
     });
 
     //Step 3. The PDF is not signed until saved to file.
-	await pdf.saveAs("signed.pdf");
+await pdf.saveAs("signed.pdf");
 })();

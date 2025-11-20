@@ -5,8 +5,8 @@ export function run() {
 	const options = {
 	   type: ImageType.JPG
 	};
-	await PdfDocument.fromFile("./sample-pdf-file.pdf").then((resolve) => {
+	PdfDocument.fromFile("./sample-pdf-file.pdf").then((pdf) => {
 	    pdf.rasterizeToImageFiles("./images/pdf-to-jpeg.png", options);
-	    return resolve;
+	    return pdf;
 	});
 }

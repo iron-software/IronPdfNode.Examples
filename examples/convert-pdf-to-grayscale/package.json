@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__convert-pdf-to-grayscale",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\convert-pdf-to-grayscale",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Convert Pdf To Grayscale",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Convert Pdf To Grayscale",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Convert Pdf To Grayscale",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Convert Pdf To Grayscale",
         "Code Example"
     ],
     "author": "Iron Software LLC",

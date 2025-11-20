@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__pdfa",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\pdfa",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Pdfa",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Pdfa",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Pdfa",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Pdfa",
         "Code Example"
     ],
     "author": "Iron Software LLC",

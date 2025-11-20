@@ -1,9 +1,15 @@
 ***Based on <https://ironpdf.com/examples/page-numbers-and-page-breaks/>***
 
-Page breaks are expertly handled during the PDF conversion process with IronPDF.
+When converting HTML to PDF, IronPDF handles page breaks flawlessly. 
 
-In the context of HTML, a page break acts as a signal to either a web browser or a rendering tool, indicating when to begin a new page for display or print purposes. This feature is particularly useful in managing the presentation of printed materials or ensuring that specific sections commence on a new page.
+In the context of HTML, a page break is a specific marker that advises either a web browser or a rendering engine to initiate a new page when displaying or printing content. This is particularly useful for managing the layout of printed documents or ensuring that particular sections start on a new page.
 
-Additionally, the provided snippet configures the PDF rendering settings to insert the page number at the lower center part of each page. The format used is "`{page}` of `{total-pages}`", with a maximum height constraint of 15 units for the page numbers.
+Additionally, the following code snippet adjusts the rendering settings to insert the page number at the bottom center of each page in the PDF. The format used for the page numbering is "`{page}` of `{total-pages}`", with a maximum height restriction of 15 units for the numbers.
 
-For detailed insights on mastering page breaks during HTML to PDF conversions, explore the [thorough guide on IronPDF capabilities](https://ironpdf.com/docs/#features). IronPDF forms part of Iron Software's comprehensive suite of tools designed for diverse file management tasks, which includes [creating barcodes with IronBarcode](https://ironsoftware.com/csharp/barcode), [handling Excel files via IronXL](https://ironsoftware.com/csharp/excel), and [performing optical character recognition with IronOCR](https://ironsoftware.com/csharp/ocr).
+```html
+<!-- Configuration for rendering PDF page numbers and ensuring page breaks are respected -->
+```
+
+For detailed information on effectively handling page breaks during your HTML to PDF conversions, visit the [detailed guide on IronPDF features](https://www.ironpdf.com/docs/#features). IronPDF is just one element of Iron Software's comprehensive suite of file processing utilities, which also includes [barcode creation using IronBarcode](https://ironsoftware.com/csharp/barcode), [managing Excel files with IronXL](https://ironsoftware.com/csharp/excel/), and [performing optical character recognition via IronOCR](https://ironsoftware.com/csharp/ocr/).
+
+[Explore detailed code examples for implementing page numbers and breaks in PDFs](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/page-numbers-and-page-breaks)

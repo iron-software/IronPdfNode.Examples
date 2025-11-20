@@ -1,11 +1,16 @@
 ***Based on <https://ironpdf.com/examples/form-data/>***
 
-You can also convert HTML forms to PDF while maintaining the form fields' functionality and data. This requires defining an HTML form with various user inputs such as text boxes, radio buttons, and checkboxes, which enable data entry and selection options for users.
+You can convert HTML with form fields into a PDF, maintaining the form's functionality and data entry capability. This process involves creating an HTML form embedded with various input types, such as text boxes, radio buttons, and checkboxes, to facilitate user interactions.
 
-To begin, enable the `createPdfFormsFromHtml` setting by setting it to true, ensuring that the HTML form is transformed into an editable PDF form.
+To transform an HTML form into an editable PDF form:
 
-Then, transform the specified HTML content into a PDF file using the `PdfDocument.fromHtml` method, providing it with the necessary rendering options in an object parameter.
+1. Enable the `createPdfFormsFromHtml` setting by setting it to `true`. This ensures that the HTML form is converted into a PDF form with editable fields.
 
-Conclude by saving this newly created PDF form as "formField.pdf" through the `saveAs` method.
+2. Convert the HTML content to a PDF document by using the `PdfDocument.fromHtml` method. Ensure to pass all necessary rendering options via an object parameter.
 
-For further guidance on crafting PDFs from HTML forms, you can explore more resources and examples on the [IronPDF Product Page](https://ironpdf.com).
+3. Once the PDF with form fields is created, save it as a new PDF file, "formField.pdf", using the `saveAs` method.
+
+For additional guidance on creating PDF forms from HTML content, refer to the [IronPDF Product Page](https://ironpdf.com) for comprehensive resources and examples.
+
+Explore in-depth how to generate PDF forms from HTML by accessing our code examples through the following link:
+[Explore Code Examples for Creating PDF Forms from HTML](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/form-data).

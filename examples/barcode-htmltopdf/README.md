@@ -1,27 +1,28 @@
 ***Based on <https://ironpdf.com/examples/barcode-htmltopdf/>***
 
-Barcodes can be embedded into newly created PDFs or attached to existing PDF documents by employing the `stampBarcode` method. This method primarily requires the value that the barcode should encapsulate.
+Barcodes can be seamlessly integrated into PDF documents, whether they are newly created or pre-existing ones. You can utilize the `stampBarcode` method to embed a barcode into a PDF. This method primarily requires the data that the barcode will represent.
 
-In addition to the essential value, users can opt for a configuration object for the barcode with optional settings such as:
+In addition to the mandatory input, a customizable barcode configuration option is available. This option allows for adjustments in various settings:
 
-- **`barcodeType`**: Determines the encoding type for the barcode.
-- **`behindExistingContent`**: If set to true, the barcode will be stamped behind existing content, which might render it invisible if the content is not transparent.
-- **`horizontalAlignment`**: Specifies the barcode's horizontal placement relative to the page.
-- **`horizontalOffset`**: Adjusts the horizontal position. A 0 value means no change. Positive values move it to the right, whereas negative values shift it to the left.
-- **`verticalAlignment`**: Dictates the vertical placement of the barcode on the page.
-- **`verticalOffset`**: Modifies the vertical position. Here, 0 implies no change; positive values move the stamp down, and negative values move it up.
-- **`hyperlink`**: Enables the added barcode elements to include clickable hyperlinks.
-- **`maxHeight`**: Defines the maximum height for the stamp.
-- **`maxWidth`**: Sets the maximum width for the stamp.
-- **`minHeight`**: Specifies the minimum height of the stamp.
-- **`minWidth`**: Indicates the minimum width of the stamp.
-- **`opacity`**: Controls the transparency of the stamp, where 0 is completely invisible and 100 is fully visible.
-- **`renderDelay`**: Sets a delay in milliseconds to wait after rendering HTML before stamping, useful for dynamic content like JavaScript or animations.
-- **`rotation`**: Rotates the stamp clockwise, with a range from 0 to 360 degrees.
-- **`scale`**: Scales the stamp by a percentage, enlarging or reducing its size.
-- **`timeout`**: Gives the maximum time in seconds to render the stamp.
-- **`heightPx`**: Specifies the height in pixels for the barcode.
-- **`widthPx`**: Defines the width in pixels for the barcode.
+- **`barcodeType`**: Defines the type of barcode encoding to use.
+- **`behindExistingContent`**: Enable this to place the barcode behind existing content. Note that if the existing content is not transparent, the barcode might not be visible.
+- **`horizontalAlignment`**: Controls the barcode's horizontal placement on the page.
+- **`horizontalOffset`**: The shift along the horizontal axis, where 0 represents no shift, positive values move to the right, and negative values to the left.
+- **`verticalAlignment`**: Manages vertical positioning of the barcode on the page.
+- **`verticalOffset`**: Adjusts the barcode's position vertically; positive values move it down, and negative values move it up.
+- **`hyperlink`**: Enables a clickable hyperlink on stamped elements.
+- **`maxHeight`**: Restricts the maximum height of the barcode stamp.
+- **`maxWidth`**: Sets the maximum width limit for the barcode stamp.
+- **`minHeight`**: Determines the minimum height of the barcode stamp.
+- **`minWidth`**: Sets the minimum width for the barcode stamp.
+- **`opacity`**: Adjusts the transparency of the barcode, with 0 being completely transparent and 100 being fully opaque.
+- **`renderDelay`**: Delays the stamping process for a specified number of milliseconds to accommodate the rendering of JavaScript, Ajax, or animations.
+- **`rotation`**: Rotates the barcode stamp clockwise, anywhere from 0 to 360 degrees.
+- **`scale`**: Scales the size of the barcode stamp by a specified percentage.
+- **`timeout`**: Specifies the maximum rendering time in seconds.
+- **`heightPx`**: Defines the barcode's height in pixels.
+- **`widthPx`**: Specifies the barcode's width in pixels.
 
-For further details on working with PDFs and barcodes, refer to the [IronPDF Documentation](https://ironpdf.com/docs/).
-Discover additional libraries by Iron Software, like [IronBarcode for barcode creation](https://ironsoftware.com/csharp/barcode/), which can elevate your project's capabilities.
+For detailed guidance on managing PDFs and barcodes, you can visit the [IronPDF Documentation](https://ironpdf.com/docs/). To explore additional libraries from Iron Software, such as [IronBarcode for barcode generation](https://ironsoftware.com/csharp/barcode/), which can enhance your project capabilities, click on the link provided.
+
+[Learn to Add Barcodes to PDFs with IronPDF for Node.js](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/barcode-htmltopdf)

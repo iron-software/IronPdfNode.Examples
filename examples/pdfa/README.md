@@ -1,7 +1,18 @@
 ***Based on <https://ironpdf.com/examples/pdfa/>***
 
-IronPDF supports exportation of PDFs conforming to the PDF/A-3b standard—this segment of the ISO PDF specifications ensures that documents intended for archival will retain their original form upon display forever.
+IronPDF offers the ability to export PDF files to the PDF/A-3b standard. This standard is a focused subset of the ISO PDF specification, tailored for the long-term storage of document archives, guaranteeing that they remain unaltered over time.
 
-Furthermore, IronPDF is aligned with Google's initiative to improve PDF archiving and accessibility and is compliant with Section 508 standards relating to PDF documents. In the year 2021, IronPDF began generating PDFs from HTML using the Google Chromium HTML rendering engine. This update enables IronPDF to incorporate [improvements made by Google in terms of PDF accessibility](https://blog.chromium.org/2020/07/using-chrome-to-generate-more.html).
+IronPDF also supports Google's efforts to improve PDF archiving and accessibility, and complies with Section 508 standards for such documents. In 2021, IronPDF adopted the Google Chromium HTML rendering engine for converting HTML to PDF. This enhances the software by integrating [the accessibility optimisations that Google has implemented for creating PDFs](https://blog.chromium.org/2020/07/using-chrome-to-generate-more.html).
 
-Using the `convertToPdfA` method from IronPDF, you're equipped to transform standard PDFs so they meet specific archiving standards, ready for export as needed.
+The `convertToPdfA` method in IronPDF enables the conversion of standard PDF documents to meet archival standards, readying them for export. Below is an example showcasing how to utilize IronPDF for this conversion:
+
+### Detailed Steps:
+- Start by importing the `IronPdf` namespace.
+- Create a `PdfDocument` instance to manage PDF functionalities.
+- Load an existing PDF from `"example.pdf"` into the `pdf` variable.
+- Apply the `ConvertToPdfA()` method to change the document to conform to the PDF/A-3b standards.
+- The document is then saved as `"example_pdfA.pdf"`, and a confirmation message is output to the console.
+
+To execute this sample, make sure IronPDF is installed in your project.
+
+[Explore the PDF/A Conversion Code Example Now!](https://ironpdf.com/github/IronPdfNode.Examples/tree/main/examples/pdfa)

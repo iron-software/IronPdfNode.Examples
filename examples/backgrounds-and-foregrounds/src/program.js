@@ -1,7 +1,7 @@
 import {PdfDocument} from "@ironsoftware/ironpdf";
 
 (async () => {
-	// Render a URL as a PDF
+// Render a URL as a PDF
     const pdf = await PdfDocument.fromUrl("https://www.wikipedia.org/");
 
     // Add a background PDF

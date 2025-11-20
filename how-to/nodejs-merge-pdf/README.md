@@ -1,26 +1,73 @@
-# Merging PDF Files into One Using Node.js with IronPDF
+# Node.js and IronPDF: Combining PDF Files into a Single Document
 
 ***Based on <https://ironpdf.com/how-to/nodejs-merge-pdf/>***
 
 
-IronPDF is a powerful Node.js library designed for PDF creation, manipulation, and merging. To dive into IronPDF or discover more about what it offers, check out the [IronPDF for Node.js Documentation](https://ironpdf.com/docs/nodejs).
+IronPDF provides an array of functionalities for developers working with Node.js, including the ability to create, manipulate, and merge PDF files. For a deeper dive into what IronPDF offers or to start using it, you can consult the [IronPDF for Node.js Documentation](https://ironpdf.com/nodejs/docs/).
 
-Additionally, for those looking into barcode functionalities, the [IronBarcode for Barcode Solutions](https://ironsoftware.com/csharp/barcode) is perfect for integrating barcode generation and scanning into your projects.
+For those interested in generating and decoding barcodes, explore the capabilities of [IronBarcode for Barcode Solutions](https://ironsoftware.com/csharp/barcode/), which integrates smoothly with your applications.
 
-For optical character recognition needs, [IronOCR for Advanced OCR Functionalities](https://ironsoftware.com/csharp/ocr) offers state-of-the-art technology to accurately extract text from images and scanned documents.
+When it comes to OCR technology, [IronOCR for Advanced OCR Functionalities](https://ironsoftware.com/csharp/ocr/) stands out for its precision in extracting information from scanned documents.
 
-If your project involves web data extraction, you can leverage [IronWebScraper's Web Scraping Tools](https://ironsoftware.com/csharp/webscraper) for efficient and reliable data collection from various online sources.
+For web data extraction, [IronWebScraper's Web Scraping Tools](https://ironsoftware.com/csharp/webscraper) offer reliable and efficient solutions for collecting data from various online sources.
 
-Excel file manipulation is streamlined with [IronXL's Excel Library](https://ironsoftware.com/csharp/excel), which supports both reading and writing Excel files on multiple platforms.
+Automating Excel tasks is streamlined with [IronXL's Excel Library](https://ironsoftware.com/csharp/excel/), compatible with various platforms for both reading and writing Excel documents.
 
-For secure document handling and data compression, explore the robust options provided by [IronSecureDoc for Document Security](https://ironsoftware.com/csharp/securedoc) and [IronZIP for File Compression](https://ironsoftware.com/csharp/zip), which enable effective data protection and space saving.
+[IronSecureDoc for Document Security](https://ironsoftware.com/csharp/securedoc/) and [IronZIP for File Compression](https://ironsoftware.com/csharp/zip/) provide advanced solutions for secure document handling and efficient data compression.
 
-To get an overview of all the libraries and products offered by Iron Software, visit [Iron Software's Product Overview](https://ironsoftware.com). Here, you will find comprehensive details and practical use cases addressing various development needs.
+Discover the full range of Iron Software's libraries and products at the [Iron Software's Product Overview](https://ironsoftware.com/) where you'll find comprehensive descriptions and practical applications to meet diverse development needs.
 
-For application-based document printing solutions, take a look at [IronPrint for Efficient Printing Solutions](https://ironsoftware.com/csharp/print).
+For printing functionalities, [IronPrint for Efficient Printing Solutions](https://ironsoftware.com/csharp/print/) is an excellent resource.
 
-Furthermore, if you need to handle Word documents, [IronWord's Word Document Manipulation](https://ironsoftware.com/csharp/word) ensures easy integration and management of Word files within your applications.
+Working with Word documents is simplified using [IronWord's Word Document Manipulation](https://ironsoftware.com/csharp/word/), which ensures effortless integration into your projects.
 
-For those requiring quick response code functionalities, [IronQR for QR Code Generation](https://ironsoftware.com/csharp/qr) is an exceptional tool for incorporating QR codes in your applications.
+Additionally, [IronQR for QR Code Generation](https://ironsoftware.com/csharp/qr/) makes implementing QR codes in your applications straightforward and efficient.
 
-Utilizing these advanced tools, developers can significantly boost their applications, adding diverse functionalities tailored to their specific requirements.
+Utilizing these robust tools, developers can greatly enhance their applications, tailoring them to specific requirements.
+
+## How to Merge Multiple PDFs into One with Node.js
+
+This example demonstrates merging several PDF files into a single document using IronPDF in a Node.js environment.
+
+```javascript
+// Include the IronPDF library
+const IronPdf = require('ironpdf');
+
+// Define the function to merge PDFs
+async function mergePdfs(outputFilePath, inputFiles) {
+  // Retrieve the PDF documents
+  const pdfDocs = await Promise.all(inputFiles.map(file => IronPdf.PdfDocument.fromFile(file)));
+
+  // Combine the PDF documents
+  const mergedPdf = await IronPdf.PdfDocument.merge(pdfDocs);
+
+  // Store the merged PDF at the designated output file path
+  await mergedPdf.toFile(outputFilePath);
+
+  console.log(`Merged PDF is saved at ${outputFilePath}`);
+}
+
+// Example usage of the mergePdfs function
+(async () => {
+  const inputFiles = ['file1.pdf', 'file2.pdf', 'file3.pdf'];
+  const outputFilePath = 'merged.pdf';
+  
+  await mergePdfs(outputFilePath, inputFiles);
+})();
+```
+
+### Overview:
+
+- **IronPDF Import**: We start by importing IronPDF via `require('ironpdf')`, equipping us with necessary PDF manipulation tools.
+
+- **mergePdfs Function**: This asynchronous function accepts `outputFilePath` for storing the combined PDF and `inputFiles`, an array of files to merge.
+  
+- **PDF Document Retrieval**: Each PDF mentioned in `inputFiles` is loaded using `IronPdf.PdfDocument.fromFile`, and we handle the asynchronous nature of file loading with `Promise.all()`.
+  
+- **Combining PDFs**: We then merge the loaded documents into a single file with `IronPdf.PdfDocument.merge`.
+  
+- **Storing the Combined PDF**: Finally, we save the combined PDF to the given `outputFilePath` using the `toFile()` method.
+  
+- **Executed Example**: An immediately invoked function that executes `mergePdfs` with sample files and an output path.
+
+Before running this script, ensure that you have set up both IronPDF and Node.js in your development environment.

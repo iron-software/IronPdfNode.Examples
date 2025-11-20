@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__reading-pdf-text",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\reading-pdf-text",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Reading Pdf Text",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Reading Pdf Text",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Reading Pdf Text",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Reading Pdf Text",
         "Code Example"
     ],
     "author": "Iron Software LLC",

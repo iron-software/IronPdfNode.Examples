@@ -1,7 +1,11 @@
 ***Based on <https://ironpdf.com/examples/multi-frame-tiff-to-pdf/>***
 
-Converting a TIFF file, whether it's a single or multiple-paged document, to PDF can be achieved with just one line of code.
+Transforming a TIFF image to a PDF is straightforward and can be achieved with just a single line of code.
 
-Use the `PdfGenerator.imageToPdf` method to transform TIFF files, as well as other image formats like PNG, JPG, and JPEG into PDFs. This versatile method also accepts an image buffer, making it convenient for processing images obtained from a network source.
+Use the method `PdfGenerator.imageToPdf` to transform a TIFF, whether it consists of one or multiple pages, into a PDF file. This function is versatile, supporting various image formats including PNG, JPG, and JPEG, in addition to TIFF.
 
-For more detailed examples and further information about this functionality, please check out the [IronPDF Image to PDF Documentation](https://ironpdf.com/how-to/pdf-image-to-pdf/).
+Moreover, the function is capable of handling an image buffer. This feature is particularly useful for processing images obtained from network sources.
+
+The following C# example illustrates the process of converting a TIFF or any other supported image file into a PDF. The method `PdfDocument.ImageToPdf` captures the image data and seamlessly converts it to a PDF format, which is subsequently stored at a designated location on the disk.
+
+[Explore how to Convert PDFs to Images using Python](https://ironpdf.com/python/how-to/python-pdf-to-image/)

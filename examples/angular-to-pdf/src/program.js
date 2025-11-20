@@ -14,5 +14,5 @@ import {PdfDocument, WaitForType} from "@ironsoftware/ironpdf";
     const pdf = await PdfDocument.fromUrl("https://angular.io/", { renderOptions: options });
 
     // Export the PDF document
-	await pdf.saveAs("angular.pdf");
+await pdf.saveAs("angular.pdf");
 })();

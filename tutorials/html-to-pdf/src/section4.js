@@ -1,7 +1,7 @@
-import {PdfDocument} from "@websiteironsoftware/ironpdf";
+import { PdfDocument } from "@ironsoftware/ironpdf";
+import './config.js'; // Import the configuration script
 
 export function run() {
-	import('./config.js');
 	// Render a PDF from an HTML File
 	const pdf = await PdfDocument.fromHtml("./sample2.html");
 	// Save the PDF document to the same folder as our project.

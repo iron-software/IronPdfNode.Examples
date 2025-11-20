@@ -10,7 +10,7 @@ import {PdfDocument, CssMediaType, FitToPaperModes} from "@ironsoftware/ironpdf"
     };
 
     // Render an HTML file
-	const pdf = await PdfDocument.fromHtml("Responsive.html", {renderOptions: options});
+const pdf = await PdfDocument.fromHtml("Responsive.html", {renderOptions: options});
 
-	await pdf.saveAs("pdf-from-html.pdf");
+await pdf.saveAs("pdf-from-html.pdf");
 })();

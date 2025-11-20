@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__nodejs-pdf-to-image",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\how-to\\nodejs-pdf-to-image",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Nodejs Pdf To Image",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ How To \\ Nodejs Pdf To Image",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Nodejs Pdf To Image",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ How To \\ Nodejs Pdf To Image",
         "How-To"
     ],
     "author": "Iron Software LLC",

@@ -1,15 +1,29 @@
 ***Based on <https://ironpdf.com/examples/image-to-pdf/>***
 
-Transforming a single image into a PDF can be effortlessly accomplished by providing the image's file path to the `PdfGenerator.imageToPdf` method and then exporting the generated PDF document.
+To create a PDF document from a single image, use the `PdfGenerator.imageToPdf` method with the image file path as an input, then export the generated PDF.
 
-When dealing with multiple images, the process involves a few more steps due to the need for handling several files. Initially, employ the `readdir` method to acquire the list of image files from a specified directory path.
+When dealing with multiple images, an array of file paths is employed. Here is a detailed guide including a well-formulated code sample.
 
-After obtaining the list, filter out only the file names that end in ".jpg" or ".jpeg". These filtered names should be stored in an array called `jpegFiles`.
+### Code Explanation
 
-For each file name in the `jpegFiles` array, create the complete path by concatenating the directory path with the file name. Place these complete paths into another array named `filePaths`.
+1. **Import Necessary Modules**:
+   - `fs`: This is a core Node.js module for file system operations.
+   - `path`: Another core module essential for manipulating file paths.
+   - `PdfGenerator`: Part of the IronPDF library, this module is tasked with creating PDFs.
 
-Proceed by using the `imageToPdf` method again, which now converts all images located at the paths specified in the `filePaths` array into a single PDF document.
+2. **Directory Access**:
+   - `fs.readdir`: This function scans the specified `imageDirectoryPath`.
+   - It then filters and returns files ending in `.jpg` or `.jpeg`.
 
-The final step is to save this newly created PDF, which includes all the images, under the name "composite.pdf."
+3. **Construct Full File Paths**:
+   - The paths of the image files are fully assembled using the `path.join` method.
 
-For further details on how to programmatically convert images to PDFs using the IronPDF library, please visit the [IronPDF product page](https://ironpdf.com).
+4. **Image to PDF Conversion**:
+   - Using the `PdfGenerator.imageToPdf` function, the collected image paths are transformed into a single PDF document.
+
+5. **PDF Storage**:
+   - The `saveAs` function is employed to store the newly created PDF under the name `composite.pdf`.
+
+For additional information on processing images into PDFs with IronPDF, check the [IronPDF product page](https://ironpdf.com).
+
+<a href="https://ironpdf.com/python/how-to/python-pdf-to-image/" class="code_content__related-link__doc-cta-link">Check Out the Python PDF to Image Conversion Guide</a>

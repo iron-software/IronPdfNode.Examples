@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__html-headers-and-footers",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\html-headers-and-footers",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Html Headers And Footers",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Html Headers And Footers",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Html Headers And Footers",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Html Headers And Footers",
         "Code Example"
     ],
     "author": "Iron Software LLC",

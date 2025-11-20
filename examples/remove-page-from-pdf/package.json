@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__remove-page-from-pdf",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\remove-page-from-pdf",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Remove Page From Pdf",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Remove Page From Pdf",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Remove Page From Pdf",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Remove Page From Pdf",
         "Code Example"
     ],
     "author": "Iron Software LLC",

@@ -1,0 +1,19 @@
+{
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\get-started\\license-keys",
+    "version": "1.0.0",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Get Started \\ License Keys",
+    "main": "src/program.js",
+    "keywords": [
+        "IronPDF for Node.js",
+        "Node.js",
+        "node",
+        "IronPdfNode.Examples",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Get Started \\ License Keys",
+        "Getting Started"
+    ],
+    "author": "Iron Software LLC",
+    "license": "MIT",
+    "dependencies": {
+        "@ironsoftware/ironpdf": "^2024.11.4"
+    }
+}

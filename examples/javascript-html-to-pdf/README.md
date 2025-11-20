@@ -1,7 +1,18 @@
 ***Based on <https://ironpdf.com/examples/javascript-html-to-pdf/>***
 
-Any JavaScript contained within the HTML will be run as part of the PDF conversion process, whether sourced from a string, file, or a URL pointing to a PDF document.
+All JavaScript code embedded in HTML, be it delivered as a string, from a file, or via a URL, will execute when converted to a PDF document.
 
-To permit the execution of JavaScript, you should set the `enableJavaScript` property to `true`. In particular scenarios, such as when generating PDFs from web pages that include dynamic charts and graphs utilizing JavaScript, it might be necessary to also specify a `waitFor` property. This property allows adequate time for the JavaScript to execute fully, ensuring an accurate rendering.
+You can allow JavaScript execution by setting the `enableJavaScript` property to true. If your HTML includes elements like charts and graphs that rely on JavaScript, you might also need to adjust the `waitFor` property to give the scripts adequate time to run.
 
-For a step-by-step guide on how to enable JavaScript with IronPDF, please refer to the [JavaScript Code Examples page](https://ironpdf.com/examples/javascript-html-to-pdf/).
+For step-by-step guidance on how to activate JavaScript in IronPDF, refer to the [JavaScript Code in IronPDF tutorial](https://ironpdf.com/examples/javascript-html-to-pdf/).
+
+### Enabling JavaScript in IronPDF: A Quick Guide
+
+Below is a straightforward guide to enabling JavaScript execution using IronPDF:
+
+- **EnableJavaScript**: Activates JavaScript execution within the HTML, critical for accurately rendering dynamic elements such as charts and graphs.
+- **RenderDelay**: This parameter allows you to define a delay (measured in milliseconds) that holds off the PDF rendering until JavaScript has finished running. This feature is vital for ensuring animations or asynchronous operations in JavaScript are completely loaded.
+
+For more examples and in-depth discussion on managing various JavaScript scenarios with IronPDF, see the [JavaScript Code Examples page](https://ironpdf.com/examples/javascript-html-to-pdf/).
+
+[Explore JavaScript to PDF Examples on GitHub Now!](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/javascript-html-to-pdf)

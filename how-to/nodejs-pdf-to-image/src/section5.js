@@ -4,9 +4,9 @@ export function run() {
 	// Convert PDF containing many pages to BMP images.
 	const options = {
 	    type: ImageType.BMP,
-	    fromPages: [0, 3, 5, 8]  // Select only the pages with an image on it.
+	    fromPages: [0, 3, 5, 8]  // Select only the desired pages
 	};
-	await PdfDocument.fromFile("./sample-pdf-with-images.pdf").then((pdf) => {
+	PdfDocument.fromFile("./sample-pdf-with-images.pdf").then((pdf) => {
 	    pdf.rasterizeToImageFiles("./images/multipage-selective-pdf/multipage-pdf-page.bmp", options);
 	});
 }

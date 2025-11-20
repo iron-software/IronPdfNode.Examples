@@ -1,6 +1,11 @@
-import {PdfDocument} from "@ironsoftware/ironpdf";
+import { PdfDocument } from "@ironsoftware/ironpdf";
 
 export function run() {
-	/* Convert an HTML String to a PDF */
-	PdfDocument.fromUrl("https://ironpdf.com/nodejs/").then((pdf) => {pdf.saveAs("./url_to_pdf.pdf")});
+	// Import the needed module
+	/* Convert a URL to a PDF */
+	(async () => {
+	   const pdf = await PdfDocument.fromUrl("https://ironpdf.com/nodejs/");
+	   // Save the generated PDF
+	   await pdf.saveAs("./url_to_pdf.pdf");
+	})();
 }

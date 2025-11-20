@@ -1,4 +1,4 @@
-import * as ironpdf from "@ironsoftware/ironpdf";
+import * from "@ironsoftware/ironpdf";
 
 
 // Add your own code here...

@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__custom-pdf-paper-size",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\custom-pdf-paper-size",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Custom Pdf Paper Size",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Custom Pdf Paper Size",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Custom Pdf Paper Size",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Custom Pdf Paper Size",
         "Code Example"
     ],
     "author": "Iron Software LLC",

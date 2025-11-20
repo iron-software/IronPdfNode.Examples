@@ -1,14 +1,14 @@
 {
-    "name": "ironpdfnode-examples__adding-headers-and-footers-advanced",
+    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\adding-headers-and-footers-advanced",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: Adding Headers And Footers Advanced",
+    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Adding Headers And Footers Advanced",
     "main": "src/program.js",
     "keywords": [
         "IronPDF for Node.js",
         "Node.js",
         "node",
         "IronPdfNode.Examples",
-        "Adding Headers And Footers Advanced",
+        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Adding Headers And Footers Advanced",
         "Code Example"
     ],
     "author": "Iron Software LLC",

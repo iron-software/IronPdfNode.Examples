@@ -1,9 +1,11 @@
 ***Based on <https://ironpdf.com/examples/threading/>***
 
-JavaScript and Node.js are both equipped to handle asynchronous operations. Similarly, [IronPDF, a .NET PDF library](https://ironpdf.com/), excels in creating and manipulating PDFs efficiently.
+JavaScript and Node.js facilitate asynchronous processing modalities. This capacity is also embedded in [IronPDF, a sophisticated .NET PDF library](https://ironpdf.com/), renowned for its adept PDF production and editing features.
 
-IronPDF typically uses methods that return promises, allowing for the concurrent rendering of multiple HTML documents. We can utilize the `Promise.all` method to pause execution until all these promises are resolved.
+IronPDF typically handles operations using promises. This allows for rendering multiple HTML sources concurrently, with `Promise.all` used to synchronize the completion of these tasks.
 
-It's important to remember that `Promise.all` only confirms that the promises have been resolved, not that they were successful.
+It's important to recognize that using the `Promise.all` method does not ensure the successful execution of all promises; it merely confirms that all the operations have been completed.
 
-Using `await` within a `.map` function helps in pausing the process to wait for the generated PDF documents, allowing for further modifications to these documents. If the objective is simply to generate the PDFs without any further alteration, the implementation of `async` and `await` might be unnecessary.
+Within the `.map` method, the `await` keyword is employed to pause execution until the PDF conversions are completed, allowing for any necessary modifications to be made to the documents thereafter. However, if the task is strictly to generate PDFs without further adjustments, the application of `async` and `await` might be superfluous.
+
+[Discover Examples of Asynchronous PDF Generation](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/threading)
