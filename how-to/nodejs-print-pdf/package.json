@@ -14,7 +14,7 @@
     "author": "Iron Software LLC",
     "license": "MIT",
     "dependencies": {
-        "@ironsoftware/ironpdf": "^2024.11.4",
+        "@ironsoftware/ironpdf": "^2026.8.1",
         "pdf-to-printer": "^5.6.0"
     }
 }
