@@ -31,18 +31,18 @@ This example demonstrates merging several PDF files into a single document using
 
 ```javascript
 // Include the IronPDF library
-const IronPdf = require('ironpdf');
+const { PdfDocument } = require("@ironsoftware/ironpdf");
 
 // Define the function to merge PDFs
 async function mergePdfs(outputFilePath, inputFiles) {
   // Retrieve the PDF documents
-  const pdfDocs = await Promise.all(inputFiles.map(file => IronPdf.PdfDocument.fromFile(file)));
+  const pdfDocs = await Promise.all(inputFiles.map(file => PdfDocument.fromFile(file)));
 
   // Combine the PDF documents
-  const mergedPdf = await IronPdf.PdfDocument.merge(pdfDocs);
+  const mergedPdf = await PdfDocument.mergePdf(pdfDocs);
 
   // Store the merged PDF at the designated output file path
-  await mergedPdf.toFile(outputFilePath);
+  await mergedPdf.saveAs(outputFilePath);
 
   console.log(`Merged PDF is saved at ${outputFilePath}`);
 }

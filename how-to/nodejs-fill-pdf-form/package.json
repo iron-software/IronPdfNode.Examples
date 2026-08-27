@@ -1,15 +1,15 @@
 {
-    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\how-to\\nodejs-fill-pdf-form",
+    "name": "ironpdf-node-nodejs-fill-pdf-form",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ How To \\ Nodejs Fill Pdf Form",
+    "description": "IronPDF for Node.js example: Node.js fill PDF form.",
     "main": "src/program.js",
     "keywords": [
-        "IronPDF for Node.js",
-        "Node.js",
+        "ironpdf",
+        "pdf",
+        "nodejs",
         "node",
-        "IronPdfNode.Examples",
-        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ How To \\ Nodejs Fill Pdf Form",
-        "How-To"
+        "how-to",
+        "nodejs-fill-pdf-form"
     ],
     "author": "Iron Software LLC",
     "license": "MIT",

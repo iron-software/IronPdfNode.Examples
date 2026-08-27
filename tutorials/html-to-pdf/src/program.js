@@ -1,4 +1,29 @@
-import * from "@ironsoftware/ironpdf";
+import {run as section1} from "./section1.js";
+import {run as section2} from "./section2.js";
+import {run as section3} from "./section3.js";
+import {run as section4} from "./section4.js";
+import {run as section5} from "./section5.js";
+import {run as section6} from "./section6.js";
+import {run as section7} from "./section7.js";
+import {run as section8} from "./section8.js";
+import {run as section9} from "./section9.js";
+import {run as section10} from "./section10.js";
+import {run as section11} from "./section11.js";
+import {run as section12} from "./section12.js";
+import {run as section13} from "./section13.js";
+import {run as section14} from "./section14.js";
 
-
-// Add your own code here...
+section1();
+// section2();
+// section3();
+// section4();
+// section5();
+// section6();
+// section7();
+// section8();
+// section9();
+// section10();
+// section11();
+// section12();
+// section13();
+// section14();

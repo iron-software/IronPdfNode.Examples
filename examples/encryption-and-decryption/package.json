@@ -1,15 +1,15 @@
 {
-    "name": "IronPdfNode.Examples__D:\\Documents\\Dropbox\\workspaces\\web\\ironsoftware.com\\github-tutorials\\IronPdfNode.Examples\\examples\\encryption-and-decryption",
+    "name": "ironpdf-node-encryption-and-decryption",
     "version": "1.0.0",
-    "description": "Code examples demonstrating IronPDF for Node.js Feature: D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Encryption And Decryption",
+    "description": "IronPDF for Node.js example: Encryption and decryption.",
     "main": "src/program.js",
     "keywords": [
-        "IronPDF for Node.js",
-        "Node.js",
+        "ironpdf",
+        "pdf",
+        "nodejs",
         "node",
-        "IronPdfNode.Examples",
-        "D :\\ Documents \\ Dropbox \\ Workspaces \\ Web \\ Ironsoftware . Com \\ Github Tutorials \\ IronPdfNode . Examples \\ Examples \\ Encryption And Decryption",
-        "Code Example"
+        "examples",
+        "encryption-and-decryption"
     ],
     "author": "Iron Software LLC",
     "license": "MIT",
