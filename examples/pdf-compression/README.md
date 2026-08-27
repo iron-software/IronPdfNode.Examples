@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-compression/>***
+> Full guide: [PDF compression](https://ironpdf.com/examples/pdf-compression/)
 
 IronPDF provides a robust solution for efficiently compressing PDF documents. A principal technique in this process involves downsizing the embedded images in the PDF file using the `compressSize` method available on the PDF object.
 

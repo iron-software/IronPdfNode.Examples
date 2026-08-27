@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/digitally-sign-a-pdf/>***
+> Full guide: [Digitally sign a PDF](https://ironpdf.com/examples/digitally-sign-a-pdf/)
 
 Applying a digital signature to a PDF starts by uploading an existing PDF file.
 

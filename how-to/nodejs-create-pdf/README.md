@@ -1,6 +1,6 @@
 # Generating PDF Files in Node.js
 
-***Based on <https://ironpdf.com/how-to/nodejs-create-pdf/>***
+> Full guide: [Generating PDF Files in Node.js](https://ironpdf.com/nodejs/how-to/nodejs-create-pdf/)
 
 
 Producing PDF files in Node.js is straightforward when you use the appropriate libraries. Iron Software provides an excellent selection of libraries that can be integrated into your development projects.

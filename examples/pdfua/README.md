@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdfua/>***
+> Full guide: [Pdfua](https://ironpdf.com/examples/pdfua/)
 
 PDF/UA (Portable Document Format/Universal Accessibility) is a globally recognized standard established for creating PDF files that are accessible to people with disabilities, notably those who use assistive technology like screen readers.
 

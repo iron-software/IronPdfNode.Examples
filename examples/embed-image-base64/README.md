@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/embed-image-base64/>***
+> Full guide: [Embed image base64](https://ironpdf.com/examples/embed-image-base64/)
 
 To facilitate the offline use of HTML content that includes images, it's useful to embed the images directly into the HTML code as base64 encoded strings. This process involves loading the image and converting it into a base64 format.
 

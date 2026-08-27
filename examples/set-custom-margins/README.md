@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/set-custom-margins/>***
+> Full guide: [Set custom margins](https://ironpdf.com/nodejs/examples/set-custom-margins/)
 
 Adjusting margins with IronPDF is a simple and efficient process.
 

@@ -1,6 +1,6 @@
 # How to Execute PDF Printing through Node.js
 
-***Based on <https://ironpdf.com/how-to/nodejs-print-pdf/>***
+> Full guide: [How to Execute PDF Printing through Node.js](https://ironpdf.com/nodejs/how-to/nodejs-print-pdf/)
 
 
 This tutorial will demonstrate how to print PDF documents using Node.js. We'll employ the `pdf-to-printer` package, a convenient tool for routing PDFs to your local printers.

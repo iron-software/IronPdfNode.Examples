@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/backgrounds-and-foregrounds/>***
+> Full guide: [Backgrounds and foregrounds](https://ironpdf.com/examples/backgrounds-and-foregrounds/)
 
 Easily applying a background or foreground to a PDF, whether it's a new document or an existing one, is a straightforward process.
 

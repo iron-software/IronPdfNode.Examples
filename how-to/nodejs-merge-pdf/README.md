@@ -1,6 +1,6 @@
 # Node.js and IronPDF: Combining PDF Files into a Single Document
 
-***Based on <https://ironpdf.com/how-to/nodejs-merge-pdf/>***
+> Full guide: [Node.js and IronPDF: Combining PDF Files into a Single Document](https://ironpdf.com/nodejs/how-to/nodejs-merge-pdf/)
 
 
 IronPDF provides an array of functionalities for developers working with Node.js, including the ability to create, manipulate, and merge PDF files. For a deeper dive into what IronPDF offers or to start using it, you can consult the [IronPDF for Node.js Documentation](https://ironpdf.com/nodejs/docs/).

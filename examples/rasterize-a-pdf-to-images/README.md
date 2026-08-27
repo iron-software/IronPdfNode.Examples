@@ -1,6 +1,6 @@
 # Converting PDF Pages to Images
 
-***Based on <https://ironpdf.com/examples/rasterize-a-pdf-to-images/>***
+> Full guide: [Converting PDF Pages to Images](https://ironpdf.com/examples/rasterize-a-pdf-to-images/)
 
 
 The process of turning each page of a PDF into an individual image, such as JPEG or PNG, is known as rasterizing. This method is especially useful for tasks like extracting pages or images from PDFs to be displayed on a web page or integrated into other documents.

@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/image-to-pdf/>***
+> Full guide: [Image to PDF](https://ironpdf.com/examples/image-to-pdf/)
 
 To create a PDF document from a single image, use the `PdfGenerator.imageToPdf` method with the image file path as an input, then export the generated PDF.
 

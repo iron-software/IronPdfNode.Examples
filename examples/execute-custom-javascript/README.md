@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/execute-custom-javascript/>***
+> Full guide: [Execute custom JavaScript](https://ironpdf.com/examples/execute-custom-javascript/)
 
 Easily adjust the look of HTML elements in your applications using JavaScript and IronPDF, a popular library from Iron Software. This library excels in transforming HTML into PDF files and supports a variety of web technologies including JavaScript, CSS, and more.
 

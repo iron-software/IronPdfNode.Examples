@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/converting-a-url-to-a-pdf/>***
+> Full guide: [Converting a URL to a PDF](https://ironpdf.com/examples/converting-a-url-to-a-pdf/)
 
 Turning a web URL into a PDF document with IronPDF is straightforward. Just use the `fromUrl` method to input the URL, which promptly delivers a PDF object. This object can then be refined further or saved in its current form. For further information on transforming HTML to PDF with IronPDF, visit the [IronPDF HTML to PDF Conversion Guide](https://ironpdf.com/tutorials/html-to-pdf/).
 

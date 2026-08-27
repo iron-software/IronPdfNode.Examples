@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/threading/>***
+> Full guide: [Threading](https://ironpdf.com/examples/threading/)
 
 JavaScript and Node.js facilitate asynchronous processing modalities. This capacity is also embedded in [IronPDF, a sophisticated .NET PDF library](https://ironpdf.com/), renowned for its adept PDF production and editing features.
 

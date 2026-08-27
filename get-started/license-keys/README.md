@@ -1,6 +1,6 @@
 # Implementing IronPDF License Key in Node.js Projects
 
-***Based on <https://ironpdf.com/get-started/license-keys/>***
+> Full guide: [Implementing IronPDF License Key in Node.js Projects](https://ironpdf.com/get-started/license-keys/)
 
 
 ## Obtaining a License Key

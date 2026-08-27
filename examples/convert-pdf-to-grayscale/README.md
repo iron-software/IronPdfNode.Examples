@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/convert-pdf-to-grayscale/>***
+> Full guide: [Convert PDF to grayscale](https://ironpdf.com/nodejs/examples/convert-pdf-to-grayscale/)
 
 Transforming a full-color PDF document to grayscale simplifies the PDF by emphasizing only the intensity of light, not the colors themselves.
 

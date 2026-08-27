@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/adding-headers-and-footers-advanced/>***
+> Full guide: [Adding headers and footers advanced](https://ironpdf.com/examples/adding-headers-and-footers-advanced/)
 
 Incorporating headers and footers into both new and existing PDFs can be effortlessly achieved using IronPDF. 
 

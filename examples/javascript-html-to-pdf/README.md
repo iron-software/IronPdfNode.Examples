@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/javascript-html-to-pdf/>***
+> Full guide: [JavaScript HTML to PDF](https://ironpdf.com/examples/javascript-html-to-pdf/)
 
 All JavaScript code embedded in HTML, be it delivered as a string, from a file, or via a URL, will execute when converted to a PDF document.
 

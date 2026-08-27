@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-cover-page/>***
+> Full guide: [PDF cover page](https://ironpdf.com/examples/pdf-cover-page/)
 
 A cover page significantly enhances the appeal and presentation of a PDF document, often being the first page that a viewer encounters. It typically contains key details such as the title of the document, author information, logos, and other branding elements. This page not only visually identifies the document but also boosts the brand presence for businesses and organizations.
 

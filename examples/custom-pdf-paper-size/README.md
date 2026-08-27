@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/custom-pdf-paper-size/>***
+> Full guide: [Custom PDF paper size](https://ironpdf.com/examples/custom-pdf-paper-size/)
 
 This example demonstrates how to set a specific paper size when converting HTML to a PDF file.
 

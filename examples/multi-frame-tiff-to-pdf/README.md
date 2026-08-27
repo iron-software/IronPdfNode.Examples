@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/multi-frame-tiff-to-pdf/>***
+> Full guide: [Multi frame TIFF to PDF](https://ironpdf.com/examples/multi-frame-tiff-to-pdf/)
 
 Transforming a TIFF image to a PDF is straightforward and can be achieved with just a single line of code.
 

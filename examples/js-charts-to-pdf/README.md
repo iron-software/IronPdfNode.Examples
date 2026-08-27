@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/js-charts-to-pdf/>***
+> Full guide: [JS charts to PDF](https://ironpdf.com/examples/js-charts-to-pdf/)
 
 To correctly render charts utilizing JavaScript, it's essential to provide adequate time for JavaScript execution. The following example elucidates how to set up this process:
 

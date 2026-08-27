@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/unicode/>***
+> Full guide: [Unicode](https://ironpdf.com/examples/unicode/)
 
 IronPDF fully supports Unicode and UTF-8 encoding, enabling the creation of PDF documents that feature text in a variety of languages and character sets, including those requiring Unicode characters. UTF-8 is a prevalent encoding format capable of representing almost all characters from numerous languages, ideal for producing multilingual and international documents.
 

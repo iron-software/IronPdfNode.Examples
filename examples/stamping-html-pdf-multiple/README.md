@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/stamping-html-pdf-multiple/>***
+> Full guide: [Stamping HTML PDF multiple](https://ironpdf.com/examples/stamping-html-pdf-multiple/)
 
 IronPDF provides a range of stamp types, including HTML, text, image, and barcode options. Users can designate each stamp's placement using vertical and horizontal coordinates, and further refine their position to the pixel level with vertical and horizontal offsets.
 

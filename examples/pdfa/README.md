@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdfa/>***
+> Full guide: [Pdfa](https://ironpdf.com/examples/pdfa/)
 
 IronPDF offers the ability to export PDF files to the PDF/A-3b standard. This standard is a focused subset of the ISO PDF specification, tailored for the long-term storage of document archives, guaranteeing that they remain unaltered over time.
 

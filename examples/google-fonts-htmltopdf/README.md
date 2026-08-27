@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/google-fonts-htmltopdf/>***
+> Full guide: [Google fonts htmltopdf](https://ironpdf.com/examples/google-fonts-htmltopdf/)
 
 To ensure assets such as JavaScript, fonts, and network resources are properly rendered, a render delay should be defined using the `waitFor` class attribute. This provides the necessary load time for these important assets.
 

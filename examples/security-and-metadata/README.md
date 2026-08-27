@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/security-and-metadata/>***
+> Full guide: [Security and metadata](https://ironpdf.com/examples/security-and-metadata/)
 
 IronPDF provides powerful functionalities for PDF encryption, decryption, metadata manipulation, and permission settings including options for annotations, content copying and pasting, form fields, and printing access.
 

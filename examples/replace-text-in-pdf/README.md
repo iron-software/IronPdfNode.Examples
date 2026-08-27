@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/replace-text-in-pdf/>***
+> Full guide: [Replace text in PDF](https://ironpdf.com/nodejs/examples/replace-text-in-pdf/)
 
 The following code snippet shows how to substitute specific strings in any PDF, a capability that extends to both new and pre-existing documents.
 

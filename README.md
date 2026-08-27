@@ -1,10 +1,6 @@
 <section class="e22ba268 ph2 ph0-ns ml0-ns mr3-ns black-80" id="tabpanel-readme" aria-labelledby="package-tab-readme" role="tabpanel" data-attribute="">
 <article>
 
-Paraphrased Section:
-
------
-
 ![Build Passed](https://camo.githubusercontent.com/2920a67f31140f5ded965f5aa60bec6c7bba9845545a3bd99c31192a4cc223fe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6275696c642d25323025453225394325393325323033313538253230746573747325323070617373656425323028302532306661696c6564292532302d3130374331303f6c6f676f3d76697375616c73747564696f)
 ![Windows Compatibility](https://camo.githubusercontent.com/4c1f2a3927a0c0db490dd617df8f04d4f8cf16f0db1fc691e2abaecaa807b478/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545322538302538452532302d2532302545322539432539332d3130374331303f6c6f676f3d77696e646f7773)
 ![macOS Compatibility](https://camo.githubusercontent.com/a7c2bac7216e874a47cf425683eccc909c5975c853c262ab21e10afd6e85631a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545322538302538452532302d2532302545322539432539332d3130374331303f6c6f676f3d6170706c65)
@@ -13,8 +9,6 @@ Paraphrased Section:
 ![Live Chat Support](https://camo.githubusercontent.com/f504b053ad43015d996953328c6e4065b2f4b82f27759e36f4f380a46784fa5e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c697665253230436861743a2d32342f352d707572706c653f6c6f676f3d676f6f676c6563686174266c6f676f436f6c6f723d7768697465)
 
 -----
-
-Here's the paraphrased section:
 
 # IronPDF - Streamlining PDF Operations in Node.js Projects
 
@@ -47,10 +41,6 @@ IronPDF is fully compatible with multiple platforms, ensuring that developers ca
 [](#utilizing-ironpdf)
 
 IronPDF leverages a robust Chrome Engine to convert HTML strings, files, and online URLs into PDF documents within Node.js environments. Given the intensive nature of the rendering process, it is advised to perform these operations on the server-side. This approach allows frontend frameworks such as ReactJs and Angular to transfer the heavy rendering tasks to the server and then retrieve the final PDF to display on the client side.
-
-Here's the paraphrased section on how to install IronPDF:
-
------
 
 ## Installation Instructions
 
@@ -280,7 +270,6 @@ For additional assistance and information, feel free to reach out to us via emai
 * [pdf conversion in node.js](https://ironpdf.com/search?q=keywords:"pdf conversion in node.js")
 * [create pdf in node js](https://ironpdf.com/search?q=keywords:"create pdf in node js")
 * [node pdf sdk](https://ironpdf.com/search?q=keywords:"node pdf sdk")
-```
 
 ### Searchable Keywords
 
@@ -346,5 +335,3 @@ For additional assistance and information, feel free to reach out to us via emai
 * [pdf conversion in node.js](https://ironpdf.com/search?q=keywords:"pdf conversion in node.js")
 * [create pdf in node js](https://ironpdf.com/search?q=keywords:"create pdf in node js")
 * [node pdf sdk](https://ironpdf.com/search?q=keywords:"node pdf sdk")
-```
-

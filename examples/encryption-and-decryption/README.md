@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/encryption-and-decryption/>***
+> Full guide: [Encryption and decryption](https://ironpdf.com/examples/encryption-and-decryption/)
 
 This example illustrates how to update metadata, transform a PDF to read-only mode, adjust permissions, and modify the document's encryption password with the robust C# .NET library provided by IronPDF.
 

@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/html-headers-and-footers/>***
+> Full guide: [HTML headers and footers](https://ironpdf.com/examples/html-headers-and-footers/)
 
 Set up headers and footers for PDF documents using IronPDF's capabilities, a suite from Iron Software designed for sophisticated PDF creation and editing.
 

@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-page-orientation/>***
+> Full guide: [PDF page orientation](https://ironpdf.com/examples/pdf-page-orientation/)
 
 Understanding page orientation and rotation is essential, though they might seem similar, especially when considering a 90-degree rotation in landscape format.
 

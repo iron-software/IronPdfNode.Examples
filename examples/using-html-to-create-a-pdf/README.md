@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/using-html-to-create-a-pdf/>***
+> Full guide: [Using HTML to create a PDF](https://ironpdf.com/examples/using-html-to-create-a-pdf/)
 
 Utilize the `fromHtml` function to transform HTML strings and files into PDF files. The produced PDF should mirror the output seen when using the print option in Google Chrome. Thanks to IronPDF's implementation of the Chrome rendering engine, your HTML-to-PDF conversions will be as precise as what you'd expect from Chrome itself.
 

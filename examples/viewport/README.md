@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/viewport/>***
+> Full guide: [Viewport](https://ironpdf.com/examples/viewport/)
 
 Regarding viewport settings, IronPDF offers features like CSS media and paper mode to enhance PDF rendering.
 

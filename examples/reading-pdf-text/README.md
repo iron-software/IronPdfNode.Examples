@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/reading-pdf-text/>***
+> Full guide: [Reading PDF text](https://ironpdf.com/examples/reading-pdf-text/)
 
 Facilitating data migration through the extraction of text and images from documents makes transitioning between formats smoother. It ensures content remains accessible and editable, mitigating the risk of data loss.
 

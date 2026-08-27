@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/page-numbers-and-page-breaks/>***
+> Full guide: [Page numbers and page breaks](https://ironpdf.com/examples/page-numbers-and-page-breaks/)
 
 When converting HTML to PDF, IronPDF handles page breaks flawlessly. 
 

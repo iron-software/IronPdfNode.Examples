@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/merge-pdfs/>***
+> Full guide: [Merge PDFs](https://ironpdf.com/examples/merge-pdfs/)
 
 The script outlined here simplifies the combination of various PDF documents, derived from different HTML sources, into one consolidated PDF file.
 

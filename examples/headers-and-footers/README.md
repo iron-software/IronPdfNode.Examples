@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/headers-and-footers/>***
+> Full guide: [Headers and footers](https://ironpdf.com/examples/headers-and-footers/)
 
 Discover how to seamlessly incorporate text headers and footers into your PDFs generated from HTML.
 
