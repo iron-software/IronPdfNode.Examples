@@ -13,7 +13,7 @@ import {PdfDocument} from "@ironsoftware/ironpdf";
     // Configure render options
     const options = {
         htmlHeader: {
-            htmlFragment: "<center><i>{page} of {total-pages}<i></center>",
+            htmlFragment: "<center><i>{page} of {total-pages}</i></center>",
             dividerLine: true,
             maxHeight: 15,
         }

@@ -1,4 +1,3 @@
-import * from '@ironsoftware/ironpdf';
 
 export function run() {
 	// Convert PDF to JPG (not to PNG)

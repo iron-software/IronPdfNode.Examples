@@ -2,7 +2,11 @@ import {PdfDocument} from "@ironsoftware/ironpdf";
 
 (async () => {
     // Import a PDF document or create a new PDF from Html
-    const pdf = await PdfDocument.open("encrypted.pdf", "password");
+    const pdf = await PdfDocument.open("encrypted.pdf", {
+        // A password is a PdfPassword object, not a bare string: passing
+        // "password" here fails validation with "Expected object, received string".
+        password: { userPassword: "password" },
+    });
 
     // Create an empty Map
     const newMetadata = new Map();

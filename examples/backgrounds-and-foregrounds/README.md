@@ -1,4 +1,6 @@
-***Based on <https://ironpdf.com/examples/backgrounds-and-foregrounds/>***
+# Backgrounds & Foregrounds
+
+> Full guide: [Backgrounds & Foregrounds](https://ironpdf.com/nodejs/examples/backgrounds-and-foregrounds/)
 
 Easily applying a background or foreground to a PDF, whether it's a new document or an existing one, is a straightforward process.
 
@@ -11,3 +13,32 @@ Furthermore, we load another document called "MyForeground.pdf" intended for use
 The final output, a merged PDF file that includes the original PDF, background, and foreground layers, is then saved as "Complete.pdf."
 
 [Explore PDF Background & Foreground Examples Here](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/backgrounds-and-foregrounds)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+// Render a URL as a PDF
+    const pdf = await PdfDocument.fromUrl("https://www.wikipedia.org/");
+
+    // Add a background PDF
+    const bgpdf = await PdfDocument.open("MyBackground.pdf");
+    await pdf.addBackgroundFromAnotherPdf(bgpdf);
+
+    // Add a foreground overlay PDF to the first page
+    const fgpdf = await PdfDocument.open("MyForeground.pdf");
+    await pdf.addForegroundFromAnotherPdf(fgpdf, 0, 0);
+    
+    // Save the merged PDF to a file
+    await pdf.saveAs("Complete.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

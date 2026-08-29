@@ -1,4 +1,6 @@
-***Based on <https://ironpdf.com/examples/security-and-metadata/>***
+# Passwords, Security & Metadata
+
+> Full guide: [Passwords, Security & Metadata](https://ironpdf.com/nodejs/examples/security-and-metadata/)
 
 IronPDF provides powerful functionalities for PDF encryption, decryption, metadata manipulation, and permission settings including options for annotations, content copying and pasting, form fields, and printing access.
 
@@ -13,3 +15,54 @@ For saving changes, the `saveAs` method allows you to set `ownerPassword` and `u
 For a comprehensive understanding of what IronPDF can do, you can visit the [IronPDF product page](https://ironpdf.com) or find out more about Iron Software at their [homepage](https://ironsoftware.com).
 
 [Explore Security & Metadata Examples on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/security-and-metadata) for practical implementations and further insights.
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Import a PDF document or create a new PDF from Html
+    const pdf = await PdfDocument.open("encrypted.pdf", {
+        // A password is a PdfPassword object, not a bare string: passing
+        // "password" here fails validation with "Expected object, received string".
+        password: { userPassword: "password" },
+    });
+
+    // Create an empty Map
+    const newMetadata = new Map();
+
+    // Add key-value pairs of metadata
+    newMetadata.set("Author", "Satoshi Nakamoto");
+    newMetadata.set("Keywords", "SEO, Friendly");
+
+    await pdf.overrideMetadata(newMetadata);
+
+    await pdf.removePasswordsAndEncryption();
+    // Make PDF read-only
+    await pdf.makePdfDocumentReadOnly("secret-key");
+
+    // Configure permissions
+    const permissions = {
+        AllowAnnotations: false,
+        AllowExtractContent: false,
+        AllowFillForms: false,
+        AllowPrint: true,
+    };
+
+    await pdf.setPermission(permissions);
+    
+    // Change or set the document encrpytion password
+    await pdf.saveAs("secured.pdf", {
+        ownerPassword: "top-secret",
+        userPassword: "my-password",
+    });
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

@@ -1,4 +1,4 @@
-import {PdfDocument} from "@ironsoftware/ironpdf";
+import {NaturalLanguages, PdfDocument} from "@ironsoftware/ironpdf";
 
 (async () => {
     // Open a PDF or use an exisiting rendered PDF

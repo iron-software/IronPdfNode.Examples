@@ -1,4 +1,3 @@
-import * from '@ironsoftware/ironpdf';
 
 export function run() {
 	// Import the printer module

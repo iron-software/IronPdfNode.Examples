@@ -1,6 +1,8 @@
-***Based on <https://ironpdf.com/examples/barcode-htmltopdf/>***
+# Add Barcodes in HTML to PDF
 
-Barcodes can be seamlessly integrated into PDF documents, whether they are newly created or pre-existing ones. You can utilize the `stampBarcode` method to embed a barcode into a PDF. This method primarily requires the data that the barcode will represent.
+> Full guide: [Add Barcodes in HTML to PDF](https://ironpdf.com/nodejs/examples/barcode-htmltopdf/)
+
+Barcodes can be integrated into PDF documents, whether they are newly created or pre-existing ones. You can utilize the `stampBarcode` method to embed a barcode into a PDF. This method primarily requires the data that the barcode will represent.
 
 In addition to the mandatory input, a customizable barcode configuration option is available. This option allows for adjustments in various settings:
 
@@ -26,3 +28,32 @@ In addition to the mandatory input, a customizable barcode configuration option 
 For detailed guidance on managing PDFs and barcodes, you can visit the [IronPDF Documentation](https://ironpdf.com/docs/). To explore additional libraries from Iron Software, such as [IronBarcode for barcode generation](https://ironsoftware.com/csharp/barcode/), which can enhance your project capabilities, click on the link provided.
 
 [Learn to Add Barcodes to PDFs with IronPDF for Node.js](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/barcode-htmltopdf)
+
+## Code
+
+```js
+import {PdfDocument, BarcodeType} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Render HTML to PDF
+    const pdf = await PdfDocument.fromHtml("<h1>Stamp Barcode</h1>");
+
+    // Configure barcode options
+    const barcodeOptions = {
+        barcodeEncoding: BarcodeType.code39,
+    };
+
+    // Stamp barcode
+    await pdf.stampBarcode("Hello World", barcodeOptions);
+
+    // Export to a file
+    await pdf.saveAs("bcTest.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

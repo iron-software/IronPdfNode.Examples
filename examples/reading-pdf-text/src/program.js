@@ -3,7 +3,7 @@ import {PdfDocument} from "@ironsoftware/ironpdf";
 (async () => {
     // Extracting Image and Text content from Pdf Documents
     // Import existing PDF document
-    const pdf = await PdfDocument.fromHtml("old_report.pdf");
+    const pdf = await PdfDocument.fromFile("old_report.pdf");
     
     // Get all text to put in a search index
     const text = await pdf.extractText();

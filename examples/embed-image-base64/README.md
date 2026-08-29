@@ -1,4 +1,6 @@
-***Based on <https://ironpdf.com/examples/embed-image-base64/>***
+# Embedding Bitmaps and Images
+
+> Full guide: [Embedding Bitmaps and Images](https://ironpdf.com/nodejs/examples/embed-image-base64/)
 
 To facilitate the offline use of HTML content that includes images, it's useful to embed the images directly into the HTML code as base64 encoded strings. This process involves loading the image and converting it into a base64 format.
 
@@ -21,6 +23,51 @@ Here is a comprehensive tutorial on how to read an image file, convert it to a b
 4. **Execution:**
    - The `generatePdf` function is executed with a specified path to the image file.
 
-This guide seamlessly integrates the processes of reading an image, encoding it to base64 for HTML incorporation, and producing a PDF with IronPDF.
+This guide integrates the processes of reading an image, encoding it to base64 for HTML incorporation, and producing a PDF with IronPDF.
 
 [Explore the Complete Base64 Image Embedding Example](https://ironpdf.com/IronPdfNode.Examples/tree/main/examples/embed-image-base64)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+import fs from 'fs';
+
+(async () => {
+    // Image file path
+    const filePath = 'iron.png';
+
+    // Read bytes from a file using fs.readFile
+    fs.readFile(filePath, (err, data) => {
+    if (err) {
+        console.error('Error reading file:', err);
+        return;
+    }
+
+    let binaryString = '';
+    data.forEach((byte) => {
+        binaryString += String.fromCharCode(byte);
+      });
+
+    // Convert the binary string to base64
+    const base64String = btoa(binaryString);
+
+    // Insert base64 to img element
+    const imgHtml = `<img src='data:image/png;base64,${base64String}'>`;
+
+    // Render HTML content with the embedded image to a PDF
+    const pdf = PdfDocument.fromHtml(imgHtml).then(
+        (returnedPdf)=>{
+            // Save the PDF
+            returnedPdf.saveAs("embedded_example_1.pdf")
+        });
+    });
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

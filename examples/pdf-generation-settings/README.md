@@ -1,4 +1,6 @@
-***Based on <https://ironpdf.com/examples/pdf-generation-settings/>***
+# HTML Rendering Settings
+
+> Full guide: [HTML Rendering Settings](https://ironpdf.com/nodejs/examples/pdf-generation-settings/)
 
 A variety of settings can be adjusted when converting HTML content into rendered output, whether using HTML strings, local files, or URLs. The demonstrated configurations encompass several aspects such as choosing a custom paper size with adjustable units, activating HTML backgrounds, setting page orientation, defining the document's title, delaying the rendering to allow for resource loading, determining the CSS media type, opting for either simplex or duplex paper modes, integrating editable forms, tailoring margins, and incorporating pagination.
 
@@ -18,3 +20,54 @@ The incorporation of a rendering delay primarily ensures that all JavaScript ele
 - **Practical Application**: The provided HTML and CSS setup is crafted to showcase how styles can be dynamically applied based on the content's viewing medium, whether on-screen or on paper.
 
 [Learn More About Advanced PDF Generation Settings on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/pdf-generation-settings).
+
+## Code
+
+```js
+import {PdfDocument, WaitForType, CssMediaType, FitToPaperModes, PdfPaperOrientation, PaperSizeUnit} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Many rendering options to use to customize!
+    const options = {
+        paperSize: {
+            unit: PaperSizeUnit.Inch,
+            width: 12.5,
+            height: 20,
+        },
+        printHtmlBackgrounds: true,
+        paperOrientation: PdfPaperOrientation.Landscape,
+        title: "My PDF Document Name",
+        waitFor: {
+            type: WaitForType.RenderDelay,
+            maxWaitTime: 50, // in milliseconds
+        },
+        cssMediaType: CssMediaType.Screen,
+        fitToPaperMode: FitToPaperModes.FitToPage,
+        createPdfFormsFromHtml: true,
+
+        // Supports margin customization
+        margin: {
+            top: 40, // millimeters
+            left: 20, // millimeters
+            right: 20, // millimeters
+            bottom: 40, // millimeters
+        },
+
+        // Can set FirstPageNumber if you have a cover page
+        firstPageNumber: 1, // use 2 if a cover page will be appended
+    };
+
+    // Render HTML page to PDF
+    const pdf = await PdfDocument.fromUrl("https://angular.io/", { renderOptions: options });
+    
+    // Save the PDF
+    await pdf.saveAs("my-content.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

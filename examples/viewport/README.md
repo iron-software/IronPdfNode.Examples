@@ -1,4 +1,6 @@
-***Based on <https://ironpdf.com/examples/viewport/>***
+# Responsive HTML to PDF
+
+> Full guide: [Responsive HTML to PDF](https://ironpdf.com/nodejs/examples/viewport/)
 
 Regarding viewport settings, IronPDF offers features like CSS media and paper mode to enhance PDF rendering.
 
@@ -15,3 +17,31 @@ In addition to these settings, the [IronPDF's Paper Sizing Options](https://iron
 - `FitToPage`: This configuration scales content to fill an entire page in both height and width, maintaining aspect ratios and ensuring the content fits neatly on one page.
 
 Explore responsive PDF rendering in different scenarios by visiting the [Viewport Example for Responsive PDF Rendering](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/viewport).
+
+## Code
+
+```js
+import {PdfDocument, CssMediaType, FitToPaperModes} from "@ironsoftware/ironpdf";
+
+(async () => {
+    const options = {
+        // Choose Screen or Print CSS media
+        cssMediaType: CssMediaType.Screen,
+        
+        // Set paper mode to automatic fit to physical paper
+        fitToPaperMode: FitToPaperModes.FitToPage,
+    };
+
+    // Render an HTML file
+const pdf = await PdfDocument.fromHtml("Responsive.html", {renderOptions: options});
+
+await pdf.saveAs("pdf-from-html.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

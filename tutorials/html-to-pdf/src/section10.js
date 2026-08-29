@@ -1,7 +1,7 @@
 import { PdfDocument, defaultChromePdfRenderOptions } from "@ironsoftware/ironpdf";
 import './config.js'; // Import the configuration script
 
-export function run() {
+export async function run() {
 	// Initialize render options with default settings
 	var options = defaultChromePdfRenderOptions();
 	// Define a rich HTML header

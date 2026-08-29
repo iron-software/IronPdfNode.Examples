@@ -1,6 +1,6 @@
 # Utilizing IronPdfEngine
 
-***Based on <https://ironpdf.com/get-started/use-ironpdfengine/>***
+> Full guide: [Utilizing IronPdfEngine](https://ironpdf.com/nodejs/get-started/use-ironpdfengine/)
 
 
 IronPdfEngine is an advanced gRPC server designed to manage various IronPDF operations including generating, modifying, and reading PDF documents.
@@ -37,7 +37,7 @@ npm install @ironsoftware/ironpdf
 
 #### Option 2 (recommended): Installation of IronPdfEngine as a Dependency
 
-Installing IronPdfEngine dependencies is another approach supported by IronPdf for Node.js. These dependencies package IronPdfEngine inside a `.zip` file and handle its extraction and utilization seamlessly.
+Installing IronPdfEngine dependencies is another approach supported by IronPdf for Node.js. These dependencies package IronPdfEngine inside a `.zip` file and handle its extraction and utilization.
 
 You can opt to install one or more IronPdfEngine dependencies.
 
@@ -102,4 +102,4 @@ IronPdfGlobalConfig.setConfig({
 
 That’s all! Following this, your application will be connected to the remote IronPdfEngine.
 
-For systems using a remote IronPdfEngine, there's no need to install IronPdfEngine directly as a dependency. You can bypass the section "[Option 2 (recommended) install IronPdfEngine as a dependency](#anchor-option-2-recommended-install-ironpdfengine-as-a-dependency)."
+For systems using a remote IronPdfEngine, there's no need to install IronPdfEngine directly as a dependency. You can bypass the section "Option 2 (recommended) install IronPdfEngine as a dependency."
