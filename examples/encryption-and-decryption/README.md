@@ -1,6 +1,6 @@
 # PDF Encryption & Decryption
 
-> Full guide: [PDF Encryption & Decryption](https://ironpdf.com/nodejs/examples/encryption-and-decryption/)
+> Full guide: [PDF Encryption & Decryption](https://ironpdf.com/nodejs/examples/encryption-and-decryption/?utm_source=github)
 
 This example illustrates how to update metadata, transform a PDF to read-only mode, adjust permissions, and modify the document's encryption password with IronPDF for Node.js.
 
@@ -14,7 +14,7 @@ Set up the permissions for the PDF using a newly defined permissions object. Thi
 
 Lastly, update or establish a new document encryption password to "my-password" and save the altered PDF as "secured.pdf". This example underlines the capabilities of IronPDF in ensuring the security and management of documents in application development.
 
-[Explore more about PDF Encryption & Decryption with IronPDF](https://ironpdf.com/examples/encryption-and-decryption)
+[Explore more about PDF Encryption & Decryption with IronPDF](https://ironpdf.com/examples/encryption-and-decryption/?utm_source=github)
 
 ## Code
 

@@ -1,6 +1,6 @@
 # Rendering Charts in PDFs
 
-> Full guide: [Rendering Charts in PDFs](https://ironpdf.com/nodejs/examples/js-charts-to-pdf/)
+> Full guide: [Rendering Charts in PDFs](https://ironpdf.com/nodejs/examples/js-charts-to-pdf/?utm_source=github)
 
 To correctly render charts utilizing JavaScript, it's essential to provide adequate time for JavaScript execution. The following example elucidates how to set up this process:
 

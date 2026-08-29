@@ -1,6 +1,6 @@
 # Convert a PDF to Images
 
-> Full guide: [Convert a PDF to Images](https://ironpdf.com/nodejs/examples/rasterize-a-pdf-to-images/)
+> Full guide: [Convert a PDF to Images](https://ironpdf.com/nodejs/examples/rasterize-a-pdf-to-images/?utm_source=github)
 
 The process of turning each page of a PDF into an individual image, such as JPEG or PNG, is known as rasterizing. This method is especially useful for tasks like extracting pages or images from PDFs to be displayed on a web page or integrated into other documents.
 
@@ -37,7 +37,7 @@ Add the IronPDF package to your project first:
 
 Here is a basic outline on using IronPDF to convert a PDF to a collection of images, which can be modified to meet particular requirements.
 
-[Learn to Convert PDF to Images with Python](https://ironpdf.com/python/how-to/python-pdf-to-image/)
+[Learn to Convert PDF to Images with Python](https://ironpdf.com/python/how-to/python-pdf-to-image/?utm_source=github)
 
 ## Running This Example
 

@@ -1,8 +1,8 @@
 # Multi Threaded Generation
 
-> Full guide: [Multi Threaded Generation](https://ironpdf.com/nodejs/examples/threading/)
+> Full guide: [Multi Threaded Generation](https://ironpdf.com/nodejs/examples/threading/?utm_source=github)
 
-JavaScript and Node.js facilitate asynchronous processing modalities. This capacity is also embedded in [IronPDF, a sophisticated .NET PDF library](https://ironpdf.com/), renowned for its adept PDF production and editing features.
+JavaScript and Node.js facilitate asynchronous processing modalities. This capacity is also embedded in [IronPDF, a sophisticated .NET PDF library](https://ironpdf.com/?utm_source=github), renowned for its adept PDF production and editing features.
 
 IronPDF typically handles operations using promises. This allows for rendering multiple HTML sources concurrently, with `Promise.all` used to synchronize the completion of these tasks.
 

@@ -1,6 +1,6 @@
 # Read PDF Text and Images in Node.js
 
-> Full guide: [Read PDF Text and Images in Node.js](https://ironpdf.com/nodejs/examples/reading-pdf-text/)
+> Full guide: [Read PDF Text and Images in Node.js](https://ironpdf.com/nodejs/examples/reading-pdf-text/?utm_source=github)
 
 Facilitating data migration through the extraction of text and images from documents makes transitioning between formats smoother. It ensures content remains accessible and editable, mitigating the risk of data loss.
 
@@ -15,7 +15,7 @@ In this example:
 - `extractText()` pulls the text out as a string, which is then written to the console.
 - `extractRawImages()` returns the embedded images as buffers, each of which is then written to its own file.
 
-For more extensive guidelines on these methods, be sure to check the [IronPDF Documentation](https://ironpdf.com/docs/).
+For more extensive guidelines on these methods, be sure to check the [IronPDF Documentation](https://ironpdf.com/docs/?utm_source=github).
 
 [Explore More on Reading PDF Text with IronPDF](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/reading-pdf-text)
 

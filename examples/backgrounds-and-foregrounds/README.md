@@ -1,6 +1,6 @@
 # Backgrounds & Foregrounds
 
-> Full guide: [Backgrounds & Foregrounds](https://ironpdf.com/nodejs/examples/backgrounds-and-foregrounds/)
+> Full guide: [Backgrounds & Foregrounds](https://ironpdf.com/nodejs/examples/backgrounds-and-foregrounds/?utm_source=github)
 
 Easily applying a background or foreground to a PDF, whether it's a new document or an existing one, is a straightforward process.
 

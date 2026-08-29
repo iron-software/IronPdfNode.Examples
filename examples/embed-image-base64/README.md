@@ -1,6 +1,6 @@
 # Embedding Bitmaps and Images
 
-> Full guide: [Embedding Bitmaps and Images](https://ironpdf.com/nodejs/examples/embed-image-base64/)
+> Full guide: [Embedding Bitmaps and Images](https://ironpdf.com/nodejs/examples/embed-image-base64/?utm_source=github)
 
 To facilitate the offline use of HTML content that includes images, it's useful to embed the images directly into the HTML code as base64 encoded strings. This process involves loading the image and converting it into a base64 format.
 
@@ -25,7 +25,7 @@ Here is a comprehensive tutorial on how to read an image file, convert it to a b
 
 This guide integrates the processes of reading an image, encoding it to base64 for HTML incorporation, and producing a PDF with IronPDF.
 
-[Explore the Complete Base64 Image Embedding Example](https://ironpdf.com/IronPdfNode.Examples/tree/main/examples/embed-image-base64)
+[Explore the Complete Base64 Image Embedding Example](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/embed-image-base64)
 
 ## Code
 

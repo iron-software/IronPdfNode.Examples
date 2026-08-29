@@ -1,6 +1,6 @@
 # PDF Forms
 
-> Full guide: [PDF Forms](https://ironpdf.com/nodejs/examples/form-data/)
+> Full guide: [PDF Forms](https://ironpdf.com/nodejs/examples/form-data/?utm_source=github)
 
 You can convert HTML with form fields into a PDF, maintaining the form's functionality and data entry capability. This process involves creating an HTML form embedded with various input types, such as text boxes, radio buttons, and checkboxes, to facilitate user interactions.
 
@@ -12,7 +12,7 @@ To transform an HTML form into an editable PDF form:
 
 3. Once the PDF with form fields is created, save it as a new PDF file, "formField.pdf", using the `saveAs` method.
 
-For additional guidance on creating PDF forms from HTML content, refer to the [IronPDF Product Page](https://ironpdf.com) for comprehensive resources and examples.
+For additional guidance on creating PDF forms from HTML content, refer to the [IronPDF Product Page](https://ironpdf.com?utm_source=github) for comprehensive resources and examples.
 
 Explore in-depth how to generate PDF forms from HTML by accessing our code examples through the following link:
 [Explore Code Examples for Creating PDF Forms from HTML](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/form-data).

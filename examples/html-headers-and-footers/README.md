@@ -1,6 +1,6 @@
 # Add HTML Headers & Footers
 
-> Full guide: [Add HTML Headers & Footers](https://ironpdf.com/nodejs/examples/html-headers-and-footers/)
+> Full guide: [Add HTML Headers & Footers](https://ironpdf.com/nodejs/examples/html-headers-and-footers/?utm_source=github)
 
 Set up headers and footers for PDF documents using IronPDF's capabilities, a suite from Iron Software designed for sophisticated PDF creation and editing.
 
@@ -8,7 +8,7 @@ To craft the content for the header, include an HTML snippet and a horizontal li
 
 It's critical to adjust the margins since the heights of the header and footer aren't auto-calculated, which can cause them to cover the primary HTML content inadvertently.
 
-For more elaboration on implementing headers and footers or to look at additional functionalities, visit the [IronPDF Official Website](https://ironpdf.com).
+For more elaboration on implementing headers and footers or to look at additional functionalities, visit the [IronPDF Official Website](https://ironpdf.com?utm_source=github).
 
 Access further code examples on HTML headers and footers in IronPDF through this GitHub link: [Explore HTML Headers & Footers Code Example on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/html-headers-and-footers).
 

@@ -1,10 +1,10 @@
 # HTML to PDF NodeJS
 
-> Full guide: [HTML to PDF NodeJS](https://ironpdf.com/tutorials/html-to-pdf/)
+> Full guide: [HTML to PDF NodeJS](https://ironpdf.com/tutorials/html-to-pdf/?utm_source=github)
 
 _Converting high-quality PDFs from raw HTML, CSS, and JavaScript is a standout feature of IronPDF, immensely popular for its efficiency and fidelity. This guide provides a thorough introduction for Node developers to exploit IronPDF for integrating HTML to PDF conversion capabilities into their projects._
 
-_IronPDF is an API library for adding PDF processing to an application. Available across [various programming environments](https://ironpdf.com/nodejs/licensing/), IronPDF offers extensive documentation on PDF generation in platforms such as [.NET](https://ironpdf.com/tutorials/html-to-pdf/), [Java](https://ironpdf.com/java/tutorials/html-to-pdf/), and [Python](https://ironpdf.com/python/tutorials/html-to-pdf/). This tutorial specifically addresses its application within Node.js projects._
+_IronPDF is an API library for adding PDF processing to an application. Available across [various programming environments](https://ironpdf.com/nodejs/licensing/?utm_source=github), IronPDF offers extensive documentation on PDF generation in platforms such as [.NET](https://ironpdf.com/tutorials/html-to-pdf/?utm_source=github), [Java](https://ironpdf.com/java/tutorials/html-to-pdf/?utm_source=github), and [Python](https://ironpdf.com/python/tutorials/html-to-pdf/?utm_source=github). This tutorial specifically addresses its application within Node.js projects._
 
 ___
 
@@ -22,7 +22,7 @@ npm install @ironsoftware/ironpdf
 npm install @ironsoftware/ironpdf
 ```
 
-You also have the option to [manually download and install](https://ironpdf.com/download-modal) the IronPDF package.
+You also have the option to [manually download and install](https://ironpdf.com/?utm_source=github#download-modal) the IronPDF package.
 
 ### Optional Manual Installation of the IronPDF Engine
 
@@ -38,7 +38,7 @@ IronPDF naturally appends a distinguished background watermark to every document
 
 ![Figure 1](https://ironpdf.com/static-assets/ironpdf-nodejs/tutorials/html-to-pdf/html-to-pdf-2.webp)
 
-**Secure a licence key from [ironpdf.com/nodejs/licensing/](https://ironpdf.com/nodejs/licensing/) to produce watermark-free PDF documents.**
+**Secure a licence key from [ironpdf.com/nodejs/licensing/](https://ironpdf.com/nodejs/licensing/?utm_source=github) to produce watermark-free PDF documents.**
 
 To eliminate this default watermark from your PDF documents, you'll need to input a valid license key into the `licenseKey` field of the global `IronPdfGlobalConfig` object. Below is the code snippet to achieve this:
 
@@ -52,9 +52,9 @@ var config = IronPdfGlobalConfig.getConfig();
 config.licenseKey = "{YOUR-LICENSE-KEY-HERE}";
 ```
 
-[Acquire a license key](https://ironpdf.com/nodejs/licensing/) from our licensing page, or get in touch to [receive a trial license key for free](https://ironpdf.com/trial-license).
+[Acquire a license key](https://ironpdf.com/nodejs/licensing/?utm_source=github) from our licensing page, or get in touch to [receive a trial license key for free](https://ironpdf.com/?utm_source=github#trial-license).
 
-Before using other features of the library, it's crucial to set the license key [alongside other global configuration parameters](https://ironpdf.com/nodejs/object-reference/api/interfaces/IronPdfConfig.html). This ensures optimal performance and functionality of the library.
+Before using other features of the library, it's crucial to set the license key [alongside other global configuration parameters](https://ironpdf.com/nodejs/object-reference/api/interfaces/IronPdfConfig.html?utm_source=github). This ensures optimal performance and functionality of the library.
 
 In the following parts of this guide, we'll proceed under the assumption that a license key is already configured and stored in a separate JavaScript file named `config.js`. This configuration file is imported into any script where IronPDF's capabilities are utilized.
 
@@ -489,7 +489,7 @@ PdfDocument.fromZip("./html-zip.zip", {
 
 ## Advanced HTML to PDF Generation Options
 
-The interface [`ChromePdfRenderOptions`](https://www.ironpdf.com/nodejs/object-reference/api/interfaces/ChromePdfRenderOptions.html) provides Node.js developers with the capability to tailor the HTML rendering process within the IronPDF library. It offers detailed control over how PDFs look before they are rendered and addresses particular challenges in HTML-to-PDF conversions.
+The interface [`ChromePdfRenderOptions`](https://ironpdf.com/nodejs/object-reference/api/interfaces/ChromePdfRenderOptions.html?utm_source=github) provides Node.js developers with the capability to tailor the HTML rendering process within the IronPDF library. It offers detailed control over how PDFs look before they are rendered and addresses particular challenges in HTML-to-PDF conversions.
 
 IronPDF starts by rendering PDFs with a set of default `ChromePdfRenderOptions`. To access and modify these default settings, you can use the `defaultChromePdfRenderOptions` function. This allows developers to customize the PDF's appearance from the outset, ensuring precise adherence to their specific requirements.
 
@@ -801,7 +801,7 @@ Additionally, the constant `template` is used to reference the path where the HT
 
 This guide covers the core of IronPDF. These resources go further:
 
-1. **[The `PdfGenerator` class](https://ironpdf.com/nodejs/object-reference/api/classes/PdfGenerator.html):** A utility class that constructs `PdfDocument` instances from HTML content, URLs, and Zip files, as an alternative to the rendering methods on `PdfDocument` itself.
+1. **[The `PdfGenerator` class](https://ironpdf.com/nodejs/object-reference/api/classes/PdfGenerator.html?utm_source=github):** A utility class that constructs `PdfDocument` instances from HTML content, URLs, and Zip files, as an alternative to the rendering methods on `PdfDocument` itself.
 
-2. **[`HttpLoginCredentials`](https://ironpdf.com/nodejs/object-reference/api/interfaces/ChromePdfRenderOptions.html):** For projects requiring PDF generation from web pages with access restrictions, such as cookie-dependent or password-protected sites, this documentation is particularly valuable.
+2. **[`HttpLoginCredentials`](https://ironpdf.com/nodejs/object-reference/api/interfaces/ChromePdfRenderOptions.html?utm_source=github):** For projects requiring PDF generation from web pages with access restrictions, such as cookie-dependent or password-protected sites, this documentation is particularly valuable.
 

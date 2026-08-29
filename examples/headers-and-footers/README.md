@@ -1,6 +1,6 @@
 # Add Classic Text Headers & Footers
 
-> Full guide: [Add Classic Text Headers & Footers](https://ironpdf.com/nodejs/examples/headers-and-footers/)
+> Full guide: [Add Classic Text Headers & Footers](https://ironpdf.com/nodejs/examples/headers-and-footers/?utm_source=github)
 
 Discover how to incorporate text headers and footers into your PDFs generated from HTML.
 
@@ -10,7 +10,7 @@ Adjust the document margins to ensure space for both the header and footer.
 
 Employ the `PdfDocument.fromHtml` method for transforming HTML into a professionally styled PDF by including the `renderOptions` parameter.
 
-For comprehensive guidance on this process, consult the [IronPDF Documentation](https://ironpdf.com/docs/).
+For comprehensive guidance on this process, consult the [IronPDF Documentation](https://ironpdf.com/docs/?utm_source=github).
 
 The final PDF, titled "header_footer.pdf," incorporates all specified headers and footers.
 

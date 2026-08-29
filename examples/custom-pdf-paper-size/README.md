@@ -1,12 +1,12 @@
 # Custom PDF Size
 
-> Full guide: [Custom PDF Size](https://ironpdf.com/nodejs/examples/custom-pdf-paper-size/)
+> Full guide: [Custom PDF Size](https://ironpdf.com/nodejs/examples/custom-pdf-paper-size/?utm_source=github)
 
 This example demonstrates how to set a specific paper size when converting HTML to a PDF file.
 
 Start by using the `paperSize` attribute in the rendering options to specify a desired paper size, here set to a unique 5x5 inch size. Modify the width and height parameters as necessary to fit your requirements.
 
-The method `PdfDocument.fromHtml` from the [IronPDF library](https://ironpdf.com) is then employed to transform the HTML into a PDF while incorporating the defined rendering options.
+The method `PdfDocument.fromHtml` from the [IronPDF library](https://ironpdf.com?utm_source=github) is then employed to transform the HTML into a PDF while incorporating the defined rendering options.
 
 Once the PDF is rendered, save the document using the custom size with the `saveAs` method.
 

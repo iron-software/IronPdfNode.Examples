@@ -1,6 +1,6 @@
 # How to Convert a PDF to an Image File
 
-> Full guide: [How to Convert a PDF to an Image File](https://ironpdf.com/nodejs/how-to/nodejs-pdf-to-image/)
+> Full guide: [How to Convert a PDF to an Image File](https://ironpdf.com/nodejs/how-to/nodejs-pdf-to-image/?utm_source=github)
 
 
 To transform PDF documents into images, the `rasterizeToImageFiles` function of IronPDF's NodeJS library offers a flexible solution. This method supports a variety of image formats including JPG, PNG, and others. Whether you need to convert entire PDFs into images or just specific pages, IronPDF places comprehensive controls at your fingertips.
@@ -115,9 +115,9 @@ PdfDocument.fromFile("./sample-pdf-with-images.pdf").then((pdf) => {
 
 ### API Documentation
 
-Explore detailed explanations and more functionalities by visiting the [API reference for the `PdfDocument` class](https://ironsoftware.com/csharp/ocr/examples/javascript-integration/#api-reference).
+Explore detailed explanations and more functionalities by visiting the [API reference for the `PdfDocument` class](https://ironpdf.com/object-reference/api/IronPdf.PdfDocument.html?utm_source=github).
 
 ### Practical Examples
 
-- [**Converting a PDF to Images with IronPDF**](https://ironsoftware.com/csharp/ocr/examples/pdf-to-image/): A variant of the `rasterizeToImageFiles` usage.
-- [**Transforming Images into PDFs with IronPDF**](https://ironsoftware.com/csharp/ocr/examples/image-to-pdf/): Learn how to compile multiple images into a single PDF document.
+- [**Converting a PDF to Images with IronPDF**](https://ironpdf.com/examples/rasterize-a-pdf-to-images/?utm_source=github): A variant of the `rasterizeToImageFiles` usage.
+- [**Transforming Images into PDFs with IronPDF**](https://ironpdf.com/examples/image-to-pdf/?utm_source=github): Learn how to compile multiple images into a single PDF document.

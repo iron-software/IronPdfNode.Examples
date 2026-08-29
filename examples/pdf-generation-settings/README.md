@@ -1,6 +1,6 @@
 # HTML Rendering Settings
 
-> Full guide: [HTML Rendering Settings](https://ironpdf.com/nodejs/examples/pdf-generation-settings/)
+> Full guide: [HTML Rendering Settings](https://ironpdf.com/nodejs/examples/pdf-generation-settings/?utm_source=github)
 
 A variety of settings can be adjusted when converting HTML content into rendered output, whether using HTML strings, local files, or URLs. The demonstrated configurations encompass several aspects such as choosing a custom paper size with adjustable units, activating HTML backgrounds, setting page orientation, defining the document's title, delaying the rendering to allow for resource loading, determining the CSS media type, opting for either simplex or duplex paper modes, integrating editable forms, tailoring margins, and incorporating pagination.
 

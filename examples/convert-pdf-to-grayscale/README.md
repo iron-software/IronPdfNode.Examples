@@ -1,10 +1,10 @@
 # Set to Grayscale
 
-> Full guide: [Set to Grayscale](https://ironpdf.com/nodejs/examples/convert-pdf-to-grayscale/)
+> Full guide: [Set to Grayscale](https://ironpdf.com/nodejs/examples/convert-pdf-to-grayscale/?utm_source=github)
 
 Transforming a full-color PDF document to grayscale simplifies the PDF by emphasizing only the intensity of light, not the colors themselves.
 
-The capability to create grayscale PDFs exists only when you're converting from HTML to PDF using [IronPDF's HTML to PDF Conversion Feature](https://ironpdf.com/tutorials/html-to-pdf/). In this process, the `PdfPrintOptions` object has a `GrayScale` attribute which can be set to either `true` or `false`. By setting this attribute to `true`, a grayscale PDF will be produced in lieu of a color PDF.
+The capability to create grayscale PDFs exists only when you're converting from HTML to PDF using [IronPDF's HTML to PDF Conversion Feature](https://ironpdf.com/tutorials/html-to-pdf/?utm_source=github). In this process, the `PdfPrintOptions` object has a `GrayScale` attribute which can be set to either `true` or `false`. By setting this attribute to `true`, a grayscale PDF will be produced in lieu of a color PDF.
 
 Here's how to convert an HTML document into a grayscale PDF with IronPDF for Node.js:
 
