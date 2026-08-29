@@ -1,6 +1,6 @@
 # PDF/A
 
-> Full guide: [PDF/A](https://ironpdf.com/nodejs/examples/pdfa/)
+> Full guide: [PDF/A](https://ironpdf.com/nodejs/examples/pdfa/?utm_source=github)
 
 IronPDF offers the ability to export PDF files to the PDF/A-3b standard. This standard is a focused subset of the ISO PDF specification, tailored for the long-term storage of document archives, guaranteeing that they remain unaltered over time.
 
@@ -17,7 +17,7 @@ The `convertToPdfA` method in IronPDF enables the conversion of standard PDF doc
 
 To execute this sample, make sure IronPDF is installed in your project.
 
-[Explore the PDF/A Conversion Code Example Now!](https://ironpdf.com/github/IronPdfNode.Examples/tree/main/examples/pdfa)
+[Explore the PDF/A Conversion Code Example Now!](https://ironpdf.com/github/IronPdfNode.Examples/tree/main/examples/pdfa?utm_source=github)
 
 ## Code
 

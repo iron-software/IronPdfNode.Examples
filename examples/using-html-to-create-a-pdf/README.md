@@ -1,10 +1,10 @@
 # HTML String to PDF
 
-> Full guide: [HTML String to PDF](https://ironpdf.com/nodejs/examples/using-html-to-create-a-pdf/)
+> Full guide: [HTML String to PDF](https://ironpdf.com/nodejs/examples/using-html-to-create-a-pdf/?utm_source=github)
 
 Utilize the `fromHtml` function to transform HTML strings and files into PDF files. The produced PDF should mirror the output seen when using the print option in Google Chrome. Thanks to IronPDF's implementation of the Chrome rendering engine, your HTML-to-PDF conversions will be as precise as what you'd expect from Chrome itself.
 
-IronPDF not only excels in rendering but also in PDF manipulation, offering a variety of powerful tools in one package. For instance, check out the [HTML stamping feature of IronPDF](https://ironpdf.com/examples/stamping-html-pdf-multiple/), which enables the rendering of HTML content into a PDF and then merging it with a primary document. This process adds HTML-based stamps either behind or in front of the main content to craft a final document.
+IronPDF not only excels in rendering but also in PDF manipulation, offering a variety of powerful tools in one package. For instance, check out the [HTML stamping feature of IronPDF](https://ironpdf.com/examples/stamping-html-pdf-multiple/?utm_source=github), which enables the rendering of HTML content into a PDF and then merging it with a primary document. This process adds HTML-based stamps either behind or in front of the main content to craft a final document.
 
 ### Overview of the Example
 
@@ -20,7 +20,7 @@ IronPDF not only excels in rendering but also in PDF manipulation, offering a va
 
 6. **Completion Notification**: Display a console message to inform the user that the PDF file has been successfully generated and saved.
 
-[Explore HTML to PDF Conversion in Node.js](https://ironpdf.com/nodejs/tutorials/html-to-pdf/ "Learn More")
+[Explore HTML to PDF Conversion in Node.js](https://ironpdf.com/nodejs/tutorials/html-to-pdf/?utm_source=github "Learn More")
 
 ## Code
 

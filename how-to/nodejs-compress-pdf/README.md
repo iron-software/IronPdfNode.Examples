@@ -1,6 +1,6 @@
 # How to Compress PDF Files in Node.js
 
-> Full guide: [How to Compress PDF Files Using Node.js](https://ironpdf.com/nodejs/how-to/nodejs-compress-pdf/)
+> Full guide: [How to Compress PDF Files Using Node.js](https://ironpdf.com/nodejs/how-to/nodejs-compress-pdf/?utm_source=github)
 
 Large PDF files slow down file transfers, inflate storage costs, and degrade performance in document-heavy applications. IronPDF for Node.js provides the `compressSize` method, which reduces embedded image quality and optionally rescales images to their visible dimensions in the document, often cutting file size by 50% or more without changing the document structure.
 

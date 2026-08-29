@@ -1,6 +1,6 @@
 # Add Headers/Footers on Specific Pages
 
-> Full guide: [Add Headers/Footers on Specific Pages](https://ironpdf.com/nodejs/examples/adding-headers-and-footers-advanced/)
+> Full guide: [Add Headers/Footers on Specific Pages](https://ironpdf.com/nodejs/examples/adding-headers-and-footers-advanced/?utm_source=github)
 
 Incorporating headers and footers into both new and existing PDFs can be achieved using IronPDF. 
 
@@ -16,7 +16,7 @@ Here is how you might apply headers and footers to your PDFs using IronPDF:
 
 Further details can specify in the second parameter which involves designating the page number where the header or footer should appear. This can be set to a specific page, multiple pages, or to "all" pages. Absence of a specified page number will default the application of the header or footer to every page.
 
-[Explore Advanced Header & Footer PDF Examples](https://ironpdf.com/examples/adding-headers-and-footers-advanced)
+[Explore Advanced Header & Footer PDF Examples](https://ironpdf.com/examples/adding-headers-and-footers-advanced?utm_source=github)
 
 ## Code
 

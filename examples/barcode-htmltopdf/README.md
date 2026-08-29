@@ -1,6 +1,6 @@
 # Add Barcodes in HTML to PDF
 
-> Full guide: [Add Barcodes in HTML to PDF](https://ironpdf.com/nodejs/examples/barcode-htmltopdf/)
+> Full guide: [Add Barcodes in HTML to PDF](https://ironpdf.com/nodejs/examples/barcode-htmltopdf/?utm_source=github)
 
 Barcodes can be integrated into PDF documents, whether they are newly created or pre-existing ones. You can utilize the `stampBarcode` method to embed a barcode into a PDF. This method primarily requires the data that the barcode will represent.
 
@@ -25,7 +25,7 @@ In addition to the mandatory input, a customizable barcode configuration option 
 - **`heightPx`**: Defines the barcode's height in pixels.
 - **`widthPx`**: Specifies the barcode's width in pixels.
 
-For detailed guidance on managing PDFs and barcodes, you can visit the [IronPDF Documentation](https://ironpdf.com/docs/). To explore additional libraries from Iron Software, such as [IronBarcode for barcode generation](https://ironsoftware.com/csharp/barcode/), which can enhance your project capabilities, click on the link provided.
+For detailed guidance on managing PDFs and barcodes, you can visit the [IronPDF Documentation](https://ironpdf.com/docs/?utm_source=github). To explore additional libraries from Iron Software, such as [IronBarcode for barcode generation](https://ironsoftware.com/csharp/barcode/?utm_source=github), which can enhance your project capabilities, click on the link provided.
 
 [Learn to Add Barcodes to PDFs with IronPDF for Node.js](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/barcode-htmltopdf)
 

@@ -1,6 +1,6 @@
 # Passwords, Security & Metadata
 
-> Full guide: [Passwords, Security & Metadata](https://ironpdf.com/nodejs/examples/security-and-metadata/)
+> Full guide: [Passwords, Security & Metadata](https://ironpdf.com/nodejs/examples/security-and-metadata/?utm_source=github)
 
 IronPDF provides powerful functionalities for PDF encryption, decryption, metadata manipulation, and permission settings including options for annotations, content copying and pasting, form fields, and printing access.
 
@@ -12,7 +12,7 @@ You can also establish specific permissions by creating a permission object with
 
 For saving changes, the `saveAs` method allows you to set `ownerPassword` and `userPassword` attributes accordingly.
 
-For a comprehensive understanding of what IronPDF can do, you can visit the [IronPDF product page](https://ironpdf.com) or find out more about Iron Software at their [homepage](https://ironsoftware.com).
+For a comprehensive understanding of what IronPDF can do, you can visit the [IronPDF product page](https://ironpdf.com?utm_source=github) or find out more about Iron Software at their [homepage](https://ironsoftware.com?utm_source=github).
 
 [Explore Security & Metadata Examples on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/security-and-metadata) for practical implementations and further insights.
 

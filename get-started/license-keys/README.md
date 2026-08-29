@@ -1,13 +1,13 @@
 # Implementing IronPDF License Key in Node.js Projects
 
-> Full guide: [Implementing IronPDF License Key in Node.js Projects](https://ironpdf.com/get-started/license-keys/)
+> Full guide: [Implementing IronPDF License Key in Node.js Projects](https://ironpdf.com/get-started/license-keys/?utm_source=github)
 
 
 ## Obtaining a License Key
 
 Implementing an IronPDF license key removes the trial limitations such as watermarks and allows your Node.js projects to go live without any restrictions.
 
-Acquire your IronPDF license by [purchasing directly](https://ironpdf.com/nodejs/licensing/) or opting for a [free 30-day trial of IronPDF](https://ironpdf.com/nodejs/licensing/).
+Acquire your IronPDF license by [purchasing directly](https://ironpdf.com/nodejs/licensing/?utm_source=github) or opting for a [free 30-day trial of IronPDF](https://ironpdf.com/nodejs/licensing/?utm_source=github).
 
 ## Configuring Your License Key
 
@@ -24,4 +24,4 @@ IronPdfGlobalConfig.getConfig().licenseKey = "{YOUR-LICENSE-KEY-HERE}";
 
 ## Additional Support or Questions?
 
-Should you require further assistance or if you have any questions, our dedicated support team is ready to help you. Feel free to [reach out to our support staff](https://ironpdf.com/#live-chat-support).
+Should you require further assistance or if you have any questions, our dedicated support team is ready to help you. Feel free to [reach out to our support staff](https://ironpdf.com/?utm_source=github#live-chat-support).

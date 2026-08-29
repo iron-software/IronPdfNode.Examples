@@ -1,6 +1,6 @@
 # Digital Signatures
 
-> Full guide: [Digital Signatures](https://ironpdf.com/nodejs/examples/digitally-sign-a-pdf/)
+> Full guide: [Digital Signatures](https://ironpdf.com/nodejs/examples/digitally-sign-a-pdf/?utm_source=github)
 
 Applying a digital signature to a PDF starts by uploading an existing PDF file.
 
@@ -15,7 +15,7 @@ In this scenario:
 
 After the digital signature is in place, you can distribute the signed PDF file by using the `saveAs` method. This document is now securely authenticated.
 
-For additional guidance on this functionality within IronPDF, visit the [IronPDF digital signature documentation](https://ironpdf.com/docs/).
+For additional guidance on this functionality within IronPDF, visit the [IronPDF digital signature documentation](https://ironpdf.com/docs/?utm_source=github).
 
 [Explore Code: Digitally Sign a PDF with IronPDF](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/digitally-sign-a-pdf)
 

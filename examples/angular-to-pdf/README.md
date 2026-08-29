@@ -1,6 +1,6 @@
 # Angular.JS to PDF
 
-> Full guide: [Angular.JS to PDF](https://ironpdf.com/nodejs/examples/angular-to-pdf/)
+> Full guide: [Angular.JS to PDF](https://ironpdf.com/nodejs/examples/angular-to-pdf/?utm_source=github)
 
 Use the `fromUrl` method from IronPDF to create a PDF from a webpage. This method converts web content to a PDF almost instantly, but it may encounter issues with JavaScript or fonts not loading properly. To prevent this, employ the `WaitFor` class, setting an appropriate wait condition and maximum duration.
 
@@ -31,7 +31,7 @@ The snippet below generates a PDF from a webpage using IronPDF, with waiting str
 
 This methodology confirms that the PDF created mirrors the original web content accurately, including all dynamically loaded scripts and font styles.
 
-[Explore Angular to PDF Conversion Code Example](https://ironpdf.com/git-hub.com/iron-software/IronPdfNode.Examples/tree/main/examples/angular-to-pdf)
+[Explore Angular to PDF Conversion Code Example](https://ironpdf.com/git-hub.com/iron-software/IronPdfNode.Examples/tree/main/examples/angular-to-pdf?utm_source=github)
 
 ## Code
 

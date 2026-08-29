@@ -1,6 +1,6 @@
 # Responsive HTML to PDF
 
-> Full guide: [Responsive HTML to PDF](https://ironpdf.com/nodejs/examples/viewport/)
+> Full guide: [Responsive HTML to PDF](https://ironpdf.com/nodejs/examples/viewport/?utm_source=github)
 
 Regarding viewport settings, IronPDF offers features like CSS media and paper mode to enhance PDF rendering.
 
@@ -9,7 +9,7 @@ Through the CSS media feature of IronPDF, you can dictate the application of sty
 - **Screen**: This setting applies styles that are best for viewing on digital screens, emphasizing aesthetics such as color schemes and layouts that are attractive on computer displays.
 - **Print**: This setting gears the style application towards output suitable for physical printing, hence optimizing CSS rules to enhance readability and proper layout on printed media like paper.
 
-In addition to these settings, the [IronPDF's Paper Sizing Options](https://ironpdf.com/examples/custom-pdf-paper-size/) adjust how content fits on the PDF pages and includes several configurations:
+In addition to these settings, the [IronPDF's Paper Sizing Options](https://ironpdf.com/examples/custom-pdf-paper-size/?utm_source=github) adjust how content fits on the PDF pages and includes several configurations:
 
 - `ContinuousFeed`: Ideal for continuous feed printers which print on paper rolls. It's commonly utilized in specific industrial print settings.
 - `FitToHeight`: This setting scales the content to a specific height while preserving the aspect ratio, ensuring content visibility without any overflow.

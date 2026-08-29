@@ -1,6 +1,6 @@
 # Images To PDF
 
-> Full guide: [Images To PDF](https://ironpdf.com/nodejs/examples/image-to-pdf/)
+> Full guide: [Images To PDF](https://ironpdf.com/nodejs/examples/image-to-pdf/?utm_source=github)
 
 To create a PDF document from a single image, use the `PdfGenerator.imageToPdf` method with the image file path as an input, then export the generated PDF.
 
@@ -26,9 +26,9 @@ When dealing with multiple images, an array of file paths is employed. Here is a
 5. **PDF Storage**:
    - The `saveAs` function is employed to store the newly created PDF under the name `composite.pdf`.
 
-For additional information on processing images into PDFs with IronPDF, check the [IronPDF product page](https://ironpdf.com).
+For additional information on processing images into PDFs with IronPDF, check the [IronPDF product page](https://ironpdf.com?utm_source=github).
 
-<a href="https://ironpdf.com/python/how-to/python-pdf-to-image/" class="code_content__related-link__doc-cta-link">Check Out the Python PDF to Image Conversion Guide</a>
+<a href="https://ironpdf.com/python/how-to/python-pdf-to-image/?utm_source=github" class="code_content__related-link__doc-cta-link">Check Out the Python PDF to Image Conversion Guide</a>
 
 ## Code
 

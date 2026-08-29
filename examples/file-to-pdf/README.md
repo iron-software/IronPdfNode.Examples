@@ -1,6 +1,6 @@
 # HTML Files to PDF
 
-> Full guide: [HTML Files to PDF](https://ironpdf.com/nodejs/examples/file-to-pdf/)
+> Full guide: [HTML Files to PDF](https://ironpdf.com/nodejs/examples/file-to-pdf/?utm_source=github)
 
 ### Transforming HTML into PDF with IronPDF
 
@@ -19,9 +19,9 @@ Here's how to implement this conversion in Node.js:
 
 Once the HTML is rendered into PDF format, the document can be preserved using the `saveAs` method, storing it as 'output.pdf' either in the default directory or any custom path you define.
 
-For additional insights on using IronPDF to craft and edit PDF documents, browse the extensive IronPDF documentation available on [Iron Software's official website](https://ironpdf.com/docs/).
+For additional insights on using IronPDF to craft and edit PDF documents, browse the extensive IronPDF documentation available on [Iron Software's official website](https://ironpdf.com/docs/?utm_source=github).
 
-[Explore detailed HTML to PDF conversion tutorials](https://ironpdf.com/nodejs/tutorials/html-to-pdf/)
+[Explore detailed HTML to PDF conversion tutorials](https://ironpdf.com/nodejs/tutorials/html-to-pdf/?utm_source=github)
 
 ## Code
 

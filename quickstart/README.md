@@ -1,13 +1,13 @@
 # IronPDF for Node.js - Create, Edit, and Read PDFs in Node.js Scripts
 
-> Docs: [IronPDF for Node.js documentation](https://ironpdf.com/nodejs/docs/)
+> Docs: [IronPDF for Node.js documentation](https://ironpdf.com/nodejs/docs/?utm_source=github)
 
 
 IronPDF offers a PDF library designed to simplify the creation and customization of PDF documents programmatically with Node.js.
 
 Developed by Iron Software, IronPDF is part of a suite of high-end document processing libraries that are continually evolving to meet developer needs.
 
-For additional platform support, IronPDF is also compatible with [C# and VB.NET in .NET](https://ironpdf.com/), [Java PDF Library](https://ironpdf.com/java/), and [Python PDF Library](https://ironpdf.com/python/).
+For additional platform support, IronPDF is also compatible with [C# and VB.NET in .NET](https://ironpdf.com/?utm_source=github), [Java PDF Library](https://ironpdf.com/java/?utm_source=github), and [Python PDF Library](https://ironpdf.com/python/?utm_source=github).
 
 ## Key Features of IronPDF for Node.js
 
@@ -16,7 +16,7 @@ For additional platform support, IronPDF is also compatible with [C# and VB.NET 
 3. Protect your PDF documents with encryption, passwords, digital signatures, and metadata.
 4. Supports full multithreading and asynchronous operations to maximize performance in essential applications.
 
-Explore more than [50 advanced functionalities for PDF manipulation](https://ironpdf.com/features/) that IronPDF offers.
+Explore more than [50 advanced functionalities for PDF manipulation](https://ironpdf.com/features/?utm_source=github) that IronPDF offers.
 
 ## Getting Started with IronPDF for Node.js
 
@@ -137,6 +137,6 @@ import { PdfDocument } from "@ironsoftware/ironpdf";
 
 ## Licensing & Support Available
 
-[Acquire a production license for IronPDF](https://ironpdf.com/licensing), or [apply for a free trial](https://ironpdf.com/trial-license) to evaluate IronPDF before purchasing.
+[Acquire a production license for IronPDF](https://ironpdf.com/licensing?utm_source=github), or [apply for a free trial](https://ironpdf.com/trial-license?utm_source=github) to evaluate IronPDF before purchasing.
 
-For further assistance and queries, please reach out to [our support team](https://ironpdf.com/#live-chat-support).
+For further assistance and queries, please reach out to [our support team](https://ironpdf.com/?utm_source=github#live-chat-support).

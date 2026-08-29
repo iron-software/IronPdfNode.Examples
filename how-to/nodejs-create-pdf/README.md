@@ -1,6 +1,6 @@
 # How to Create PDF Files in Node.js
 
-> Full guide: [How to Create PDF Files in Node.js](https://ironpdf.com/nodejs/how-to/nodejs-create-pdf/)
+> Full guide: [How to Create PDF Files in Node.js](https://ironpdf.com/nodejs/how-to/nodejs-create-pdf/?utm_source=github)
 
 Creating PDF files programmatically in Node.js requires a library that handles HTML rendering accurately, supports modern CSS, and fits Node's async patterns. IronPDF uses a Chromium-based rendering engine to convert HTML into PDFs that match Chrome's print output, supporting full CSS, inline JavaScript, and responsive layouts.
 

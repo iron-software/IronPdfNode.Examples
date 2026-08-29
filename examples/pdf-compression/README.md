@@ -1,6 +1,6 @@
 # PDF Compression
 
-> Full guide: [PDF Compression](https://ironpdf.com/nodejs/examples/pdf-compression/)
+> Full guide: [PDF Compression](https://ironpdf.com/nodejs/examples/pdf-compression/?utm_source=github)
 
 IronPDF provides a solution for efficiently compressing PDF documents. A principal technique in this process involves downsizing the embedded images in the PDF file using the `compressSize` method available on the PDF object.
 

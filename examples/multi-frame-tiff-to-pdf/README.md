@@ -1,6 +1,6 @@
 # TIFF to PDF with Multi-Page Support
 
-> Full guide: [TIFF to PDF with Multi-Page Support](https://ironpdf.com/nodejs/examples/multi-frame-tiff-to-pdf/)
+> Full guide: [TIFF to PDF with Multi-Page Support](https://ironpdf.com/nodejs/examples/multi-frame-tiff-to-pdf/?utm_source=github)
 
 Transforming a TIFF image to a PDF is straightforward and can be achieved with just a single line of code.
 
@@ -10,7 +10,7 @@ Moreover, the function is capable of handling an image buffer. This feature is p
 
 The following example converts a TIFF, or any other supported image file, into a PDF. `PdfGenerator.imageToPdf` reads the image data and returns a PDF document, which is then written to disk.
 
-[Explore how to Convert PDFs to Images using Python](https://ironpdf.com/python/how-to/python-pdf-to-image/)
+[Explore how to Convert PDFs to Images using Python](https://ironpdf.com/python/how-to/python-pdf-to-image/?utm_source=github)
 
 ## Code
 

@@ -1,6 +1,6 @@
 # Stamping New Content
 
-> Full guide: [Stamping New Content](https://ironpdf.com/nodejs/examples/stamping-new-content/)
+> Full guide: [Stamping New Content](https://ironpdf.com/nodejs/examples/stamping-new-content/?utm_source=github)
 
 Using HTML stamping, you can insert an HTML snippet that allows for detailed control over its appearance via inline CSS. Below is an example where images are embedded directly in the HTML and then stamped onto the document.
 
