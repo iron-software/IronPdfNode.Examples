@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "IronPDF for Node.js example: HTML headers and footers.",
     "main": "src/program.js",
+    "type": "module",
     "keywords": [
         "ironpdf",
         "pdf",

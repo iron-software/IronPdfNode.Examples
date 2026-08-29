@@ -1,10 +1,12 @@
-> Full guide: [Digitally sign a PDF](https://ironpdf.com/examples/digitally-sign-a-pdf/)
+# Digital Signatures
+
+> Full guide: [Digital Signatures](https://ironpdf.com/nodejs/examples/digitally-sign-a-pdf/)
 
 Applying a digital signature to a PDF starts by uploading an existing PDF file.
 
 To digitize a signature, utilize the `signDigitalSignature` method. This function will need the digital certificate's file path and the password used to authorize the document. You also have the option to add further details such as the signing reason and the geographical location.
 
-Below is an example of implementing a digital signature with IronPDF in C#:
+Below is an example of applying a digital signature with IronPDF for Node.js:
 
 In this scenario:
 - Begin by loading the PDF you need to sign using `PdfDocument.FromFile`.
@@ -16,3 +18,35 @@ After the digital signature is in place, you can distribute the signed PDF file 
 For additional guidance on this functionality within IronPDF, visit the [IronPDF digital signature documentation](https://ironpdf.com/docs/).
 
 [Explore Code: Digitally Sign a PDF with IronPDF](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/digitally-sign-a-pdf)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Step 1. Import a PDF
+const pdf = await PdfDocument.open("sample.pdf");
+
+    // Step 2. Sign the PDF with digital certificate
+    await pdf.signDigitalSignature({
+        certificatePath: "IronSoftware.pfx",
+        certificatePassword: "123456",
+        signingReason: "To show how to sign a PDF",
+        signingLocation: "Chicago, USA",
+        signatureImage: {
+            SignatureImagePath: "logo.png"
+        }
+    });
+
+    //Step 3. The PDF is not signed until saved to file.
+await pdf.saveAs("signed.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

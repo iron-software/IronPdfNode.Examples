@@ -1,4 +1,6 @@
-> Full guide: [PDF cover page](https://ironpdf.com/examples/pdf-cover-page/)
+# Attach a Cover Page
+
+> Full guide: [Attach a Cover Page](https://ironpdf.com/nodejs/examples/pdf-cover-page/)
 
 A cover page significantly enhances the appeal and presentation of a PDF document, often being the first page that a viewer encounters. It typically contains key details such as the title of the document, author information, logos, and other branding elements. This page not only visually identifies the document but also boosts the brand presence for businesses and organizations.
 
@@ -8,13 +10,38 @@ Creating a separate cover page and incorporating it into a PDF document is strai
 
 The following example illustrates how to accomplish this task:
 
-```csharp
-// Example: Adding a cover page to an existing PDF
-// Full preparation includes detailing paths and naming specifications
-
-// Code to set up and execute the PDF merge operation
-```
-
 To customize this process for your documents, adapt the script to match your specific file paths and naming standards. This method is both effective and efficient for producing PDFs with professional-looking cover pages.
 
 [Explore PDF Cover Page Code Example on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/pdf-cover-page)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    /* Cover Page */
+    // Create a sample cover page using fromHtml method
+    const coverHtml = "<h1>This is Cover Page</h1>";
+    const cover = await PdfDocument.fromHtml(coverHtml);
+
+    /* Main Document */
+    // As we have a Cover Page, we're going to start the page numbers at 2.
+    // Downloaded & Converted to PDF in Just One Line!
+    const pdfUrl = "https://www.nuget.org/packages/IronPdf/";
+    const pdf = await PdfDocument.fromUrl(pdfUrl, { firstPageNumber: 2 });
+
+    // Only ONE Line command to merge two PDFs.
+    const combinedPdf = await PdfDocument.mergePdf([cover, pdf]);
+
+    // Save the merged PDF
+    await combinedPdf.saveAs("combined.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

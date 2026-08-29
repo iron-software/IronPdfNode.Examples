@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "IronPDF for Node.js example: Rasterize A PDF to images.",
     "main": "src/program.js",
+    "type": "module",
     "keywords": [
         "ironpdf",
         "pdf",

@@ -1,4 +1,6 @@
-> Full guide: [JavaScript HTML to PDF](https://ironpdf.com/examples/javascript-html-to-pdf/)
+# JavaScript in HTML To PDF
+
+> Full guide: [JavaScript in HTML To PDF](https://ironpdf.com/nodejs/examples/javascript-html-to-pdf/)
 
 All JavaScript code embedded in HTML, be it delivered as a string, from a file, or via a URL, will execute when converted to a PDF document.
 
@@ -16,3 +18,36 @@ Below is a straightforward guide to enabling JavaScript execution using IronPDF:
 For more examples and in-depth discussion on managing various JavaScript scenarios with IronPDF, see the [JavaScript Code Examples page](https://ironpdf.com/examples/javascript-html-to-pdf/).
 
 [Explore JavaScript to PDF Examples on GitHub Now!](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/javascript-html-to-pdf)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Define the JavaScript code to change text color to red
+    const htmlWithJavaScript = `<h1>This is HTML</h1>
+    <script>
+        document.write('<h1>This is JavaScript</h1>');
+        window.ironpdf.notifyRender();
+    </script>`;
+
+    // Create rendering options object
+    const renderOptions = {
+        enableJavaScript: true,
+    };
+
+    // Render HTML content to a PDF
+    const pdf = await PdfDocument.fromHtml(htmlWithJavaScript, { renderOptions });
+
+    // Save the PDF with the executed JavaScript
+    await pdf.saveAs("javascript-in-html.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

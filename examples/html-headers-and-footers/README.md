@@ -1,4 +1,6 @@
-> Full guide: [HTML headers and footers](https://ironpdf.com/examples/html-headers-and-footers/)
+# Add HTML Headers & Footers
+
+> Full guide: [Add HTML Headers & Footers](https://ironpdf.com/nodejs/examples/html-headers-and-footers/)
 
 Set up headers and footers for PDF documents using IronPDF's capabilities, a suite from Iron Software designed for sophisticated PDF creation and editing.
 
@@ -8,47 +10,54 @@ It's critical to adjust the margins since the heights of the header and footer a
 
 For more elaboration on implementing headers and footers or to look at additional functionalities, visit the [IronPDF Official Website](https://ironpdf.com).
 
-```csharp
-using IronPdf;
+Access further code examples on HTML headers and footers in IronPDF through this GitHub link: [Explore HTML Headers & Footers Code Example on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/html-headers-and-footers).
 
-class Program
-{
-    static void Main()
-    {
-        // Instantiate a PDF renderer
-        var pdfRenderer = new HtmlToPdf();
+## Code
 
-        // Set up the header with HTML content and styling
-        string headerHtml = "<div style='width:100%; border-bottom:1px solid black; text-align:center;'>Header Content</div>";
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
 
-        // Set up the footer with HTML content and styling
-        string footerHtml = "<div style='width:100%; border-top:1px solid black; text-align:center;'>Footer Content</div>";
+(async () => {
+    // Configure render options
+    const renderOptions = {
+        firstPageNumber: 1, // Use 2 if a cover page will be appended
 
-        // Assign header configuration with specified height
-        pdfRenderer.PrintOptions.Header = new SimpleHeaderFooter()
-        {
-            HtmlFragment = headerHtml,
-            MaxHeight = 50  // Define the header height
-        };
+        // Build a footer using html to style the text
+        // mergeable fields are:
+        // {page} {total-pages} {url} {date} {time} {html-title} & {pdf-title}
+        htmlFooter: {
+            maxHeight: 15, //millimeters
+            htmlFragment: "<center><i>{page} of {total-pages}</i></center>",
+            dividerLine: true,
+        },
 
-        // Assign footer configuration with specified height
-        pdfRenderer.PrintOptions.Footer = new SimpleHeaderFooter()
-        {
-            HtmlFragment = footerHtml,
-            MaxHeight = 50 // Define the footer height
-        };
+        // Build a header using an image asset
+        htmlHeader: {
+            maxHeight: 15, //millimeters
+            htmlFragment: "<img src='logo.png'>",
+        },
 
-        // Adjust page margins to fit the header and footer without overlapping content
-        pdfRenderer.PrintOptions.MarginTop = 60;   // Top margin for the header
-        pdfRenderer.PrintOptions.MarginBottom = 60; // Bottom margin for the footer
+        // Use sufficient margin.bottom to ensure that the htmlFooter does not overlap with the main PDF page content.
+        margin: {
+            top: 25, // Create 25mm space for the header
+            bottom: 25, // Create 25mm space for the footer
+        },
+    };
 
-        // Execute HTML to PDF conversion
-        var pdfDocument = pdfRenderer.RenderHtmlAsPdf("<h1>Main Content</h1><p>This is some example content.</p>");
+    // The guide's snippet stops at the options object and never applies it.
+    // Render a document with those options and save it.
+    const pdf = await PdfDocument.fromHtml(
+        "<h1>Report</h1><p>Body content.</p>",
+        { renderOptions }
+    );
 
-        // Save the generated PDF
-        pdfDocument.SaveAs("output.pdf");
-    }
-}
+    await pdf.saveAs("html-headers-and-footers.pdf");
+})();
 ```
 
-Access further code examples on HTML headers and footers in IronPDF through this GitHub link: [Explore HTML Headers & Footers Code Example on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/html-headers-and-footers).
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

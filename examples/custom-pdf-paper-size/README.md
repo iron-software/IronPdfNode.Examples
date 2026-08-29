@@ -1,4 +1,6 @@
-> Full guide: [Custom PDF paper size](https://ironpdf.com/examples/custom-pdf-paper-size/)
+# Custom PDF Size
+
+> Full guide: [Custom PDF Size](https://ironpdf.com/nodejs/examples/custom-pdf-paper-size/)
 
 This example demonstrates how to set a specific paper size when converting HTML to a PDF file.
 
@@ -21,3 +23,37 @@ Once the PDF is rendered, save the document using the custom size with the `save
 - Lastly, `SaveAs` commits the newly created PDF file to the `outputPath`.
 
 View and experiment with the custom PDF page size example on GitHub by following this [link](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/custom-pdf-paper-size).
+
+## Code
+
+```js
+import {PdfDocument, PaperSizeUnit} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Define the HTML content
+    const html = `<p>Lorem ipsum dolor sit amet...</p>`;
+
+    // Configure render options
+    const options = {
+        // Set the paper size to custom (5x5 inches)
+        paperSize: {
+            unit: PaperSizeUnit.Inch,
+            height: 5,
+            width: 5,
+        },
+    };
+
+    // Render HTML content to a PDF
+    const pdf = await PdfDocument.fromHtml(html, { renderOptions: options });
+
+    // Save the PDF with the custom paper size
+    await pdf.saveAs("customPaperSize.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

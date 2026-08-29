@@ -1,4 +1,6 @@
-> Full guide: [Merge PDFs](https://ironpdf.com/examples/merge-pdfs/)
+# Merge Two or More PDFs
+
+> Full guide: [Merge Two or More PDFs](https://ironpdf.com/nodejs/examples/merge-pdfs/)
 
 The script outlined here simplifies the combination of various PDF documents, derived from different HTML sources, into one consolidated PDF file.
 
@@ -16,3 +18,38 @@ Merging is not limited to documents just produced: existing PDF files go through
 This approach is ideal for amalgamating PDFs sourced from diverse origins or existing documents, simplifying the process of document management.
 
 [Explore Code Example: Merge PDFs with IronPDF for Node.js](https://ironpdf.com/github.com/iron-software/IronPdfNode.Examples/tree/main/examples/merge-pdfs)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    const html_a = `<p> [PDF_A] </p>
+    <p> [PDF_A] 1st Page </p>
+    <div style='page-break-after: always;'></div>
+    <p> [PDF_A] 2nd Page</p>`;
+
+    const html_b = `<p> [PDF_B] </p>
+    <p> [PDF_B] 1st Page </p>
+    <div style='page-break-after: always;'></div>
+    <p> [PDF_B] 2nd Page</p>`;
+
+    // Render HTML content to PDF documents
+    const pdfdoc_a = await PdfDocument.fromHtml(html_a);
+    const pdfdoc_b = await PdfDocument.fromHtml(html_b);
+
+    // Merge the two PDF documents
+    const merged = await PdfDocument.mergePdf([pdfdoc_a, pdfdoc_b]);
+
+    // Save the merged PDF
+    await merged.saveAs("Merged.pdf");  
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

@@ -1,4 +1,6 @@
-> Full guide: [Set custom margins](https://ironpdf.com/nodejs/examples/set-custom-margins/)
+# Set Custom Margins
+
+> Full guide: [Set Custom Margins](https://ironpdf.com/nodejs/examples/set-custom-margins/)
 
 Adjusting margins with IronPDF is a simple and efficient process.
 
@@ -23,3 +25,32 @@ Below is a practical code snippet that illustrates how to configure margins:
 These steps illustrate how you can tailor the margins in your PDF documents, aiding you in crafting well-structured PDFs through IronPDF.
 
 [Explore IronPDF Custom Margin Code Example on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/set-custom-margins)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    const options = {
+        margin: {
+            top: 40,
+            left: 20,
+            right: 20,
+            bottom: 40,
+        },
+    };
+    // Render HTML file to PDF
+    const pdf = await PdfDocument.fromHtml("my-content.html", { renderOptions: options });
+
+    // Save the PDF
+    await pdf.saveAs("my-content.pdf");
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "IronPDF for Node.js example: PDF page orientation.",
     "main": "src/program.js",
+    "type": "module",
     "keywords": [
         "ironpdf",
         "pdf",

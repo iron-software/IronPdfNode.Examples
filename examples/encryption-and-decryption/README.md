@@ -1,6 +1,8 @@
-> Full guide: [Encryption and decryption](https://ironpdf.com/examples/encryption-and-decryption/)
+# PDF Encryption & Decryption
 
-This example illustrates how to update metadata, transform a PDF to read-only mode, adjust permissions, and modify the document's encryption password with the C# .NET library provided by IronPDF.
+> Full guide: [PDF Encryption & Decryption](https://ironpdf.com/nodejs/examples/encryption-and-decryption/)
+
+This example illustrates how to update metadata, transform a PDF to read-only mode, adjust permissions, and modify the document's encryption password with IronPDF for Node.js.
 
 Start by loading an existing PDF through the `open` method. This function can also access password-protected files if you supply the password as its second argument, ensuring solid management of secure files.
 
@@ -12,48 +14,52 @@ Set up the permissions for the PDF using a newly defined permissions object. Thi
 
 Lastly, update or establish a new document encryption password to "my-password" and save the altered PDF as "secured.pdf". This example underlines the capabilities of IronPDF in ensuring the security and management of documents in application development.
 
-```csharp
-// Include the required namespace from IronPdf.
-using IronPdf;
+[Explore more about PDF Encryption & Decryption with IronPDF](https://ironpdf.com/examples/encryption-and-decryption)
 
-class EncryptPdfExample
-{
-    static void Main()
-    {
-        // Load an existing PDF file, enter password if the document is secured.
-        var pdfDocument = IronPdf.PdfDocument.FromFile("original.pdf", "secure-password");
+## Code
 
-        // Set up new metadata for the PDF.
-        var metadataInfo = new Dictionary<string, string>
-        {
-            { "Author", "Updated Author" },
-            { "Keywords", "PDF, Edit, Metadata" }
-        };
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
 
-        // Update the PDF's metadata with the newly defined information.
-        pdfDocument.OverrideMetadata(metadataInfo);
+(async () => {
+    // Import a PDF document or create a new PDF from Html
+    const pdf = await PdfDocument.open("encrypted.pdf", {
+        // A password is a PdfPassword object, not a bare string: passing
+        // "password" here fails validation with "Expected object, received string".
+        password: { userPassword: "password" },
+    });
+    
+    // Create an empty Map
+    const newMetadata = new Map();
 
-        // Clear all existing passwords and encryption settings.
-        pdfDocument.RemovePasswordsAndEncryption();
+    // Add key-value pairs of metadata
+    newMetadata.set("Author", "Satoshi Nakamoto");
+    newMetadata.set("Keywords", "SEO, Friendly");
 
-        // Configure the PDF to be read-only by setting a new password.
-        pdfDocument.MakePdfDocumentReadOnly("new-read-only-password");
+    await pdf.overrideMetadata(newMetadata);
 
-        // Define new permissions for the PDF document.
-        var documentPermissions = new PdfPermissions
-        {
-            AllowAnnotations = false,
-            AllowContentExtraction = false,
-            AllowFormFilling = true,
-            AllowPrinting = false,
-            AllowDocumentAssembly = false
-        };
-        pdfDocument.SetPermissions(documentPermissions);
+    await pdf.removePasswordsAndEncryption();
+    // Make PDF read-only
+    await pdf.makePdfDocumentReadOnly("secret-key");
 
-        // Set a new encryption password for the document.
-        pdfDocument.SaveAs("secured-update.pdf", "new-password"); // Save the document with updated security settings.
-    }
-}
+    // Configure permissions
+    const permissions = {
+        AllowAnnotations: false,
+        AllowExtractContent: false,
+        AllowFillForms: false,
+        AllowPrint: true,
+    };
+
+    await pdf.setPermission(permissions);
+    
+    // Change or set the document encrpytion password
+    await pdf.saveAs("secured.pdf", {userPassword:"my-password"});
+})();
 ```
 
-[Explore more about PDF Encryption & Decryption with IronPDF](https://ironpdf.com/examples/encryption-and-decryption)
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

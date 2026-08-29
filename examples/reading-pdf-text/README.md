@@ -1,4 +1,6 @@
-> Full guide: [Reading PDF text](https://ironpdf.com/examples/reading-pdf-text/)
+# Read PDF Text and Images in Node.js
+
+> Full guide: [Read PDF Text and Images in Node.js](https://ironpdf.com/nodejs/examples/reading-pdf-text/)
 
 Facilitating data migration through the extraction of text and images from documents makes transitioning between formats smoother. It ensures content remains accessible and editable, mitigating the risk of data loss.
 
@@ -8,27 +10,43 @@ To extract text, utilize the `extractText` method, and for image extraction, use
 
 Below is an enhanced and commented example of how to perform these tasks:
 
-```csharp
-// Load the PDF document using IronPDF
-var Pdf = new IronPdf.PdfDocument("example.pdf");
-
-// Extract text from PDF and print to console
-string textContent = Pdf.ExtractText();
-Console.WriteLine(textContent);
-
-// Extract images and save them to the file system
-var images = Pdf.ExtractImages();
-foreach (var image in images)
-{
-    image.SaveAs($"image-{images.IndexOf(image)}.png"); // Save each image with a unique name
-}
-```
-
-In this C# example:
+In this example:
 - We employ the IronPDF library to open a specific PDF file.
-- The `ExtractText()` method is called to extract text, which is then displayed in the console.
-- The `ExtractImages()` method is used for pulling images out of the PDF, which are then saved as byte arrays. Each image is filed individually with its designated name.
+- `extractText()` pulls the text out as a string, which is then written to the console.
+- `extractRawImages()` returns the embedded images as buffers, each of which is then written to its own file.
 
 For more extensive guidelines on these methods, be sure to check the [IronPDF Documentation](https://ironpdf.com/docs/).
 
 [Explore More on Reading PDF Text with IronPDF](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/reading-pdf-text)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Extracting Image and Text content from Pdf Documents
+    // Import existing PDF document
+    const pdf = await PdfDocument.fromFile("old_report.pdf");
+    
+    // Get all text to put in a search index
+    const text = await pdf.extractText();
+    
+    // Get all Images
+    const imagesBuffer = await pdf.extractRawImages();
+    
+    const pageCount = await pdf.getPageCount()
+    // Or even find the precise text and images for each page in the document
+    for (let index = 0; index < pageCount; index++) {
+        text = await pdf.extractText([index]);
+        imagesBuffer = await pdf.extractRawImages([index]);
+    }
+})();
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

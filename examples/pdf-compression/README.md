@@ -1,4 +1,6 @@
-> Full guide: [PDF compression](https://ironpdf.com/examples/pdf-compression/)
+# PDF Compression
+
+> Full guide: [PDF Compression](https://ironpdf.com/nodejs/examples/pdf-compression/)
 
 IronPDF provides a solution for efficiently compressing PDF documents. A principal technique in this process involves downsizing the embedded images in the PDF file using the `compressSize` method available on the PDF object.
 
@@ -18,3 +20,31 @@ In this workflow:
 By varying the `imageQuality` value, you can directly influence the compression effect and resulting file size of your PDF document.
 
 [Explore PDF Compression Examples on GitHub](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/pdf-compression)
+
+## Code
+
+```js
+import {PdfDocument} from "@ironsoftware/ironpdf";
+
+(async () => {
+    // Load the existing PDF document
+    const pdf = await PdfDocument.fromFile("my-content.pdf");
+
+    // Compress images with quality parameter (1-100)
+    await pdf.compressSize(60);
+    // Save the compressed PDF
+    await pdf.saveAs("document_compressed.pdf");
+
+    // Compress images and scale down based on visible size in the PDF document
+    await pdf.compressSize(90, true);
+    // Save the scaled and compressed PDF
+    await pdf.saveAs("document_scaled_compressed.pdf");
+});
+```
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```

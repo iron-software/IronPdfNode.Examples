@@ -29,31 +29,27 @@ Utilizing these tools, developers can greatly enhance their applications, tailor
 
 This example demonstrates merging several PDF files into a single document using IronPDF in a Node.js environment.
 
-```javascript
-// Include the IronPDF library
-const { PdfDocument } = require("@ironsoftware/ironpdf");
+```js
+import { PdfDocument } from "@ironsoftware/ironpdf";
 
 // Define the function to merge PDFs
 async function mergePdfs(outputFilePath, inputFiles) {
-  // Retrieve the PDF documents
-  const pdfDocs = await Promise.all(inputFiles.map(file => PdfDocument.fromFile(file)));
+	// Retrieve the PDF documents
+	const pdfDocs = await Promise.all(inputFiles.map((file) => PdfDocument.fromFile(file)));
 
-  // Combine the PDF documents
-  const mergedPdf = await PdfDocument.mergePdf(pdfDocs);
+	// Combine the PDF documents
+	const mergedPdf = await PdfDocument.mergePdf(pdfDocs);
 
-  // Store the merged PDF at the designated output file path
-  await mergedPdf.saveAs(outputFilePath);
+	// Store the merged PDF at the designated output file path
+	await mergedPdf.saveAs(outputFilePath);
 
-  console.log(`Merged PDF is saved at ${outputFilePath}`);
+	console.log(`Merged PDF is saved at ${outputFilePath}`);
 }
 
-// Example usage of the mergePdfs function
-(async () => {
-  const inputFiles = ['file1.pdf', 'file2.pdf', 'file3.pdf'];
-  const outputFilePath = 'merged.pdf';
-  
-  await mergePdfs(outputFilePath, inputFiles);
-})();
+const inputFiles = ["file1.pdf", "file2.pdf", "file3.pdf"];
+const outputFilePath = "merged.pdf";
+
+await mergePdfs(outputFilePath, inputFiles);
 ```
 
 ### Overview:
@@ -62,12 +58,19 @@ async function mergePdfs(outputFilePath, inputFiles) {
 
 - **mergePdfs Function**: This asynchronous function accepts `outputFilePath` for storing the combined PDF and `inputFiles`, an array of files to merge.
   
-- **PDF Document Retrieval**: Each PDF mentioned in `inputFiles` is loaded using `IronPdf.PdfDocument.fromFile`, and we handle the asynchronous nature of file loading with `Promise.all()`.
+- **PDF Document Retrieval**: Each PDF mentioned in `inputFiles` is loaded using `PdfDocument.fromFile`, and we handle the asynchronous nature of file loading with `Promise.all()`.
   
-- **Combining PDFs**: We then merge the loaded documents into a single file with `IronPdf.PdfDocument.merge`.
+- **Combining PDFs**: We then merge the loaded documents into a single file with `PdfDocument.mergePdf`.
   
-- **Storing the Combined PDF**: Finally, we save the combined PDF to the given `outputFilePath` using the `toFile()` method.
+- **Storing the Combined PDF**: Finally, we save the combined PDF to the given `outputFilePath` using the `saveAs()` method.
   
 - **Executed Example**: An immediately invoked function that executes `mergePdfs` with sample files and an output path.
 
 Before running this script, ensure that you have set up both IronPDF and Node.js in your development environment.
+
+## Running This Example
+
+```shell
+npm install
+node src/program.js
+```
