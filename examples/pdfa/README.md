@@ -17,7 +17,7 @@ The `convertToPdfA` method in IronPDF enables the conversion of standard PDF doc
 
 To execute this sample, make sure IronPDF is installed in your project.
 
-[Explore the PDF/A Conversion Code Example Now!](https://ironpdf.com/github/IronPdfNode.Examples/tree/main/examples/pdfa?utm_source=github)
+[Explore the PDF/A Conversion Code Example Now!](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/pdfa)
 
 ## Code
 

@@ -137,6 +137,6 @@ import { PdfDocument } from "@ironsoftware/ironpdf";
 
 ## Licensing & Support Available
 
-[Acquire a production license for IronPDF](https://ironpdf.com/licensing?utm_source=github), or [apply for a free trial](https://ironpdf.com/trial-license?utm_source=github) to evaluate IronPDF before purchasing.
+[Acquire a production license for IronPDF](https://ironpdf.com/licensing/?utm_source=github), or [apply for a free trial](https://ironpdf.com/trial-license?utm_source=github) to evaluate IronPDF before purchasing.
 
 For further assistance and queries, please reach out to [our support team](https://ironpdf.com/?utm_source=github#live-chat-support).

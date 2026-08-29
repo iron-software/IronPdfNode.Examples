@@ -31,7 +31,7 @@ The snippet below generates a PDF from a webpage using IronPDF, with waiting str
 
 This methodology confirms that the PDF created mirrors the original web content accurately, including all dynamically loaded scripts and font styles.
 
-[Explore Angular to PDF Conversion Code Example](https://ironpdf.com/git-hub.com/iron-software/IronPdfNode.Examples/tree/main/examples/angular-to-pdf?utm_source=github)
+[Explore Angular to PDF Conversion Code Example](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/angular-to-pdf)
 
 ## Code
 

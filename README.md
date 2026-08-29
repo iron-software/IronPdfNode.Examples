@@ -168,7 +168,7 @@ import { PdfDocument } from "@ironsoftware/ironpdf"; // Import the necessary cla
 These examples demonstrate how to utilize IronPDF for creating and modifying PDF files by converting from HTML strings, URLs, and adding stamps to existing documents.
 
 ## Feature Overview
-[![IronPDF Capabilities](https://ironpdf.com/iron-nuget-assets/main/IronPDF-nodejs-readme/features-table.png)](https://ironpdf.com/iron-nuget-assets/main/IronPDF-nodejs-readme/features-table.png?utm_source=github)
+[![IronPDF Capabilities](https://raw.githubusercontent.com/iron-software/iron-nuget-assets/main/IronPDF-nodejs-readme/features-table.png)](https://raw.githubusercontent.com/iron-software/iron-nuget-assets/main/IronPDF-nodejs-readme/features-table.png)
 
 ## Licensing & Support Options
 

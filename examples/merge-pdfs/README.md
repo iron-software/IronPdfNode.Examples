@@ -17,7 +17,7 @@ Merging is not limited to documents just produced: existing PDF files go through
 
 This approach is ideal for amalgamating PDFs sourced from diverse origins or existing documents, simplifying the process of document management.
 
-[Explore Code Example: Merge PDFs with IronPDF for Node.js](https://ironpdf.com/github.com/iron-software/IronPdfNode.Examples/tree/main/examples/merge-pdfs?utm_source=github)
+[Explore Code Example: Merge PDFs with IronPDF for Node.js](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/merge-pdfs)
 
 ## Code
 

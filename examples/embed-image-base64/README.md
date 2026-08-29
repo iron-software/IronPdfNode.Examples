@@ -25,7 +25,7 @@ Here is a comprehensive tutorial on how to read an image file, convert it to a b
 
 This guide integrates the processes of reading an image, encoding it to base64 for HTML incorporation, and producing a PDF with IronPDF.
 
-[Explore the Complete Base64 Image Embedding Example](https://ironpdf.com/IronPdfNode.Examples/tree/main/examples/embed-image-base64?utm_source=github)
+[Explore the Complete Base64 Image Embedding Example](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/embed-image-base64)
 
 ## Code
 

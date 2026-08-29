@@ -489,7 +489,7 @@ PdfDocument.fromZip("./html-zip.zip", {
 
 ## Advanced HTML to PDF Generation Options
 
-The interface [`ChromePdfRenderOptions`](https://www.ironpdf.com/nodejs/object-reference/api/interfaces/ChromePdfRenderOptions.html?utm_source=github) provides Node.js developers with the capability to tailor the HTML rendering process within the IronPDF library. It offers detailed control over how PDFs look before they are rendered and addresses particular challenges in HTML-to-PDF conversions.
+The interface [`ChromePdfRenderOptions`](https://ironpdf.com/nodejs/object-reference/api/interfaces/ChromePdfRenderOptions.html?utm_source=github) provides Node.js developers with the capability to tailor the HTML rendering process within the IronPDF library. It offers detailed control over how PDFs look before they are rendered and addresses particular challenges in HTML-to-PDF conversions.
 
 IronPDF starts by rendering PDFs with a set of default `ChromePdfRenderOptions`. To access and modify these default settings, you can use the `defaultChromePdfRenderOptions` function. This allows developers to customize the PDF's appearance from the outset, ensuring precise adherence to their specific requirements.
 

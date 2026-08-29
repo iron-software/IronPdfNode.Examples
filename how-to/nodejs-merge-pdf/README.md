@@ -9,7 +9,7 @@ For those interested in generating and decoding barcodes, explore the capabiliti
 
 When it comes to OCR technology, [IronOCR for Advanced OCR Functionalities](https://ironsoftware.com/csharp/ocr/?utm_source=github) stands out for its precision in extracting information from scanned documents.
 
-For web data extraction, [IronWebScraper's Web Scraping Tools](https://ironsoftware.com/csharp/webscraper?utm_source=github) offer reliable and efficient solutions for collecting data from various online sources.
+For web data extraction, [IronWebScraper's Web Scraping Tools](https://ironsoftware.com/csharp/webscraper/?utm_source=github) offer reliable and efficient solutions for collecting data from various online sources.
 
 Automating Excel tasks is simplified with [IronXL's Excel Library](https://ironsoftware.com/csharp/excel/?utm_source=github), compatible with various platforms for both reading and writing Excel documents.
 
