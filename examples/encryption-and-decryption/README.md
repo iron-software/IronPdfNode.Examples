@@ -1,6 +1,6 @@
 > Full guide: [Encryption and decryption](https://ironpdf.com/examples/encryption-and-decryption/)
 
-This example illustrates how to update metadata, transform a PDF to read-only mode, adjust permissions, and modify the document's encryption password with the robust C# .NET library provided by IronPDF.
+This example illustrates how to update metadata, transform a PDF to read-only mode, adjust permissions, and modify the document's encryption password with the C# .NET library provided by IronPDF.
 
 Start by loading an existing PDF through the `open` method. This function can also access password-protected files if you supply the password as its second argument, ensuring solid management of secure files.
 

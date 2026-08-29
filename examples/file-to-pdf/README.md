@@ -17,6 +17,6 @@ Here's a detailed guide on implementing this conversion using C#:
 
 Once the HTML is rendered into PDF format, the document can be preserved using the `SaveAs` method, storing it as 'output.pdf' either in the default directory or any custom path you define.
 
-For additional insights on leveraging IronPDF to craft and edit PDF documents, browse the extensive IronPDF documentation available on [Iron Software's official website](https://ironpdf.com/docs/).
+For additional insights on using IronPDF to craft and edit PDF documents, browse the extensive IronPDF documentation available on [Iron Software's official website](https://ironpdf.com/docs/).
 
 [Explore detailed HTML to PDF conversion tutorials](https://ironpdf.com/nodejs/tutorials/html-to-pdf/)

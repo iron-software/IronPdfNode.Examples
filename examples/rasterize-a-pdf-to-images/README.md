@@ -7,7 +7,7 @@ The process of turning each page of a PDF into an individual image, such as JPEG
 
 For rasterizing PDF documents into images, IronPDF's PDF to Image Converter is an excellent tool. It also provides the flexibility to choose the type of image format for the output. Each resulting image file will be labeled with "_pageNumber" to reflect the page number from the original PDF document.
 
-Here’s how you can leverage IronPDF to transform a PDF into images using C#:
+Here’s how you can use IronPDF to transform a PDF into images using C#:
 
 ## Essential Details
 

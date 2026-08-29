@@ -1,6 +1,6 @@
 > Full guide: [Remove page from PDF](https://ironpdf.com/nodejs/examples/remove-page-from-pdf/)
 
-To delete one or several pages from a PDF file, you should use the `removePage` function. After modifications, the `saveAs` method of IronPDF—a robust .NET library equipped for the creation, editing, and manipulation of PDF documents—can be employed to export the altered PDF. Additional information about IronPDF and its capabilities is available on the [IronPDF official website](https://ironpdf.com).
+To delete one or several pages from a PDF file, you should use the `removePage` function. After modifications, the `saveAs` method of IronPDF—a .NET library equipped for the creation, editing, and manipulation of PDF documents—can be employed to export the altered PDF. Additional information about IronPDF and its capabilities is available on the [IronPDF official website](https://ironpdf.com).
 
 ### Explanation:
 - **IronPdf**: This section employs IronPdf, which is a library designed for manipulating PDF files in .NET environments. Ensure this library is integrated into your project before proceeding.

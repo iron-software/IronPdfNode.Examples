@@ -10,11 +10,11 @@
 
 -----
 
-# IronPDF - Streamlining PDF Operations in Node.js Projects
+# IronPDF - Simplifying PDF Operations in Node.js Projects
 
 ![](https://raw.githubusercontent.com/iron-software/iron-nuget-assets/main/IronPDF-nodejs-readme/nuget-trial-banner-large.png)
 
-IronPDF, proudly crafted and supported by Iron Software, empowers Software Engineers with tools to generate, modify, and retrieve content from PDF documents efficiently.
+IronPDF, proudly crafted and supported by Iron Software, allows Software Engineers with tools to generate, modify, and retrieve content from PDF documents efficiently.
 
 ## Capabilities
 IronPDF stands out for its:
@@ -34,7 +34,7 @@ IronPDF is fully compatible with multiple platforms, ensuring that developers ca
 ![IronPDF Cross Platform Compatibility](https://ironpdf.com/IronPDF-nodejs-readme/cross-platform-compatibility.png)
 
 ## Utilizing IronPDF
-IronPDF leverages a robust Chrome Engine to convert HTML strings, files, and online URLs into PDF documents within Node.js environments. Given the intensive nature of the rendering process, it is advised to perform these operations on the server-side. This approach allows frontend frameworks such as ReactJs and Angular to transfer the heavy rendering tasks to the server and then retrieve the final PDF to display on the client side.
+IronPDF uses a Chrome Engine to convert HTML strings, files, and online URLs into PDF documents within Node.js environments. Given the intensive nature of the rendering process, it is advised to perform these operations on the server-side. This approach allows frontend frameworks such as ReactJs and Angular to transfer the heavy rendering tasks to the server and then retrieve the final PDF to display on the client side.
 
 ## Installation Instructions
 To install using npm, execute the following command:

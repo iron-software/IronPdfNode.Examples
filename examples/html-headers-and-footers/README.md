@@ -2,11 +2,11 @@
 
 Set up headers and footers for PDF documents using IronPDF's capabilities, a suite from Iron Software designed for sophisticated PDF creation and editing.
 
-To craft the content for the header, include an HTML snippet and a horizontal line, configuring the maximum permitted height using the versatile PDF rendering features of IronPDF. Likewise, manage the footer content through the `htmlHeader` property from IronPDF.
+To craft the content for the header, include an HTML snippet and a horizontal line, configuring the maximum permitted height using the PDF rendering features of IronPDF. Likewise, manage the footer content through the `htmlHeader` property from IronPDF.
 
 It's critical to adjust the margins since the heights of the header and footer aren't auto-calculated, which can cause them to cover the primary HTML content inadvertently.
 
-For more elaboration on implementing headers and footers or to delve into additional functionalities, visit the [IronPDF Official Website](https://ironpdf.com).
+For more elaboration on implementing headers and footers or to look at additional functionalities, visit the [IronPDF Official Website](https://ironpdf.com).
 
 ```csharp
 using IronPdf;

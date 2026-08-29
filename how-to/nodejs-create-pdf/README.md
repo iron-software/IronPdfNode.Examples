@@ -7,7 +7,7 @@ Producing PDF files in Node.js is straightforward when you use the appropriate l
 
 ## Step-by-Step Guide
 
-1. **Select a Library**: To generate PDFs, **IronPDF** is an excellent choice. It is a comprehensive .NET library designed for creating, editing, and extracting PDF content seamlessly within any application.
+1. **Select a Library**: To generate PDFs, **IronPDF** is an excellent choice. It is a comprehensive .NET library designed for creating, editing, and extracting PDF content within any application.
 
 2. **Installation**: To install IronPDF, refer to the detailed installation instructions on the [IronPDF Installation Guide](https://ironpdf.com/docs/install/).
 

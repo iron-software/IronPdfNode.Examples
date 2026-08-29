@@ -21,6 +21,6 @@ Here is a comprehensive tutorial on how to read an image file, convert it to a b
 4. **Execution:**
    - The `generatePdf` function is executed with a specified path to the image file.
 
-This guide seamlessly integrates the processes of reading an image, encoding it to base64 for HTML incorporation, and producing a PDF with IronPDF.
+This guide integrates the processes of reading an image, encoding it to base64 for HTML incorporation, and producing a PDF with IronPDF.
 
 [Explore the Complete Base64 Image Embedding Example](https://ironpdf.com/IronPdfNode.Examples/tree/main/examples/embed-image-base64)

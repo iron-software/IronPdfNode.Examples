@@ -2,7 +2,7 @@
 
 IronPDF provides a range of stamp types, including HTML, text, image, and barcode options. Users can designate each stamp's placement using vertical and horizontal coordinates, and further refine their position to the pixel level with vertical and horizontal offsets.
 
-To apply HTML stamps, you can use a piece of HTML code with complete inline CSS support for styling. For detailed guidance on leveraging HTML stamps, check out the [IronPDF Stamping Guide](https://ironpdf.com/docs/).
+To apply HTML stamps, you can use a piece of HTML code with complete inline CSS support for styling. For detailed guidance on using HTML stamps, check out the [IronPDF Stamping Guide](https://ironpdf.com/docs/).
 
 If simpler styling suffices, text stamping is a rapid alternative to HTML, avoiding the need for web-based font resources. To understand more about the capabilities of text stamping, visit the [IronPDF Text Stamping Documentation](https://ironpdf.com/docs/).
 

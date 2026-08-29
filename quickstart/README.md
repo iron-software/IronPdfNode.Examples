@@ -3,7 +3,7 @@
 > Docs: [IronPDF for Node.js documentation](https://ironpdf.com/nodejs/docs/)
 
 
-IronPDF offers a robust PDF library designed to streamline the creation and customization of PDF documents programmatically with Node.js.
+IronPDF offers a PDF library designed to simplify the creation and customization of PDF documents programmatically with Node.js.
 
 Developed by Iron Software, IronPDF is part of a suite of high-end document processing libraries that are continually evolving to meet developer needs.
 

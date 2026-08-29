@@ -1,6 +1,6 @@
 > Full guide: [Barcode htmltopdf](https://ironpdf.com/examples/barcode-htmltopdf/)
 
-Barcodes can be seamlessly integrated into PDF documents, whether they are newly created or pre-existing ones. You can utilize the `stampBarcode` method to embed a barcode into a PDF. This method primarily requires the data that the barcode will represent.
+Barcodes can be integrated into PDF documents, whether they are newly created or pre-existing ones. You can utilize the `stampBarcode` method to embed a barcode into a PDF. This method primarily requires the data that the barcode will represent.
 
 In addition to the mandatory input, a customizable barcode configuration option is available. This option allows for adjustments in various settings:
 

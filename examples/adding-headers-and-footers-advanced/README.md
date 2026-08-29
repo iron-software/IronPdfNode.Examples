@@ -1,6 +1,6 @@
 > Full guide: [Adding headers and footers advanced](https://ironpdf.com/examples/adding-headers-and-footers-advanced/)
 
-Incorporating headers and footers into both new and existing PDFs can be effortlessly achieved using IronPDF. 
+Incorporating headers and footers into both new and existing PDFs can be achieved using IronPDF. 
 
 To add a header, utilize the `addHtmlHeader` method, whereas the `addHtmlFooter` method serves to append a footer. Both methods utilize a configuration object that encompasses several key properties: `dividerLine`, `dividerLineColor`, `htmlFragment`, `loadStylesAndCSSFromMainHtmlDocument`, and `maxHeight`.
 

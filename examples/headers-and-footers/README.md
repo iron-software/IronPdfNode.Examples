@@ -1,6 +1,6 @@
 > Full guide: [Headers and footers](https://ironpdf.com/examples/headers-and-footers/)
 
-Discover how to seamlessly incorporate text headers and footers into your PDFs generated from HTML.
+Discover how to incorporate text headers and footers into your PDFs generated from HTML.
 
 To integrate text headers and footers, configure them within the rendering settings. Establish the header's style by detailing its content, placement, font choice, and size. Similar attributes can be defined for the footer using the `textFooter` property. Enhance your headers and footers by including dynamic fields such as `{page}`, `{total-pages}`, `{url}`, `{date}`, `{time}`, `{html-title}`, and `{pdf-title}` to customize them as needed.
 

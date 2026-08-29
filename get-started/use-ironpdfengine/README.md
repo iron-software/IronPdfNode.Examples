@@ -37,7 +37,7 @@ npm install @ironsoftware/ironpdf
 
 #### Option 2 (recommended): Installation of IronPdfEngine as a Dependency
 
-Installing IronPdfEngine dependencies is another approach supported by IronPdf for Node.js. These dependencies package IronPdfEngine inside a `.zip` file and handle its extraction and utilization seamlessly.
+Installing IronPdfEngine dependencies is another approach supported by IronPdf for Node.js. These dependencies package IronPdfEngine inside a `.zip` file and handle its extraction and utilization.
 
 You can opt to install one or more IronPdfEngine dependencies.
 
