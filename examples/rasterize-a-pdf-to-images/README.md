@@ -28,9 +28,9 @@ const pdf = await PdfDocument.fromFile("example.pdf");
 ## Essential Details
 
 - **IronPDF** is utilized for the conversion from PDF to images.
-- The `FromFile` method is responsible for loading the PDF document into an `IronPdf.PdfDocument` object.
+- The `fromFile` method is responsible for loading the PDF document into an `IronPdf.PdfDocument` object.
 - `ImageSaveOptions` facilitates the customization of image formats and resolution.
-- `RasterizeToImageFiles` function is used to convert each PDF page into separate image files, appropriately labeled by their page numbers.
+- `rasterizeToImageFiles` function is used to convert each PDF page into separate image files, appropriately labeled by their page numbers.
 - The images will be stored in the defined output directory.
 
 Add the IronPDF package to your project first:

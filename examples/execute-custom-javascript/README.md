@@ -8,7 +8,7 @@ Begin by crafting your JavaScript snippet. For instance, let's consider a scenar
 
 Then, construct an instance of the rendering options and make sure to enable JavaScript by setting the `enableJavaScript` property to `true`. Embed the JavaScript script we previously wrote into the `javascript` property of the options object.
 
-Proceed to convert the HTML content into a PDF document using the `PdfDocument.FromHtml` method. Don’t forget to include the rendering options you set up as the second argument.
+Proceed to convert the HTML content into a PDF document using the `PdfDocument.fromHtml` method. Don’t forget to include the rendering options you set up as the second argument.
 
 Conclude by saving the generated PDF file, which will show the H1 tags in red, under the name 'executed_js.pdf'.
 

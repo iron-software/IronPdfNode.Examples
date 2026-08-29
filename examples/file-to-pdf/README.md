@@ -13,11 +13,11 @@ Here's how to implement this conversion in Node.js:
 - **Namespace Incorporation**: Incorporate the namespace using `IronPdf;` to utilize the features of the IronPDF library.
 - **Render the file**: `PdfDocument.fromHtml()` accepts a path to an `.html` file as well as an HTML string.
 - **HTML to PDF Conversion**: Convert an HTML file into a PDF document using `renderer.RenderHtmlFileAsPdf(htmlFilePath);`.
-- **PDF Serialization**: Utilize `pdf.SaveAs(outputPdfPath);` to store the rendered PDF at the defined file path.
+- **PDF Serialization**: Utilize `pdf.saveAs(outputPdfPath);` to store the rendered PDF at the defined file path.
 
 ### Saving the Converted PDF
 
-Once the HTML is rendered into PDF format, the document can be preserved using the `SaveAs` method, storing it as 'output.pdf' either in the default directory or any custom path you define.
+Once the HTML is rendered into PDF format, the document can be preserved using the `saveAs` method, storing it as 'output.pdf' either in the default directory or any custom path you define.
 
 For additional insights on using IronPDF to craft and edit PDF documents, browse the extensive IronPDF documentation available on [Iron Software's official website](https://ironpdf.com/docs/).
 

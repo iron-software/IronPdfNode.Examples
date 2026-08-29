@@ -8,7 +8,7 @@ To integrate text headers and footers, configure them within the rendering setti
 
 Adjust the document margins to ensure space for both the header and footer.
 
-Employ the `PdfDocument.FromHtml` method for transforming HTML into a professionally styled PDF by including the `renderOptions` parameter.
+Employ the `PdfDocument.fromHtml` method for transforming HTML into a professionally styled PDF by including the `renderOptions` parameter.
 
 For comprehensive guidance on this process, consult the [IronPDF Documentation](https://ironpdf.com/docs/).
 

@@ -20,7 +20,7 @@ Once the PDF is rendered, save the document using the custom size with the `save
 
 - `RenderHtmlAsPdf` processes the HTML content into a PDF according to the set parameters.
 
-- Lastly, `SaveAs` commits the newly created PDF file to the `outputPath`.
+- Lastly, `saveAs` commits the newly created PDF file to the `outputPath`.
 
 View and experiment with the custom PDF page size example on GitHub by following this [link](https://github.com/iron-software/IronPdfNode.Examples/tree/main/examples/custom-pdf-paper-size).
 

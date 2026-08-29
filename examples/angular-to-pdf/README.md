@@ -25,7 +25,7 @@ The snippet below generates a PDF from a webpage using IronPDF, with waiting str
 
 - **Handling Asynchronous Resource Loading**: Employ the `WaitForNetworkIdle` to ensure all resources, including JavaScript and fonts, are fully loaded. Set this to wait for reduced network activity up to 10 seconds using `TimeSpan.FromSeconds(10)`, which is critical for pages dependent on dynamic assets.
 
-- **PDF File Saving**: Save the newly created PDF to a file named "output.pdf" through the `SaveAs` method.
+- **PDF File Saving**: Save the newly created PDF to a file named "output.pdf" through the `saveAs` method.
 
 - **Confirmation of Success**: Display a status message in the console confirming that the PDF has been saved successfully.
 

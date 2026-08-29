@@ -13,9 +13,9 @@ Below is an example demonstrating how to use IronPDF to compress a PDF file by m
 In this workflow:
 - The appropriate IronPDF namespace is first imported.
 - We then outline the `CompressPdf` function, which requires the path to the input and output PDF files, along with a percentage to define the image quality.
-- The `PdfDocument.FromFile` method is invoked to load the PDF from its file location.
+- The `PdfDocument.fromFile` method is invoked to load the PDF from its file location.
 - The `CompressImages` method is used for adjusting the quality of images within the document.
-- The altered PDF is then saved to the new location using the `SaveAs` method.
+- The altered PDF is then saved to the new location using the `saveAs` method.
 
 By varying the `imageQuality` value, you can directly influence the compression effect and resulting file size of your PDF document.
 

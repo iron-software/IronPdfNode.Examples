@@ -20,7 +20,7 @@ Below is a practical code snippet that illustrates how to configure margins:
 4. **Set Print Options**: Apply the `PdfPrintOptions`, which include the margin settings, to the `renderer.PrintOptions`.
 5. **HTML Content**: Formulate your HTML content within a string, ready to be transformed into the PDF format.
 6. **Render HTML to PDF**: Employ `RenderHtmlAsPdf` method on the renderer, supplying the HTML text. This will yield a `PdfDocument`.
-7. **Save PDF**: Utilize `SaveAs` to commit the newly created `PdfDocument` to a file, specifying your preferred storage location.
+7. **Save PDF**: Utilize `saveAs` to commit the newly created `PdfDocument` to a file, specifying your preferred storage location.
 
 These steps illustrate how you can tailor the margins in your PDF documents, aiding you in crafting well-structured PDFs through IronPDF.
 

@@ -9,9 +9,9 @@ To digitize a signature, utilize the `signDigitalSignature` method. This functio
 Below is an example of applying a digital signature with IronPDF for Node.js:
 
 In this scenario:
-- Begin by loading the PDF you need to sign using `PdfDocument.FromFile`.
-- Next, use the `SignDigitalSignature` method to apply the digital signature, where you'll specify the path to your `.pfx` file (the digital certificate) and the password. Optional information about the signing reason and location may be provided as well.
-- Conclude by saving the now signed PDF using the `SaveAs` method.
+- Begin by loading the PDF you need to sign using `PdfDocument.fromFile`.
+- Next, use the `signDigitalSignature` method to apply the digital signature, where you'll specify the path to your `.pfx` file (the digital certificate) and the password. Optional information about the signing reason and location may be provided as well.
+- Conclude by saving the now signed PDF using the `saveAs` method.
 
 After the digital signature is in place, you can distribute the signed PDF file by using the `saveAs` method. This document is now securely authenticated.
 

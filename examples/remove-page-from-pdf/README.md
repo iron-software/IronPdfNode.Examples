@@ -7,11 +7,11 @@ To delete one or several pages from a PDF file, you should use the `removePage` 
 ### Explanation:
 - **IronPdf**: This section employs IronPdf, which is a library designed for manipulating PDF files in .NET environments. Ensure this library is integrated into your project before proceeding.
 
-- **PdfDocument.FromFile(inputPath)**: This function initializes a `PdfDocument` object by loading a PDF from the specified file path.
+- **PdfDocument.fromFile(inputPath)**: This function initializes a `PdfDocument` object by loading a PDF from the specified file path.
 
-- **RemovePage(0)**: Executes on the `PdfDocument` object to eliminate the first page of the PDF. The page index begins at 0, where `0` denotes the initial page.
+- **removePage(0)**: Executes on the `PdfDocument` object to eliminate the first page of the PDF. The page index begins at 0, where `0` denotes the initial page.
 
-- **SaveAs(outputPath)**: This method is used to save the modifications made to the `PdfDocument` object at the path defined by `outputPath`.
+- **saveAs(outputPath)**: This method is used to save the modifications made to the `PdfDocument` object at the path defined by `outputPath`.
 
 - **Console.WriteLine**: Outputs a message to the console to notify the completion and location of the adjusted PDF.
 

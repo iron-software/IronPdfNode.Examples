@@ -16,7 +16,7 @@ IronPDF not only excels in rendering but also in PDF manipulation, offering a va
 
 4. **Convert HTML to PDF**: Execute the `RenderHtmlAsPdf` method on the `HtmlToPdf` instance using the defined HTML string to produce a PDF.
 
-5. **Save the PDF File**: Utilize the `SaveAs` method to save the created PDF to a file named `output.pdf`.
+5. **Save the PDF File**: Utilize the `saveAs` method to save the created PDF to a file named `output.pdf`.
 
 6. **Completion Notification**: Display a console message to inform the user that the PDF file has been successfully generated and saved.
 
