@@ -22,7 +22,7 @@ npm install @ironsoftware/ironpdf
 npm install @ironsoftware/ironpdf
 ```
 
-You also have the option to [manually download and install](https://ironpdf.com/download-modal?utm_source=github) the IronPDF package.
+You also have the option to [manually download and install](https://ironpdf.com/?utm_source=github#download-modal) the IronPDF package.
 
 ### Optional Manual Installation of the IronPDF Engine
 
@@ -52,7 +52,7 @@ var config = IronPdfGlobalConfig.getConfig();
 config.licenseKey = "{YOUR-LICENSE-KEY-HERE}";
 ```
 
-[Acquire a license key](https://ironpdf.com/nodejs/licensing/?utm_source=github) from our licensing page, or get in touch to [receive a trial license key for free](https://ironpdf.com/trial-license?utm_source=github).
+[Acquire a license key](https://ironpdf.com/nodejs/licensing/?utm_source=github) from our licensing page, or get in touch to [receive a trial license key for free](https://ironpdf.com/?utm_source=github#trial-license).
 
 Before using other features of the library, it's crucial to set the license key [alongside other global configuration parameters](https://ironpdf.com/nodejs/object-reference/api/interfaces/IronPdfConfig.html?utm_source=github). This ensures optimal performance and functionality of the library.
 
