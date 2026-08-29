@@ -115,9 +115,9 @@ PdfDocument.fromFile("./sample-pdf-with-images.pdf").then((pdf) => {
 
 ### API Documentation
 
-Explore detailed explanations and more functionalities by visiting the [API reference for the `PdfDocument` class](https://ironsoftware.com/csharp/ocr/examples/javascript-integration/?utm_source=github#api-reference).
+Explore detailed explanations and more functionalities by visiting the [API reference for the `PdfDocument` class](https://ironpdf.com/object-reference/api/IronPdf.PdfDocument.html?utm_source=github).
 
 ### Practical Examples
 
-- [**Converting a PDF to Images with IronPDF**](https://ironsoftware.com/csharp/ocr/examples/pdf-to-image/?utm_source=github): A variant of the `rasterizeToImageFiles` usage.
-- [**Transforming Images into PDFs with IronPDF**](https://ironsoftware.com/csharp/ocr/examples/image-to-pdf/?utm_source=github): Learn how to compile multiple images into a single PDF document.
+- [**Converting a PDF to Images with IronPDF**](https://ironpdf.com/examples/rasterize-a-pdf-to-images/?utm_source=github): A variant of the `rasterizeToImageFiles` usage.
+- [**Transforming Images into PDFs with IronPDF**](https://ironpdf.com/examples/image-to-pdf/?utm_source=github): Learn how to compile multiple images into a single PDF document.
