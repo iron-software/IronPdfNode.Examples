@@ -102,4 +102,4 @@ IronPdfGlobalConfig.setConfig({
 
 That’s all! Following this, your application will be connected to the remote IronPdfEngine.
 
-For systems using a remote IronPdfEngine, there's no need to install IronPdfEngine directly as a dependency. You can bypass the section "[Option 2 (recommended) install IronPdfEngine as a dependency](#anchor-option-2-recommended-install-ironpdfengine-as-a-dependency)."
+For systems using a remote IronPdfEngine, there's no need to install IronPdfEngine directly as a dependency. You can bypass the section "Option 2 (recommended) install IronPdfEngine as a dependency."

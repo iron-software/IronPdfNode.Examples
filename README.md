@@ -17,9 +17,6 @@
 IronPDF, proudly crafted and supported by Iron Software, empowers Software Engineers with tools to generate, modify, and retrieve content from PDF documents efficiently.
 
 ## Capabilities
-
-[](#capabilities)
-
 IronPDF stands out for its:
 
   * Ability to create PDFs using HTML, URLs, JavaScript, CSS, and various image formats
@@ -37,15 +34,9 @@ IronPDF is fully compatible with multiple platforms, ensuring that developers ca
 ![IronPDF Cross Platform Compatibility](https://ironpdf.com/IronPDF-nodejs-readme/cross-platform-compatibility.png)
 
 ## Utilizing IronPDF
-
-[](#utilizing-ironpdf)
-
 IronPDF leverages a robust Chrome Engine to convert HTML strings, files, and online URLs into PDF documents within Node.js environments. Given the intensive nature of the rendering process, it is advised to perform these operations on the server-side. This approach allows frontend frameworks such as ReactJs and Angular to transfer the heavy rendering tasks to the server and then retrieve the final PDF to display on the client side.
 
 ## Installation Instructions
-
-[](#installation-instructions)
-
 To install using npm, execute the following command:
 
 ```bash
@@ -63,9 +54,6 @@ IronPDF necessitates the IronPDF Engine binary. This is automatically downloaded
 > **_NOTE:_** Ensure that the versions of IronPDF and the IronPDF Engine binary are aligned and compatible.
 
 ### Windows x64 Installation Instructions
-
-[](#windows-x64-installation-instructions)
-
 For npm users:
 
 ```bash
@@ -79,9 +67,6 @@ yarn add @ironsoftware/ironpdf-engine-windows-x64
 ```
 
 ### For the Windows x86 Architecture
-
-[](#for-windows-x86)
-
 To install using npm:
 
 ```bash
@@ -95,9 +80,6 @@ yarn add @ironsoftware/ironpdf-engine-windows-x86
 ```
 
 ### For 64-bit Linux Systems
-
-[](#for-64-bit-linux-systems)
-
 To install using npm, execute:
 
 ```bash
@@ -111,9 +93,6 @@ yarn add @ironsoftware/ironpdf-engine-linux-x64
 ```
 
 ### For macOS x64 Installation
-
-[](#for-macos-x64-installation)
-
 Install using npm:
 
 ```bash
@@ -127,9 +106,6 @@ yarn add @ironsoftware/ironpdf-engine-macos-x64
 ```
 
 ### macOS Arm Installation
-
-[](#macos-arm-installation)
-
 For installation via npm, execute:
 
 ```bash
@@ -143,9 +119,6 @@ yarn add @ironsoftware/ironpdf-engine-macos-arm64
 ```
 
 ## Usage
-
-[](#usage)
-
 Here are some examples of how to work with HTML-to-PDF conversions using IronPDF:
 
 For converting an HTML string to a PDF, use the following code:
@@ -195,9 +168,6 @@ import { PdfDocument } from "@ironsoftware/ironpdf"; // Import the necessary cla
 These examples demonstrate how to utilize IronPDF for creating and modifying PDF files by converting from HTML strings, URLs, and adding stamps to existing documents.
 
 ## Feature Overview
-
-[](#feature-overview)
-
 [![IronPDF Capabilities](https://ironpdf.com/iron-nuget-assets/main/IronPDF-nodejs-readme/features-table.png)](https://ironpdf.com/iron-nuget-assets/main/IronPDF-nodejs-readme/features-table.png)
 
 ## Licensing & Support Options
